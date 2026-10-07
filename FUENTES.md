@@ -1,6 +1,6 @@
 # Fuentes y recursos visuales
 
-Revisión para esta versión: 07/10/2026. Las fotografías se guardan como WebP por rendimiento, sin alterar su contenido; los encuadres se realizan con CSS.
+Revisión para esta versión: 07/10/2026. Las fotografías originales se conservan como WebP. El sitio usa nuevas versiones de mayor resolución reconstruidas con IA mediante la herramienta de imágenes de ChatGPT; detalles y prompts en MEJORA-IMAGENES.md.
 
 ## Material publicado del negocio
 
@@ -33,3 +33,6 @@ Prompt: fotografía gastronómica editorial de una Hot Sushi Burger, una unidad 
 
 La descripción de Hot Sushi Burger y las tablas de 40/70 piezas se contrastaron con la carta de Fudo. No se fijan precios ni se inventan testimonios, calificaciones o servicios. La búsqueda de Maps usa el nombre del local porque directorios secundarios muestran un número de calle distinto; el sitio sigue la dirección publicada en Fudo.
 
+## Versiones mejoradas con ChatGPT
+
+La portada, los rolls, la foto de sushi para compartir, el ambiente y la burger usan archivos `*-hd.webp`. En las tres fotos provenientes de collages se extrae la toma mostrada en el sitio. Se pidió preservar el contenido y la composición; la IA puede reconstruir detalles distintos del original. La burger continúa identificada como imagen referencial. Ver [MEJORA-IMAGENES.md](MEJORA-IMAGENES.md) para resoluciones y prompts.

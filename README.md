@@ -18,3 +18,6 @@ Los pedidos se realizan en la carta existente de Fudo, no en un carrito creado p
 La etiqueta `noindex,nofollow` se conserva mientras el sitio sea una propuesta. Dirección y horarios siguen lo publicado por el negocio en Fudo; confirmar con el negocio antes del lanzamiento comercial definitivo.
 
 
+## Fotografías de mayor resolución
+
+El sitio utiliza las cinco versiones `assets/*-hd.webp`, preparadas con la herramienta integrada de imágenes de ChatGPT. Los originales se conservan. [MEJORA-IMAGENES.md](MEJORA-IMAGENES.md) documenta resolución, peso y prompts, y [FUENTES.md](FUENTES.md) conserva la procedencia.
