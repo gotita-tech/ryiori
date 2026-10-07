@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es-CL"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Ryori · Presentación de auditoría digital</title><style>
+    :root{
+      --bg:#0b0b0b;--panel:#121212;--panel2:#181818;--ink:#f5efe7;--muted:#b8aea3;
+      --accent:#df4a33;--accent2:#f4a261;--line:rgba(255,255,255,.1);--ok:#8fcf9e;--warn:#f7c66c;
+      --shadow:0 24px 70px rgba(0,0,0,.42);--r:24px;--max:1180px;
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5}
+    a{color:inherit;text-decoration:none} button{font:inherit} img{display:block;max-width:100%}
+    .wrap{width:min(var(--max),calc(100% - 32px));margin:auto}.eyebrow{font-size:.76rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent2);font-weight:800}.muted{color:var(--muted)}
+    .nav{position:sticky;top:0;z-index:20;background:rgba(11,11,11,.78);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+    .navin{height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:.08em}.brandmark{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;border:1px solid rgba(255,255,255,.15);background:linear-gradient(145deg,#2b1511,#111);color:var(--accent2)}
+    .tabs{display:flex;gap:6px;padding:5px;border:1px solid var(--line);border-radius:999px;background:#111}.tab{border:0;background:transparent;color:var(--muted);padding:9px 14px;border-radius:999px;cursor:pointer;font-weight:750}.tab.active{background:var(--ink);color:#111}
+    .hero{min-height:76vh;position:relative;display:grid;align-items:end;background-image:linear-gradient(90deg,rgba(7,7,7,.94) 0%,rgba(7,7,7,.66) 40%,rgba(7,7,7,.12) 72%),linear-gradient(0deg,rgba(7,7,7,.9),transparent 55%),none;background-size:cover;background-position:center}
+    .hero .inner{padding:96px 0 76px;max-width:760px}.hero h1{font-size:clamp(3.2rem,8vw,7.3rem);line-height:.9;margin:.16em 0 .22em;letter-spacing:-.06em}.hero p{max-width:650px;font-size:clamp(1rem,2vw,1.25rem);color:#ddd2c8}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 18px;border-radius:999px;border:1px solid var(--line);font-weight:800}.btn.primary{background:var(--accent);border-color:var(--accent);color:white}.btn.secondary{background:rgba(14,14,14,.54);backdrop-filter:blur(6px)}
+    .notice{margin-top:22px;padding:12px 14px;border:1px solid rgba(247,198,108,.28);background:rgba(247,198,108,.08);border-radius:14px;color:#e5d5b6;font-size:.9rem}
+    section{padding:86px 0;border-top:1px solid var(--line)} h2{font-size:clamp(2.1rem,4vw,4rem);line-height:1;margin:.18em 0 .34em;letter-spacing:-.04em} h3{margin:.2em 0 .4em;font-size:1.2rem}.lead{font-size:1.1rem;color:var(--muted);max-width:780px}
+    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:32px}.stat{padding:24px;border:1px solid var(--line);border-radius:var(--r);background:linear-gradient(160deg,#171717,#101010)}.stat strong{display:block;font-size:2rem;line-height:1}.stat span{display:block;color:var(--muted);margin-top:8px}
+    .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}.card{padding:24px;border:1px solid var(--line);border-radius:var(--r);background:var(--panel);box-shadow:var(--shadow)}.card .kicker{color:var(--accent2);font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.12em}.price{font-size:1.5rem;font-weight:900;margin-top:14px}.rating{margin-top:10px;color:#f2c879}.pill{display:inline-flex;border:1px solid var(--line);padding:7px 10px;border-radius:999px;color:var(--muted);font-size:.82rem}
+    .product{min-height:315px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden}.product:before{content:"";position:absolute;inset:0;background-image:linear-gradient(0deg,rgba(0,0,0,.94),rgba(0,0,0,.08)),none;background-size:cover;filter:saturate(.95)}.product:nth-child(1):before{background-position:70% 55%}.product:nth-child(2):before{background-position:52% 60%}.product:nth-child(3):before{background-position:90% 62%}.product>*{position:relative}
+    .split{display:grid;grid-template-columns:1.1fr .9fr;gap:22px;align-items:start;margin-top:34px}.scorebig{font-size:7rem;line-height:.85;font-weight:950;letter-spacing:-.09em;color:var(--accent2)}.barrow{display:grid;grid-template-columns:170px 1fr 50px;gap:12px;align-items:center;margin:14px 0}.bar{height:9px;border-radius:99px;background:#242424;overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2));border-radius:99px}
+    .issues{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:26px}.issue{padding:22px;border-radius:var(--r);border:1px solid rgba(223,74,51,.24);background:linear-gradient(160deg,rgba(223,74,51,.08),rgba(255,255,255,.02))}.issue strong{font-size:2.1rem}.issue ul{padding-left:20px;color:var(--muted)}
+    .ecosystem{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}.asset{padding:18px;border-radius:18px;border:1px solid var(--line);background:#111}.asset b{display:block}.asset small{color:var(--muted)}
+    .timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:30px}.step{padding:22px;border-radius:20px;border:1px solid var(--line);background:#101010}.num{font-size:.8rem;color:var(--accent2);font-weight:900;letter-spacing:.12em}.step strong{display:block;margin:10px 0 6px}.step p{color:var(--muted);margin:0}.step em{display:inline-block;margin-top:15px;color:#f3d2a4;font-style:normal;font-size:.85rem}
+    .social{display:grid;grid-template-columns:.8fr 1.2fr;gap:28px;align-items:center}.phone{width:min(390px,100%);margin:auto;border:1px solid #363636;border-radius:38px;padding:12px;background:#050505;box-shadow:var(--shadow)}.phonein{border-radius:29px;overflow:hidden;background:#151515}.socialhead{padding:18px;display:flex;justify-content:space-between;border-bottom:1px solid var(--line)}.mockgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}.mock{aspect-ratio:1;background-image:linear-gradient(0deg,rgba(0,0,0,.25),rgba(0,0,0,.05)),none;background-size:cover}.mock:nth-child(2n){background-position:80% 60%}.mock:nth-child(3n){background-position:45% 55%}.highlights{display:flex;gap:10px;padding:16px;overflow:hidden}.dot{min-width:58px;text-align:center;font-size:.68rem;color:var(--muted)}.dot i{display:block;width:48px;height:48px;margin:auto auto 5px;border-radius:50%;border:1px solid #555;background:linear-gradient(145deg,#2a1610,#111)}
+    .mode{display:none}.mode.active{display:block}.auditHero{padding:78px 0 24px}.auditHero .scoreline{display:flex;gap:28px;align-items:end;flex-wrap:wrap}.auditHero .score{font-size:clamp(5rem,15vw,10rem);font-weight:950;line-height:.82;letter-spacing:-.1em;color:var(--accent2)}
+    .quote{padding:24px;border-left:3px solid var(--accent);background:#111;border-radius:0 18px 18px 0;color:#ddd}.footer{padding:40px 0 80px;color:var(--muted);font-size:.88rem}.footer a{text-decoration:underline;text-underline-offset:3px}
+    @media(max-width:900px){.stats,.grid3,.timeline{grid-template-columns:1fr 1fr}.split,.social{grid-template-columns:1fr}.ecosystem{grid-template-columns:1fr 1fr}.barrow{grid-template-columns:120px 1fr 42px}}
+    @media(max-width:620px){.navin{height:auto;padding:11px 0;align-items:flex-start;flex-direction:column}.tabs{width:100%}.tab{flex:1}.hero{min-height:72vh;background-position:62% center}.hero .inner{padding:76px 0 50px}.stats,.grid3,.timeline,.ecosystem,.issues{grid-template-columns:1fr}.scorebig{font-size:5.2rem}.barrow{grid-template-columns:100px 1fr 38px}section{padding:64px 0}}
+  
+.auditnav{padding:18px 0;border-bottom:1px solid #333;display:flex;justify-content:space-between;align-items:center;gap:16px}.auditnav a{font-size:13px;color:#f4a261}.print{padding:10px 18px;border:1px solid #777;border-radius:5px;color:#fff;background:#222;cursor:pointer}.document-note{padding:20px 0 0;color:#b8aea3;font-size:13px}.auditHero{padding-top:45px}h1{font-weight:800}body{line-height:1.6}section{break-inside:avoid}.sources{padding-bottom:45px}.sources a{color:#f4a261;text-decoration:underline}.sources ul{padding-left:20px}@media print{body{background:#fff;color:#111}.auditnav,.print{display:none}section{padding:25px 0}h1,h2,h3,.muted,.lead,.document-note{color:#111!important}.issue,.card,.asset,.quote,.step{background:#f3f3f3!important;color:#111!important;border:1px solid #ccc}.bar{background:#ddd}.wrap{width:95%}.auditHero{padding:20px 0}.eyebrow,.score,.scorebig{color:#a43b21!important}.sources a{color:#111}}
+</style></head><body><header class="wrap auditnav"><strong>RYORI · AUDITORÍA DIGITAL</strong><button class="print" type="button" onclick="window.print()">Imprimir / guardar PDF</button></header><main><div class="wrap document-note">Presentación independiente · Revisión original del 06/10/2026. Las cifras y hallazgos corresponden a esa revisión; no son métricas en tiempo real.</div>
+      <header class="auditHero">
+        <div class="wrap">
+          <div class="eyebrow">Auditoría digital · 06/10/2026</div>
+          <div class="scoreline"><div class="score">6,2</div><div><h1 style="margin:0;font-size:clamp(2.5rem,6vw,5rem);letter-spacing:-.05em;line-height:.9">Visibilidad buena.<br>Propiedad digital baja.</h1></div></div>
+          <p class="lead" style="margin-top:28px">La huella digital es relevante, pero está fragmentada entre redes, directorios, delivery y datos inconsistentes. La mayor oportunidad no es abrir más canales: es conectar mejor los existentes y crear un activo propio.</p>
+        </div>
+      </header>
+
+      <section>
+        <div class="wrap">
+          <div class="eyebrow">Mapa de activos</div><h2>Muchos puntos de entrada, una sola marca.</h2>
+          <div class="ecosystem">
+            <div class="asset"><b>Instagram</b><small>@ryorisushi_llolleo · descubrimiento/comunidad · 6,2K+</small></div>
+            <div class="asset"><b>Facebook</b><small>Ryori Sushi Llolleo · reputación/eventos · 3,4K likes</small></div>
+            <div class="asset"><b>Google / Maps</b><small>Búsqueda de intención alta · 4,0 · 428 reseñas</small></div>
+            <div class="asset"><b>Fudo</b><small>menu.fu.do/ryori · carta/pedido · activo</small></div>
+            <div class="asset"><b>Uber Eats</b><small>Delivery / prueba social · 4,4 · 450+</small></div>
+            <div class="asset"><b>Tripadvisor</b><small>Turismo / reputación · 3,5 · 44 opiniones</small></div>
+          </div>
+          <div class="quote" style="margin-top:22px"><strong>Vacío detectado:</strong> el dominio histórico <em>ryori-llolleo.cl</em> aparece citado en directorios, pero no fue accesible durante la revisión. La carta Fudo sí estaba activa.</div>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap">
+          <div class="eyebrow">Problema crítico</div><h2>Dirección y horarios no coinciden.</h2>
+          <p class="lead">La inconsistencia aparece justo en la etapa previa a la compra y puede generar dudas, pérdida de confianza y fricción operativa.</p>
+          <div class="issues">
+            <div class="issue"><span class="kicker">Dirección</span><strong>375 vs 391</strong><ul><li>Uber Eats y piezas históricas de Facebook: Av. Divina Providencia 375.</li><li>Restaurant Guru, Tripadvisor y Waze: 391.</li></ul><span class="pill">Prioridad: normalizar NAP</span></div>
+            <div class="issue"><span class="kicker">Horarios</span><strong>3 versiones</strong><ul><li>Instagram: Lun–Jue 13:00–21:00 · Vie–Sáb 13:00–00:00.</li><li>Restaurant Guru: Lun–Jue 12:30–22:00 · Vie–Sáb 12:30–00:00.</li><li>Uber Eats: Lun–Jue 12:30–20:30 · Vie–Sáb 12:30–23:00.</li></ul><span class="pill">Prioridad: una fuente de verdad</span></div>
+          </div>
+          <p class="muted" style="margin-top:20px">Además, la marca oficial aparece como “Ryori”, mientras algunas menciones externas usan “Riory”. Conviene blindar la ortografía oficial en SEO y fichas locales.</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap split">
+          <div><div class="eyebrow">Scorecard estratégico</div><h2>El retorno está en ordenar y convertir.</h2><div class="scorebig">6,2/10</div><p class="lead">Puntaje basado en visibilidad, consistencia, reputación, conversión y control del activo.</p></div>
+          <div>
+            <div class="barrow"><span>Instagram</span><div class="bar"><i style="width:75%"></i></div><b>7,5</b></div>
+            <div class="barrow"><span>Facebook</span><div class="bar"><i style="width:60%"></i></div><b>6,0</b></div>
+            <div class="barrow"><span>Google / Maps</span><div class="bar"><i style="width:70%"></i></div><b>7,0</b></div>
+            <div class="barrow"><span>Uber Eats + Fudo</span><div class="bar"><i style="width:80%"></i></div><b>8,0</b></div>
+            <div class="barrow"><span>Tripadvisor</span><div class="bar"><i style="width:45%"></i></div><b>4,5</b></div>
+            <div class="barrow"><span>Sitio propio</span><div class="bar"><i style="width:30%"></i></div><b>3,0</b></div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap">
+          <div class="eyebrow">Reputación</div><h2>Prueba social fuerte, experiencia irregular.</h2>
+          <div class="grid3">
+            <div class="card"><div class="kicker">Google</div><h3>4,0 / 5</h3><p class="muted">428 reseñas. Volumen relevante para búsqueda local.</p></div>
+            <div class="card"><div class="kicker">Uber Eats</div><h3>4,4 / 5</h3><p class="muted">450+ valoraciones. Excelente activo de conversión.</p></div>
+            <div class="card"><div class="kicker">Tripadvisor</div><h3>3,5 / 5</h3><p class="muted">44 opiniones. El perfil figuraba como “no reclamado”.</p></div>
+          </div>
+          <div class="issues"><div class="issue"><h3>Lo que funciona</h3><p class="muted">Comentarios recientes destacan sabor de rolls y frescura percibida. Buen desempeño de productos estrella en delivery.</p></div><div class="issue"><h3>Lo que corregir</h3><p class="muted">Críticas recientes mencionan variabilidad en calidad y servicio. Un perfil no reclamado limita la capacidad de responder y controlar información.</p></div></div>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap">
+          <div class="eyebrow">Plan de acción</div><h2>Primero consistencia. Luego conversión. Después crecimiento.</h2>
+          <div class="timeline">
+            <div class="step"><span class="num">01</span><strong>Higiene digital</strong><p>Unificar nombre, dirección, teléfono, horarios y enlaces. Reclamar perfiles.</p><em>1–2 días</em></div>
+            <div class="step"><span class="num">02</span><strong>Landing MVP</strong><p>Hero, best sellers, reseñas, menú, mapa y CTAs.</p><em>3–5 días</em></div>
+            <div class="step"><span class="num">03</span><strong>Demo RRSS</strong><p>Bio, highlights, 9 piezas visuales, 3 Reels y portada Facebook.</p><em>2–3 días</em></div>
+            <div class="step"><span class="num">04</span><strong>Medición</strong><p>GA4, Meta Pixel, UTMs y eventos de clic.</p><em>1 día</em></div>
+          </div>
+        </div>
+      </section>
+    
+<section class="wrap sources"><h2>Fuentes de la revisión</h2><ul><li><a href="https://www.instagram.com/ryorisushi_llolleo/">Instagram de Ryori</a></li><li><a href="https://www.facebook.com/RyoriSushiOficial">Facebook de Ryori</a></li><li><a href="https://menu.fu.do/ryori">Carta de Fudo</a></li><li><a href="https://es.restaurantguru.com/Ryori-Sushi-Bar-San-Antonio-Valparaiso-Region">Restaurant Guru</a></li><li><a href="https://www.tripadvisor.es/Restaurant_Review-g1136530-d8105689-Reviews-Ryori-San_Antonio_Valparaiso_Region.html">Tripadvisor</a></li></ul><p class="muted">La presentación conserva el análisis anterior. Antes de tomar decisiones comerciales, confirmar con el negocio datos de contacto, dirección, horarios y vigencia de la información.</p></section></main><footer class="footer"><div class="wrap">Documento de trabajo para Ryori Sushi Llolleo · Auditoría y propuesta digital.</div></footer></body></html>

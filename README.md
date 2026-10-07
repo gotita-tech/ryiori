@@ -1,25 +1,20 @@
-# Ryori Sushi — demo digital
+# Ryori Sushi Bar — sitio y presentación
 
-Demo actual de Ryori Sushi Llolleo, recuperada del despliegue existente de Vercel sin alterar su diseño ni su contenido.
+Sitio de Ryori Sushi Bar en https://ryiori.vercel.app, publicado desde `main` en el proyecto Vercel existente `ryiori`, equipo Gotech (`gotech2`).
 
-## Archivos
+## Separación de contenidos
 
-- `index.html`: página completa con estilos y JavaScript integrados.
-- `README.md`: instrucciones de uso y despliegue.
+- `index.html`, `styles.css`, `site.js`: sitio orientado a clientes, con carta, pedidos, local y contacto.
+- `presentacion/index.html`: auditoría digital independiente, disponible en `/presentacion/`. No aparece enlazada en la navegación del sitio. Incluye impresión / guardado como PDF y conserva el análisis fechado el 06/10/2026.
+- `assets/`: fotografías optimizadas guardadas en el repositorio; no dependen de enlaces externos a imágenes.
+- `FUENTES.md`: procedencia de imágenes, enlaces y datos del negocio.
 
-## Uso local
+## Uso y despliegue
 
-Abre `index.html` en un navegador. No requiere instalación de dependencias ni proceso de compilación.
+No requiere dependencias ni compilación. Sirve la carpeta raíz con cualquier servidor estático o abre `index.html`. Cada cambio en `main` activa la integración de GitHub con Vercel.
 
-## Despliegue
+Los pedidos se realizan en la carta existente de Fudo, no en un carrito creado para esta web. Los enlaces a WhatsApp y redes fueron recuperados de esa carta. Los precios se consultan directamente en Fudo para evitar valores desactualizados.
 
-Proyecto de Vercel: `ryiori`, equipo Gotech (`gotech2`).
+La etiqueta `noindex,nofollow` se conserva mientras el sitio sea una propuesta. Dirección y horarios siguen lo publicado por el negocio en Fudo; confirmar con el negocio antes del lanzamiento comercial definitivo.
 
-La rama de producción es `main`. Los cambios enviados a esa rama se despliegan automáticamente mediante la integración de GitHub con Vercel.
-
-Sitio: https://ryiori.vercel.app
-
-## Alcance
-
-Es una demo digital, no una plataforma de pedidos con backend. Conserva la etiqueta `noindex,nofollow` del sitio original. Antes de usarla como sitio comercial definitivo, revisa los datos, enlaces e información del negocio.
 
