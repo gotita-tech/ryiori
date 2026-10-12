@@ -1,28 +1,13 @@
 /* Carta de Ryori. Variables de color y tipografía en ../comun.css */
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-padding-top: 132px; }
+.cabecera-nav > a:first-child { color: var(--arroz); }
 body { margin: 0; background: var(--arroz); color: var(--tinta); font-family: var(--texto); font-size: 16px; line-height: 1.45; -webkit-text-size-adjust: 100%; }
 a { color: inherit; }
 img { display: block; max-width: 100%; }
 button { font: inherit; color: inherit; }
 h1, h2, h3, h4, p { margin: 0; }
-.visualmente-oculto { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
-.saltar { position: fixed; left: 12px; top: -60px; z-index: 100; background: var(--mango); color: var(--tinta); padding: 12px 16px; font-weight: 600; }
-.saltar:focus { top: 12px; }
 :focus-visible { outline: 3px solid var(--mango); outline-offset: 2px; }
-
-/* ---------- Cabecera negra con el logo original ---------- */
-.cabecera {
-  background: var(--negro); color: var(--arroz);
-  display: flex; align-items: center; justify-content: space-between; gap: 16px;
-  padding: 4px max(16px, calc((100vw - 1120px) / 2)); min-height: 60px;
-}
-.logo { display: block; }
-.logo img { width: 52px; height: 52px; }
-.cabecera-nav { display: flex; align-items: center; gap: 16px; }
-.inicio { display: flex; align-items: center; min-height: 44px; padding: 0 8px; text-decoration: none; font-weight: 500; }
-.inicio:hover { text-decoration: underline; }
-.cabecera .canal { min-height: 44px; padding: 8px 16px; font-size: 14px; }
 
 /* ---------- Buscador y barra de categorías (fija al bajar) ---------- */
 .herramientas {
@@ -88,13 +73,6 @@ h1, h2, h3, h4, p { margin: 0; }
 .et-mariscos { color: #1D5A73; }
 .et-pescado { color: #2C4F8A; }
 .et-vegano, .et-vegetariano { color: var(--nori); }
-.precio { font-weight: 700; font-size: 17px; font-variant-numeric: tabular-nums; white-space: nowrap; }
-.pedir {
-  display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 16px;
-  border-radius: 999px; background: var(--tinta); color: var(--arroz);
-  font-weight: 600; font-size: 15px; text-decoration: none; white-space: nowrap;
-}
-.pedir:hover { background: var(--nori); }
 
 /* Variantes: relleno, cantidad, tamaño */
 .opciones { display: flex; flex-wrap: wrap; gap: 6px; }
@@ -117,20 +95,6 @@ h1, h2, h3, h4, p { margin: 0; }
 .trago .precio { font-size: 15px; font-weight: 600; }
 .trago .opciones { margin: -4px 0 10px; }
 
-/* ---------- Tarjeta del sugeridor ---------- */
-.tarjeta-sugeridor {
-  margin: 18px 0 8px; padding: 20px; border-radius: 16px;
-  background: var(--nori); color: var(--arroz);
-}
-.tarjeta-sugeridor .ola { width: 64px; height: 8px; color: var(--mango); display: block; margin-bottom: 10px; }
-.tarjeta-sugeridor h3 { font-family: var(--titulos); font-weight: 800; font-size: 22px; line-height: 1.15; }
-.tarjeta-sugeridor p { margin: 6px 0 14px; color: #DCE6E2; max-width: 34em; }
-.boton-mango {
-  display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; border-radius: 999px;
-  background: var(--mango); color: var(--tinta); font-weight: 700; text-decoration: none;
-}
-.boton-mango:hover { background: #F3B93F; }
-
 /* ---------- Sin resultados ---------- */
 .sin-resultados { padding-top: 28px; padding-bottom: 28px; }
 .sin-resultados p { font-size: 17px; max-width: 32em; margin-bottom: 14px; }
@@ -151,16 +115,14 @@ h1, h2, h3, h4, p { margin: 0; }
   .plato:last-child { border-bottom: 1px solid var(--linea); }
   .lista-tragos { columns: 2; }
   .categoria-titulo { font-size: 32px; }
-  .tarjeta-sugeridor { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 8px 32px; padding: 24px 28px; }
-  .tarjeta-sugeridor .ola, .tarjeta-sugeridor h3, .tarjeta-sugeridor p { grid-column: 1; }
-  .tarjeta-sugeridor .boton-mango { grid-column: 2; grid-row: 1 / span 3; }
-  .tarjeta-sugeridor p { margin-bottom: 0; }
 }
 @media (max-width: 700px) {
-  .cabecera .canales { display: none; }
   .pie a { margin-right: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 .conteo { max-width: 1120px; margin: 0 auto; padding: 12px 16px 0; font-size: 15px; font-weight: 600; }
 .conteo:empty { display: none; }
+.tarjeta-sugeridor { margin: 18px 0 8px; }
+.plato.simple { grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: 'texto pie'; align-items: center; }
+.plato.simple .plato-meta { display: none; }

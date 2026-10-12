@@ -17,17 +17,56 @@
     "_nota": "0 = domingo … 6 = sábado. Cierre 00:00 se guarda como 24:00.",
     "dias": {
       "0": [],
-      "1": [["13:00", "21:00"]],
-      "2": [["13:00", "21:00"]],
-      "3": [["13:00", "21:00"]],
-      "4": [["13:00", "21:00"]],
-      "5": [["13:00", "24:00"]],
-      "6": [["13:00", "24:00"]]
+      "1": [
+        [
+          "13:00",
+          "21:00"
+        ]
+      ],
+      "2": [
+        [
+          "13:00",
+          "21:00"
+        ]
+      ],
+      "3": [
+        [
+          "13:00",
+          "21:00"
+        ]
+      ],
+      "4": [
+        [
+          "13:00",
+          "21:00"
+        ]
+      ],
+      "5": [
+        [
+          "13:00",
+          "24:00"
+        ]
+      ],
+      "6": [
+        [
+          "13:00",
+          "24:00"
+        ]
+      ]
     },
     "texto": [
-      { "dias": "Lunes a jueves", "horas": "13:00 – 21:00" },
-      { "dias": "Viernes y sábado", "horas": "13:00 – 00:00" },
-      { "dias": "Domingo", "horas": "Cerrado" }
+      {
+        "dias": "Lunes a jueves",
+        "horas": "13:00 – 21:00"
+      },
+      {
+        "dias": "Viernes y sábado",
+        "horas": "13:00 – 00:00"
+      },
+      {
+        "dias": "Domingo",
+        "horas": "Cerrado"
+      }
     ]
   },
   "contacto": {
@@ -42,7 +81,10 @@
       "etiqueta": "Retirar en el local",
       "etiquetaCorta": "Retirar",
       "url": "https://menu.fu.do/ryori",
-      "pagoEnLocal": ["Efectivo", "Redcompra"]
+      "pagoEnLocal": [
+        "Efectivo",
+        "Redcompra"
+      ]
     },
     "delivery": {
       "etiqueta": "Delivery",
@@ -64,8 +106,14 @@
     "_nota": "Se usan las coordenadas que publica Fudo, no una búsqueda por nombre, para no caer en la ficha duplicada de Google."
   },
   "redes": {
-    "instagram": { "usuario": "@ryorisushi_llolleo", "url": "https://www.instagram.com/ryorisushi_llolleo/" },
-    "facebook": { "usuario": "RyoriSushiOficial", "url": "https://www.facebook.com/RyoriSushiOficial" }
+    "instagram": {
+      "usuario": "@ryorisushi_llolleo",
+      "url": "https://www.instagram.com/ryorisushi_llolleo/"
+    },
+    "facebook": {
+      "usuario": "RyoriSushiOficial",
+      "url": "https://www.facebook.com/RyoriSushiOficial"
+    }
   },
   "valoraciones": [
     {
@@ -87,13 +135,51 @@
   "masPedido": {
     "fuente": "Uber Eats",
     "fecha": "2026-10-12",
-    "_nota": "Porcentaje = valoraciones positivas en Uber Eats sobre el total indicado.",
+    "_nota": "Porcentaje y cantidad = valoraciones positivas en Uber Eats sobre el total. «clave» y «variante» enlazan con la carta (menu-data.js) para leer el precio de Fudo; nunca se escribe el precio aquí.",
     "productos": [
-      { "nombre": "Hot Sushi Burger Pollo", "dato": "Nº 1 · 83 % de 48" },
-      { "nombre": "Tabla Parque DYR 40 piezas", "dato": "84 % de 38" },
-      { "nombre": "Roll Acevichado", "dato": "80 % de 25" },
-      { "nombre": "Handroll pollo + queso crema", "dato": "94 % de 53" },
-      { "nombre": "Gohan de pollo", "dato": "96 % de 25" }
-    ]
+      {
+        "nombre": "Hot Sushi Burger Pollo",
+        "clave": "hot-sushi-burger",
+        "variante": [
+          "Pollo"
+        ],
+        "posicion": 1,
+        "positivas": 83,
+        "valoraciones": 48
+      },
+      {
+        "nombre": "Tabla Parque DYR 40 piezas",
+        "clave": "tabla-parque-dyr",
+        "posicion": 2,
+        "positivas": 84,
+        "valoraciones": 38
+      },
+      {
+        "nombre": "Roll Acevichado",
+        "clave": "roll-acevichado",
+        "posicion": 3,
+        "positivas": 80,
+        "valoraciones": 25
+      },
+      {
+        "nombre": "Handroll pollo + queso crema",
+        "clave": "hand-roll",
+        "variante": [
+          "Pollo"
+        ],
+        "positivas": 94,
+        "valoraciones": 53
+      },
+      {
+        "nombre": "Gohan de pollo",
+        "clave": "gohan",
+        "variante": [
+          "Pollo"
+        ],
+        "positivas": 96,
+        "valoraciones": 25
+      }
+    ],
+    "url": "https://www.ubereats.com/cl-en/store/ryori-sushi/pJ2VaHH-VmKoWFzFx3EKbg"
   }
 }

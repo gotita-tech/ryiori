@@ -94,3 +94,68 @@
 @media print {
   .wa-flotante, .barra-canales { display: none; }
 }
+
+/* ---------- Base compartida ---------- */
+.visualmente-oculto { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.saltar { position: fixed; left: 12px; top: -60px; z-index: 100; background: var(--mango); color: var(--tinta); padding: 12px 16px; font-weight: 600; }
+.saltar:focus { top: 12px; }
+
+/* ---------- Cabecera negra: logo original sobre #000, estado y dirección ---------- */
+.cabecera {
+  background: var(--negro); color: var(--arroz);
+  display: flex; align-items: center; gap: 14px;
+  padding: 6px max(16px, calc((100vw - 1180px) / 2)); min-height: 64px;
+}
+.logo { display: flex; align-items: center; min-height: 44px; flex: none; }
+.logo img { display: block; width: 96px; height: auto; }
+.local { flex: 1; min-width: 0; font-size: 13px; line-height: 1.3; }
+.estado { display: flex; align-items: center; gap: 6px; font-weight: 600; font-size: 14px; }
+.estado::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: #8A908D; flex: none; }
+.estado[data-abierto="si"]::before { background: #4FD18B; }
+.estado:empty { display: none; }
+.local address { font-style: normal; color: #C9CCC6; }
+.cabecera-nav { display: flex; align-items: center; gap: 12px; }
+.cabecera-nav > a:not(.canal) { display: flex; align-items: center; min-height: 44px; padding: 0 8px; text-decoration: none; font-weight: 600; font-size: 15px; }
+.cabecera-nav > a:not(.canal):hover { text-decoration: underline; }
+.cabecera .canal { min-height: 44px; padding: 8px 16px; font-size: 14px; }
+@media (max-width: 1100px) { .cabecera .canal-delivery, .cabecera .canal-whatsapp { display: none; } }
+@media (max-width: 700px) {
+  .cabecera .canales { display: none; }
+  .logo img { width: 72px; }
+  .estado { font-size: 13px; }
+  .local { font-size: 12px; }
+}
+
+/* ---------- La ola: separa secciones y marca lo destacado ---------- */
+.ola { display: block; width: 72px; height: 10px; color: var(--mango); }
+.ola-separador { display: block; width: 100%; height: 14px; color: var(--linea); }
+
+/* ---------- Tarjeta del sugeridor (portada y carta) ---------- */
+.tarjeta-sugeridor { padding: 20px; border-radius: 16px; background: var(--nori); color: var(--arroz); }
+.tarjeta-sugeridor .ola { margin-bottom: 10px; }
+.tarjeta-sugeridor h2, .tarjeta-sugeridor h3 { font-family: var(--titulos); font-weight: 800; font-size: 22px; line-height: 1.15; margin: 0; }
+.tarjeta-sugeridor p { margin: 6px 0 14px; color: #DCE6E2; max-width: 34em; }
+.boton-mango {
+  display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; border-radius: 999px;
+  background: var(--mango); color: var(--tinta); font-weight: 700; text-decoration: none;
+}
+.boton-mango:hover { background: #F3B93F; }
+@media (min-width: 760px) {
+  .tarjeta-sugeridor { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 4px 32px; padding: 24px 28px; }
+  .tarjeta-sugeridor > :not(.boton-mango) { grid-column: 1; }
+  .tarjeta-sugeridor .boton-mango { grid-column: 2; grid-row: 1 / span 3; }
+  .tarjeta-sugeridor p { margin-bottom: 0; }
+}
+
+/* ---------- Pie ---------- */
+.pie { background: var(--negro); color: var(--arroz); padding: 28px max(16px, calc((100vw - 1180px) / 2)); font-size: 14px; }
+.pie a { color: inherit; }
+
+/* ---------- Precio y botón Pedir (portada y carta) ---------- */
+.precio { font-weight: 700; font-size: 17px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.pedir {
+  display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 16px;
+  border-radius: 999px; background: var(--tinta); color: var(--arroz);
+  font-weight: 600; font-size: 15px; text-decoration: none; white-space: nowrap;
+}
+.pedir:hover { background: var(--nori); }

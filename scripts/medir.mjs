@@ -180,7 +180,7 @@ async function medirCarta(chrome, perfil) {
 async function medirPortada(chrome, perfil) {
   const tab = await abrir(chrome, `${BASE}/`, perfil);
   const r = await evaluar(tab, `(() => {
-    const boton = [...document.querySelectorAll('.hero a, .hero button, [data-principal]')][0];
+    const boton = [...document.querySelectorAll('.portada .canal-retiro, .hero a, .hero button')][0];
     const b = boton?.getBoundingClientRect();
     return {
       altoDocumentoPx: document.documentElement.scrollHeight,

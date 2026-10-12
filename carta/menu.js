@@ -36,7 +36,8 @@
     const etiquetas = p.variantes ? [...new Set([...p.etiquetas, ...v.etiquetas])] : p.etiquetas;
     const nombreCompleto = p.variantes ? `${p.nombre} ${v.valores.join(' ')}` : p.nombre;
     const foto = p.foto ? `<figure class="foto"><img src="../${esc(p.foto.src)}" alt="" width="96" height="96" loading="lazy" decoding="async">${p.foto.tipo === 'muestra' ? '<figcaption>Foto de muestra</figcaption>' : ''}</figure>` : '';
-    return `<article class="plato${p.foto ? ' con-foto' : ''}" data-clave="${esc(p.clave)}">
+    const simple = !p.foto && !p.descripcion && !p.variantes && !p.piezas && !etiquetas.length;
+    return `<article class="plato${p.foto ? ' con-foto' : ''}${simple ? ' simple' : ''}" data-clave="${esc(p.clave)}">
       ${foto}
       <div class="plato-texto">
         <h4 class="plato-nombre">${esc(p.nombre)}</h4>
@@ -63,7 +64,7 @@
   }
 
   const SUGERIDOR = `<aside class="tarjeta-sugeridor" aria-labelledby="sugeridor-titulo">
-      <svg class="ola" aria-hidden="true"><use href="#ola"/></svg>
+      <svg class="ola" viewBox="0 0 120 12" aria-hidden="true"><use href="#ola"/></svg>
       <h3 id="sugeridor-titulo">¿Son varios? Te sugerimos cuánto pedir</h3>
       <p>Dinos cuántos son y cuánta hambre tienen, y te armamos un pedido con tablas y rolls.</p>
       <a class="boton-mango" href="../sugeridor/">Armar mi pedido</a>
