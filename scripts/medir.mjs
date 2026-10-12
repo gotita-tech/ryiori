@@ -53,7 +53,8 @@ const AUDITORIA_VISUAL = `(() => {
     if (ratio < (grande ? 3 : 4.5)) bajoContraste.push({ txt, ratio: +ratio.toFixed(2), color: cs.color, px: tam });
   }
   const tactiles = [...document.querySelectorAll('a[href], button, input, select, textarea, [role=button]')].filter(visible).map(el => {
-    const r = el.getBoundingClientRect();
+    // Un control dentro de su <label> se toca en toda la etiqueta: se mide la etiqueta.
+    const r = (el.closest('label') || el).getBoundingClientRect();
     return { txt: (el.getAttribute('aria-label') || el.textContent || el.placeholder || '').trim().replace(/\\s+/g, ' ').slice(0, 40), w: Math.round(r.width), h: Math.round(r.height) };
   });
   return {
@@ -180,6 +181,13 @@ async function medirCarta(chrome, perfil) {
   return r;
 }
 
+async function medirPagina(chrome, url, perfil) {
+  const tab = await abrir(chrome, url, perfil);
+  const r = { visual: await evaluar(tab, AUDITORIA_VISUAL) };
+  tab.cerrar();
+  return r;
+}
+
 async function medirPortada(chrome, perfil) {
   const tab = await abrir(chrome, `${BASE}/`, perfil);
   const r = await evaluar(tab, `(() => {
@@ -214,6 +222,12 @@ try {
   console.log('Carta en teléfono y escritorio…');
   resultado.cartaTelefono = await medirCarta(chrome, PERFILES.telefono);
   resultado.cartaEscritorio = await medirCarta(chrome, PERFILES.escritorio);
+  if ((await fetch(`${BASE}/sugeridor/`)).ok) {
+    console.log('Sugeridor…');
+    resultado.cargaSugeridor = await cargaLenta(chrome, `${BASE}/sugeridor/`);
+    resultado.sugeridorTelefono = (await medirPagina(chrome, `${BASE}/sugeridor/`, PERFILES.telefono));
+    resultado.sugeridorEscritorio = (await medirPagina(chrome, `${BASE}/sugeridor/`, PERFILES.escritorio));
+  }
 } finally {
   await chrome.cerrar();
 }

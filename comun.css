@@ -125,7 +125,7 @@
 .cabecera .canal { min-height: 44px; padding: 8px 16px; font-size: 14px; }
 @media (max-width: 1100px) { .cabecera .canal-delivery, .cabecera .canal-whatsapp { display: none; } }
 @media (max-width: 700px) {
-  .cabecera .canales { display: none; }
+  .cabecera .canales, .cabecera .solo-escritorio { display: none; }
   .logo img { width: 72px; }
   .estado { font-size: 13px; }
   .local { font-size: 12px; }

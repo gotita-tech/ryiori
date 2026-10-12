@@ -1,0 +1,36 @@
+{
+  "_ayuda": "Reglas del sugeridor «¿Cuánto pedimos?». Se pueden editar sin tocar código. «id» es el número del producto en Fudo (está en menu-data.js); los precios NUNCA se escriben aquí: se leen de la carta. «max» es el máximo de unidades de ese producto en una sugerencia. «acompanamiento»: true significa que ese producto no se sugiere solo, siempre junto a otro.",
+  "personas": { "min": 1, "max": 12, "inicial": 2 },
+  "hambre": [
+    { "id": "picar", "nombre": "Para picar", "piezas": 8 },
+    { "id": "normal", "nombre": "Normal", "piezas": 12, "inicial": true },
+    { "id": "hambre", "nombre": "Con hambre", "piezas": 16 }
+  ],
+  "preferencias": [
+    {
+      "id": "todo", "nombre": "De todo", "inicial": true,
+      "productos": [
+        { "id": 64, "piezas": 70, "max": 3 },
+        { "id": 63, "piezas": 40, "max": 3 },
+        { "id": 40, "piezas": 8, "max": 4 },
+        { "id": 249, "piezas": 6, "max": 2, "acompanamiento": true }
+      ]
+    },
+    {
+      "id": "cocido", "nombre": "Solo cocido", "detalle": "Todo en tempura o cocido, sin pescado crudo",
+      "productos": [
+        { "id": 62, "piezas": 40, "max": 5, "nota": "todo tempura" },
+        { "id": 45, "piezas": 8, "max": 4 },
+        { "id": 252, "piezas": 6, "max": 2, "acompanamiento": true }
+      ]
+    },
+    {
+      "id": "vegetariano", "nombre": "Vegetariano",
+      "productos": [
+        { "id": 22, "piezas": 8, "max": 24, "nombre": "Roll vegetariano a elección", "alternativas": [544, 547], "_nota": "California, Avocado o Cheese vegetariano. 8 cortes según el encargo: confirmar con el local." },
+        { "id": 341, "piezas": 6, "max": 2, "acompanamiento": true }
+      ]
+    }
+  ],
+  "bebida": { "id": 176, "nombre": "Bebida lata 350 ml", "inicial": false }
+}
