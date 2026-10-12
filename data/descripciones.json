@@ -1,0 +1,228 @@
+{
+  "_ayuda": "Completa lo que Fudo no trae. La clave es el nombre limpio del producto en minúsculas y con guiones (ver la lista en docs/carta-sync.md o en menu-data.js). Si Fudo ya trae descripción, se usa la de Fudo; aquí se agregan piezas, etiquetas y descripciones faltantes. Etiquetas válidas: Vegano, Vegetariano, Picante, Mariscos, Pescado. Nunca se escriben precios aquí.",
+  "fuentes": {
+    "uber": {
+      "nombre": "Uber Eats · Ryori Sushi",
+      "url": "https://www.ubereats.com/cl/store/ryori-sushi/pJ2VaHH-VmKoWFzFx3EKbg",
+      "fecha": "2026-10-12"
+    },
+    "fudo": {
+      "nombre": "Carta de Ryori en Fudo",
+      "url": "https://menu.fu.do/ryori",
+      "fecha": "2026-10-12"
+    }
+  },
+  "productos": {
+    "tabla-parque-dyr": {
+      "piezas": "40 piezas",
+      "etiquetas": [
+        "Pescado"
+      ],
+      "fuente": "uber"
+    },
+    "tabla-playa-de-llolleo": {
+      "piezas": "70 piezas",
+      "etiquetas": [
+        "Mariscos",
+        "Pescado"
+      ],
+      "fuente": "uber"
+    },
+    "tabla-boca-del-maipo": {
+      "piezas": "40 piezas",
+      "fuente": "fudo"
+    },
+    "tabla-premium": {
+      "piezas": "64 piezas",
+      "etiquetas": [
+        "Mariscos"
+      ],
+      "fuente": "fudo",
+      "_nota": "Suma de lo que lista la descripción de Fudo: 10 + 10 + 10 + 20 + 10 oniguiris + 4 sashimis."
+    },
+    "roll-acevichado": {
+      "piezas": "8 cortes",
+      "etiquetas": [
+        "Mariscos"
+      ],
+      "fuente": "uber"
+    },
+    "mango-maki": {
+      "piezas": "8 cortes",
+      "fuente": "uber"
+    },
+    "ryori-full": {
+      "piezas": "8 cortes",
+      "fuente": "uber"
+    },
+    "panko-avocado": {
+      "piezas": "8 cortes",
+      "fuente": "uber"
+    },
+    "tempura-almendra": {
+      "piezas": "8 cortes",
+      "descripcion": "Almendras, queso crema y coco en panko, con un toque de teriyaki.",
+      "fuente": "uber"
+    },
+    "california-tori-crispy": {
+      "piezas": "8 cortes",
+      "fuente": "uber"
+    },
+    "california-ebi": {
+      "piezas": "8 cortes",
+      "fuente": "uber"
+    },
+    "california-sake": {
+      "piezas": "8 cortes",
+      "fuente": "uber"
+    },
+    "sake-roll": {
+      "piezas": "8 cortes",
+      "fuente": "uber"
+    },
+    "sake-ebi": {
+      "piezas": "8 cortes",
+      "fuente": "uber"
+    },
+    "avocado-teriyaki": {
+      "piezas": "8 cortes",
+      "fuente": "uber"
+    },
+    "avocado-ebi": {
+      "piezas": "8 cortes",
+      "fuente": "uber"
+    },
+    "cheese-sake": {
+      "piezas": "8 cortes",
+      "fuente": "uber"
+    },
+    "cheese-ebi": {
+      "piezas": "8 cortes",
+      "fuente": "uber"
+    },
+    "cheese-tori": {
+      "piezas": "8 cortes",
+      "fuente": "uber"
+    },
+    "cheese-smoked": {
+      "piezas": "8 cortes",
+      "fuente": "uber"
+    },
+    "tempura-tori-teriyaki": {
+      "piezas": "8 cortes",
+      "fuente": "uber"
+    },
+    "tempura-ebi-cream": {
+      "piezas": "8 cortes",
+      "fuente": "uber"
+    },
+    "tempura-tori": {
+      "piezas": "8 cortes",
+      "fuente": "uber"
+    },
+    "tempura-ebi": {
+      "piezas": "8 cortes",
+      "etiquetas": [
+        "Picante",
+        "Mariscos"
+      ],
+      "fuente": "uber"
+    },
+    "tempura-tako": {
+      "piezas": "8 cortes",
+      "fuente": "uber"
+    },
+    "tempura-sake-ahumado": {
+      "piezas": "8 cortes",
+      "fuente": "uber"
+    },
+    "tempura-quinoa": {
+      "piezas": "8 cortes",
+      "fuente": "uber"
+    },
+    "coco-merken-quinoa": {
+      "piezas": "8 cortes",
+      "fuente": "uber"
+    },
+    "avocado-sake-quinoa": {
+      "piezas": "8 cortes",
+      "fuente": "uber"
+    },
+    "california-vegano": {
+      "descripcion": "Palmito, palta y ciboulette envuelto en sésamo.",
+      "fuente": "uber"
+    },
+    "avocado-vegetariano": {
+      "descripcion": "Palmito, champiñón furay y queso crema envuelto en palta.",
+      "fuente": "uber"
+    },
+    "avocado-vegano": {
+      "descripcion": "Palmito, champiñón furay y ciboulette envuelto en palta.",
+      "fuente": "uber"
+    },
+    "cheese-vegetariano": {
+      "descripcion": "Palta, espárrago y cebollín envuelto en queso crema.",
+      "fuente": "uber"
+    },
+    "handroll-vegetariano": {
+      "descripcion": "Queso crema y palta.",
+      "fuente": "uber"
+    },
+    "hosomaki": {
+      "piezas": "8 cortes",
+      "descripcion": "Roll delgado envuelto en nori, con la proteína que elijas y 1 acompañamiento a elección.",
+      "fuente": "uber"
+    },
+    "hand-roll": {
+      "descripcion": "Cono de arroz con cobertura de tempura y panko, relleno de proteína y queso crema. Incluye una salsa.",
+      "fuente": "uber"
+    },
+    "niguiris": {
+      "descripcion": "Pequeña porción de arroz con un corte de salmón, camarón o pulpo. Incluye salsa de soya.",
+      "fuente": "uber"
+    },
+    "oniguiris-yakimono": {
+      "descripcion": "Bolitas de arroz rellenas de pollo y queso, cubiertas en panko.",
+      "fuente": "uber"
+    },
+    "gyosas": {
+      "descripcion": "Empanaditas japonesas de pollo, cerdo, camarón, verduras o mixtas.",
+      "fuente": "uber"
+    },
+    "gohan": {
+      "descripcion": "Sushi al plato: arroz con palta, queso crema, cebollín, champiñón y pimentón rojo, más la proteína que elijas.",
+      "fuente": "uber"
+    },
+    "camaron-tempura": {
+      "descripcion": "Camarón frito en tempura.",
+      "fuente": "uber"
+    },
+    "hot-sushi-burger": {
+      "descripcion": "Base de arroz crujiente, relleno de queso gauda, palta, cebollín y la proteína que elijas.",
+      "fuente": "uber"
+    },
+    "ensalada": {
+      "descripcion": "Mix verde con palmitos, pimentón, palta y la proteína que elijas.",
+      "fuente": "fudo"
+    },
+    "burger-clasica": {
+      "descripcion": "Hamburguesa de carne con queso chanco o mantecoso, tomate, lechuga y mayonesa.",
+      "fuente": "fudo"
+    },
+    "burger-rustica": {
+      "descripcion": "Hamburguesa de carne con queso cheddar, pepinillo, lechuga, cebolla caramelizada, panceta crocante y salsa barbacoa ahumada.",
+      "fuente": "fudo"
+    },
+    "burger-del-embrujo": {
+      "descripcion": "Hamburguesa de carne con queso cheddar, pepinillo, aros de cebolla, tocino crocante y salsa casera.",
+      "fuente": "fudo"
+    },
+    "burger-campestre": {
+      "descripcion": "Hamburguesa de carne con pebre picante, lechuga, tomate, aros de cebolla y salsa de la casa.",
+      "fuente": "fudo",
+      "etiquetas": [
+        "Picante"
+      ]
+    }
+  }
+}

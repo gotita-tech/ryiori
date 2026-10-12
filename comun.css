@@ -1,9 +1,21 @@
-/* Piezas compartidas por portada y carta: canales de compra, barra fija del teléfono y botón de WhatsApp.
-   En la fase 3 este archivo recibe también las variables de color y tipografía del sistema visual. */
+/* Sistema visual compartido por portada y carta: colores, tipografías, canales de compra,
+   barra fija del teléfono y botón de WhatsApp. */
 :root {
+  --tinta: #0F1112;
+  --arroz: #F6F6F2;
+  --nori: #1E3D35;
+  --mango: #E8A317;
   --wa: #128C7E;
-  --canal-tinta: #20271f;
-  --canal-papel: #f5f2e9;
+  --negro: #000000;
+  --blanco: #FFFFFF;
+  --gris: #4A504E;        /* texto secundario: 7,6:1 sobre arroz */
+  --linea: #DCDCD3;
+  --papel: #FFFFFF;
+  --titulos: 'Bricolage Grotesque', 'Archivo', system-ui, sans-serif;
+  --texto: 'Archivo', system-ui, sans-serif;
+  /* compatibilidad con la fase 1 */
+  --canal-tinta: var(--tinta);
+  --canal-papel: var(--arroz);
 }
 
 .canales { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
@@ -19,18 +31,18 @@
 
 /* Sobre fondo claro */
 .canal-retiro { background: var(--canal-tinta); border-color: var(--canal-tinta); color: var(--canal-papel); }
-.canal-retiro:hover { background: #3a4636; border-color: #3a4636; }
+.canal-retiro:hover { background: #2b3033; border-color: #2b3033; }
 .canal-delivery, .canal-whatsapp { background: transparent; color: var(--canal-tinta); }
-.canal-delivery:hover, .canal-whatsapp:hover { background: rgba(32, 39, 31, .08); }
+.canal-delivery:hover, .canal-whatsapp:hover { background: rgba(15, 17, 18, .07); }
 .canal-whatsapp .wa-icono { color: var(--wa); }
 
 /* Sobre fondo oscuro o foto */
 .canales.sobre-oscuro .canal-retiro { background: var(--canal-papel); border-color: var(--canal-papel); color: var(--canal-tinta); }
 .canales.sobre-oscuro .canal-retiro:hover { background: #fff; }
 .canales.sobre-oscuro .canal-delivery,
-.canales.sobre-oscuro .canal-whatsapp { color: var(--canal-papel); background: rgba(20, 22, 18, .35); }
+.canales.sobre-oscuro .canal-whatsapp { color: var(--canal-papel); background: rgba(15, 17, 18, .35); }
 .canales.sobre-oscuro .canal-delivery:hover,
-.canales.sobre-oscuro .canal-whatsapp:hover { background: rgba(20, 22, 18, .6); }
+.canales.sobre-oscuro .canal-whatsapp:hover { background: rgba(15, 17, 18, .6); }
 .canales.sobre-oscuro .wa-icono { color: #6fd6c4; }
 
 /* Botón redondo de WhatsApp: flotante en escritorio */
@@ -71,7 +83,7 @@
 }
 
 .canal:focus-visible, .wa-flotante:focus-visible, .wa-redondo:focus-visible {
-  outline: 3px solid #e8a317; outline-offset: 3px;
+  outline: 3px solid var(--mango); outline-offset: 3px;
 }
 
 @media (prefers-reduced-motion: reduce) {

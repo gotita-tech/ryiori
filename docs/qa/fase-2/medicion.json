@@ -1,0 +1,363 @@
+{
+  "base": "http://localhost:4173",
+  "fecha": "2026-10-12T06:58:16.899Z",
+  "condiciones": "Teléfono 390×844 (DPR 3), 1,6 Mbps, 150 ms, CPU ×4, caché desactivada",
+  "cargaPortada": {
+    "url": "http://localhost:4173/",
+    "lcpMs": 2820,
+    "lcpElemento": "IMG.hero-image hero-hd.webp",
+    "cls": 0,
+    "pesoKB": 1005,
+    "peticiones": 14,
+    "porTipoKB": {
+      "Document": 12,
+      "Image": 861,
+      "Stylesheet": 15,
+      "Script": 1,
+      "Font": 112,
+      "Other": 4
+    },
+    "mayores": [
+      {
+        "url": "/assets/hot-sushi-burger-hd.webp",
+        "kb": 293
+      },
+      {
+        "url": "/assets/rolls-casa-hd.webp",
+        "kb": 229
+      },
+      {
+        "url": "/assets/hero-hd.webp",
+        "kb": 204
+      },
+      {
+        "url": "/assets/compartir-hd.webp",
+        "kb": 131
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/playfairdisplay/v40/nuFkD-vYSZviVYUb_rj3ij__anPXDTnogkk7yRZrPA.woff2",
+        "kb": 38
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgEM86xQ.woff2",
+        "kb": 38
+      }
+    ],
+    "duracionMs": 7821
+  },
+  "cargaCarta": {
+    "url": "http://localhost:4173/carta/",
+    "lcpMs": 1068,
+    "lcpElemento": "P",
+    "cls": 0.001,
+    "pesoKB": 1202,
+    "peticiones": 14,
+    "porTipoKB": {
+      "Document": 5,
+      "Stylesheet": 15,
+      "Image": 992,
+      "Script": 80,
+      "Font": 109
+    },
+    "mayores": [
+      {
+        "url": "/assets/menu/tabla-premium-468.webp",
+        "kb": 220
+      },
+      {
+        "url": "/assets/menu/tabla-playa-de-llolleo-70-piezas-64.webp",
+        "kb": 207
+      },
+      {
+        "url": "/assets/menu/tabla-parque-dyr-40-piezas-63.webp",
+        "kb": 201
+      },
+      {
+        "url": "/assets/menu/tabla-boca-del-maipo-40-piezas-62.webp",
+        "kb": 198
+      },
+      {
+        "url": "/assets/menu/20-ryori-full-38.webp",
+        "kb": 163
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9K6as8bTXq_nANBjzKo3IeZx8z6up5BeSl9D4dj_x9PpZBMlGIInHWVyNJ.woff2",
+        "kb": 75
+      }
+    ],
+    "duracionMs": 9823
+  },
+  "portadaTelefono": {
+    "altoDocumentoPx": 5803,
+    "botonPrincipal": {
+      "texto": "Retirar en el local ↗",
+      "arribaPx": 339,
+      "abajoPx": 387,
+      "completoEnPantalla": true
+    },
+    "franjaNaranja": false,
+    "franjaDesborda": false,
+    "enlacesExternos": [
+      "https://menu.fu.do/ryori",
+      "https://www.ubereats.com/cl-en/store/ryori-sushi/pJ2VaHH-VmKoWFzFx3EKbg",
+      "https://wa.me/56999518653",
+      "https://www.instagram.com/ryorisushi_llolleo/",
+      "https://www.google.com/maps/dir/",
+      "https://www.facebook.com/RyoriSushiOficial"
+    ],
+    "mencionaFudo": false,
+    "tieneUberEats": true,
+    "visual": {
+      "textosTotal": 88,
+      "textosMenos12": 0,
+      "ejemplosPequenos": [],
+      "contrasteBajo": 0,
+      "ejemplosContraste": [],
+      "tactilesTotal": 29,
+      "tactilesMenos44": 0,
+      "ejemplosTactiles": []
+    }
+  },
+  "portadaEscritorio": {
+    "altoDocumentoPx": 3991,
+    "botonPrincipal": {
+      "texto": "Retirar en el local ↗",
+      "arribaPx": 488,
+      "abajoPx": 536,
+      "completoEnPantalla": true
+    },
+    "franjaNaranja": false,
+    "franjaDesborda": false,
+    "enlacesExternos": [
+      "https://menu.fu.do/ryori",
+      "https://www.ubereats.com/cl-en/store/ryori-sushi/pJ2VaHH-VmKoWFzFx3EKbg",
+      "https://wa.me/56999518653",
+      "https://www.instagram.com/ryorisushi_llolleo/",
+      "https://www.google.com/maps/dir/",
+      "https://www.facebook.com/RyoriSushiOficial"
+    ],
+    "mencionaFudo": false,
+    "tieneUberEats": true,
+    "visual": {
+      "textosTotal": 90,
+      "textosMenos12": 0,
+      "ejemplosPequenos": [],
+      "contrasteBajo": 0,
+      "ejemplosContraste": [],
+      "tactilesTotal": 31,
+      "tactilesMenos44": 0,
+      "ejemplosTactiles": []
+    }
+  },
+  "portadaLaptop1536x639": {
+    "altoDocumentoPx": 4015,
+    "botonPrincipal": {
+      "texto": "Retirar en el local ↗",
+      "arribaPx": 495,
+      "abajoPx": 543,
+      "completoEnPantalla": true
+    },
+    "franjaNaranja": false,
+    "franjaDesborda": false,
+    "enlacesExternos": [
+      "https://menu.fu.do/ryori",
+      "https://www.ubereats.com/cl-en/store/ryori-sushi/pJ2VaHH-VmKoWFzFx3EKbg",
+      "https://wa.me/56999518653",
+      "https://www.instagram.com/ryorisushi_llolleo/",
+      "https://www.google.com/maps/dir/",
+      "https://www.facebook.com/RyoriSushiOficial"
+    ],
+    "mencionaFudo": false,
+    "tieneUberEats": true,
+    "visual": {
+      "textosTotal": 90,
+      "textosMenos12": 0,
+      "ejemplosPequenos": [],
+      "contrasteBajo": 0,
+      "ejemplosContraste": [],
+      "tactilesTotal": 31,
+      "tactilesMenos44": 0,
+      "ejemplosTactiles": []
+    }
+  },
+  "cartaTelefono": {
+    "categorias": {
+      "promos": {
+        "altoPx": 645,
+        "filas": 6
+      },
+      "tablas": {
+        "altoPx": 1077,
+        "filas": 4
+      },
+      "sushi": {
+        "altoPx": 5884,
+        "filas": 40
+      },
+      "cocina-japonesa": {
+        "altoPx": 1326,
+        "filas": 8
+      },
+      "burgers": {
+        "altoPx": 1119,
+        "filas": 5
+      },
+      "ceviches": {
+        "altoPx": 591,
+        "filas": 3
+      },
+      "para-picar": {
+        "altoPx": 742,
+        "filas": 6
+      },
+      "postres": {
+        "altoPx": 161,
+        "filas": 1
+      },
+      "bebidas": {
+        "altoPx": 2080,
+        "filas": 42
+      },
+      "barra": {
+        "altoPx": 5900,
+        "filas": 118
+      }
+    },
+    "busquedas": {
+      "burger": {
+        "conteo": "6 resultados para «burger» en 2 categorías.",
+        "filas": 6,
+        "categorias": "promos, burgers"
+      },
+      "salmon": {
+        "conteo": "21 resultados para «salmon» en 5 categorías.",
+        "filas": 21,
+        "categorias": "tablas, sushi, cocina-japonesa, burgers, ceviches"
+      },
+      "salmón": {
+        "conteo": "21 resultados para «salmón» en 5 categorías.",
+        "filas": 21,
+        "categorias": "tablas, sushi, cocina-japonesa, burgers, ceviches"
+      },
+      "SALMÓN": {
+        "conteo": "21 resultados para «SALMÓN» en 5 categorías.",
+        "filas": 21,
+        "categorias": "tablas, sushi, cocina-japonesa, burgers, ceviches"
+      },
+      "gyosas": {
+        "conteo": "1 resultado para «gyosas» en 1 categoría.",
+        "filas": 1,
+        "categorias": "cocina-japonesa"
+      },
+      "pizza": {
+        "conteo": "Sin resultados para «pizza».",
+        "filas": 0,
+        "categorias": ""
+      }
+    },
+    "primerProductoPx": 215,
+    "altoDocumentoPx": 19998,
+    "filtrosVisiblesAlBajar": true,
+    "categoriaMarcadaEnSushi": "sushi",
+    "visual": {
+      "textosTotal": 898,
+      "textosMenos12": 0,
+      "ejemplosPequenos": [],
+      "contrasteBajo": 0,
+      "ejemplosContraste": [],
+      "tactilesTotal": 321,
+      "tactilesMenos44": 0,
+      "ejemplosTactiles": []
+    }
+  },
+  "cartaEscritorio": {
+    "categorias": {
+      "promos": {
+        "altoPx": 359,
+        "filas": 6
+      },
+      "tablas": {
+        "altoPx": 564,
+        "filas": 4
+      },
+      "sushi": {
+        "altoPx": 3326,
+        "filas": 40
+      },
+      "cocina-japonesa": {
+        "altoPx": 737,
+        "filas": 8
+      },
+      "burgers": {
+        "altoPx": 699,
+        "filas": 5
+      },
+      "ceviches": {
+        "altoPx": 370,
+        "filas": 3
+      },
+      "para-picar": {
+        "altoPx": 456,
+        "filas": 6
+      },
+      "postres": {
+        "altoPx": 171,
+        "filas": 1
+      },
+      "bebidas": {
+        "altoPx": 1189,
+        "filas": 42
+      },
+      "barra": {
+        "altoPx": 3199,
+        "filas": 118
+      }
+    },
+    "busquedas": {
+      "burger": {
+        "conteo": "6 resultados para «burger» en 2 categorías.",
+        "filas": 6,
+        "categorias": "promos, burgers"
+      },
+      "salmon": {
+        "conteo": "21 resultados para «salmon» en 5 categorías.",
+        "filas": 21,
+        "categorias": "tablas, sushi, cocina-japonesa, burgers, ceviches"
+      },
+      "salmón": {
+        "conteo": "21 resultados para «salmón» en 5 categorías.",
+        "filas": 21,
+        "categorias": "tablas, sushi, cocina-japonesa, burgers, ceviches"
+      },
+      "SALMÓN": {
+        "conteo": "21 resultados para «SALMÓN» en 5 categorías.",
+        "filas": 21,
+        "categorias": "tablas, sushi, cocina-japonesa, burgers, ceviches"
+      },
+      "gyosas": {
+        "conteo": "1 resultado para «gyosas» en 1 categoría.",
+        "filas": 1,
+        "categorias": "cocina-japonesa"
+      },
+      "pizza": {
+        "conteo": "Sin resultados para «pizza».",
+        "filas": 0,
+        "categorias": ""
+      }
+    },
+    "primerProductoPx": 224,
+    "altoDocumentoPx": 11394,
+    "filtrosVisiblesAlBajar": true,
+    "categoriaMarcadaEnSushi": "sushi",
+    "visual": {
+      "textosTotal": 900,
+      "textosMenos12": 0,
+      "ejemplosPequenos": [],
+      "contrasteBajo": 0,
+      "ejemplosContraste": [],
+      "tactilesTotal": 322,
+      "tactilesMenos44": 0,
+      "ejemplosTactiles": []
+    }
+  }
+}

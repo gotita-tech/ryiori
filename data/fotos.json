@@ -1,0 +1,31 @@
+{
+  "_ayuda": "Fotos de la carta. La clave es el nombre limpio del producto (ver menu-data.js). Para usar una foto real de la sesión: guarda el archivo en assets/fotos/, cambia «src» y pon «tipo»: «real». Las fotos «muestra» llevan el rótulo «Foto de muestra». Ninguna foto se repite entre productos. Después de editar, ejecuta: node scripts/fudo-sync.mjs",
+  "fotos": {
+    "hot-sushi-burger": { "src": "assets/hot-sushi-burger-hd.webp", "tipo": "muestra" },
+    "tabla-parque-dyr": { "src": "assets/menu/tabla-parque-dyr-40-piezas-63.webp", "tipo": "muestra" },
+    "tabla-playa-de-llolleo": { "src": "assets/menu/tabla-playa-de-llolleo-70-piezas-64.webp", "tipo": "muestra" },
+    "tabla-boca-del-maipo": { "src": "assets/menu/tabla-boca-del-maipo-40-piezas-62.webp", "tipo": "muestra" },
+    "tabla-premium": { "src": "assets/menu/tabla-premium-468.webp", "tipo": "muestra" },
+    "roll-acevichado": { "src": "assets/menu/17-rolls-acevichado-40.webp", "tipo": "muestra" },
+    "mango-maki": { "src": "assets/menu/18-mango-maki-39.webp", "tipo": "muestra" },
+    "ryori-full": { "src": "assets/menu/20-ryori-full-38.webp", "tipo": "muestra" },
+    "panko-avocado": { "src": "assets/menu/19-panko-avocado-43.webp", "tipo": "muestra" },
+    "california-tori-crispy": { "src": "assets/menu/2-california-tori-crispy-18.webp", "tipo": "muestra" },
+    "avocado-sake": { "src": "assets/menu/10-avocado-sake-24.webp", "tipo": "muestra" },
+    "cheese-tori": { "src": "assets/menu/15-cheese-tori-34.webp", "tipo": "muestra" },
+    "tempura-tori-teriyaki": { "src": "assets/menu/22-tempura-tori-teriyaki-45.webp", "tipo": "muestra" },
+    "coco-merken-quinoa": { "src": "assets/menu/29-coco-merken-quinoa-52.webp", "tipo": "muestra" },
+    "hand-roll": { "src": "assets/menu/handroll-chicken.webp", "tipo": "muestra" },
+    "niguiris": { "src": "assets/menu/niguiris-salmon-6-u-269-quantity.webp", "tipo": "muestra" },
+    "gyosas": { "src": "assets/menu/gyosas-mixtas-6-u-249-quantity.webp", "tipo": "muestra" },
+    "gohan": { "src": "assets/menu/gohan-chicken.webp", "tipo": "muestra" },
+    "camaron-tempura": { "src": "assets/menu/camaron-tempura-6-u-83-quantity.webp", "tipo": "muestra" },
+    "burger-del-embrujo": { "src": "assets/menu/burger-del-embrujo-normal-180-gr-366.webp", "tipo": "muestra" },
+    "burger-clasica": { "src": "assets/menu/burger-clasica-normal-180-gr-362.webp", "tipo": "muestra" },
+    "burger-rustica": { "src": "assets/menu/burger-rustica-normal-180-gr-364.webp", "tipo": "muestra" },
+    "burger-campestre": { "src": "assets/menu/burger-campestre-normal-180-gr-368.webp", "tipo": "muestra" },
+    "ceviche-plaza-de-llolleo": { "src": "assets/menu/ceviche-plaza-de-llolleo-59.webp", "tipo": "muestra" },
+    "ceviche-estero-el-sauce": { "src": "assets/menu/ceviche-estero-el-sauce-60.webp", "tipo": "muestra" },
+    "avocado-vegano": { "src": "assets/menu/vegan-rolls.webp", "tipo": "muestra" }
+  }
+}

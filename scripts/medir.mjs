@@ -111,6 +111,32 @@ async function medirCarta(chrome, perfil) {
   const r = await evaluar(tab, `(async () => {
     const pausa = ms => new Promise(r => setTimeout(r, ms));
     const out = { categorias: {}, busquedas: {} };
+    if (document.querySelector('#secciones')) {
+      // Carta nueva (fase 2): una sola página con todas las categorías.
+      const primero = document.querySelector('#secciones [data-clave]');
+      out.primerProductoPx = Math.round(primero.getBoundingClientRect().top + scrollY);
+      out.altoDocumentoPx = document.documentElement.scrollHeight;
+      for (const sec of document.querySelectorAll('.categoria')) {
+        out.categorias[sec.id] = { altoPx: Math.round(sec.getBoundingClientRect().height), filas: sec.querySelectorAll('[data-clave]').length };
+      }
+      const sushi = document.querySelector('#sushi');
+      scrollTo(0, sushi.getBoundingClientRect().top + scrollY + 1500); await pausa(400);
+      const barra = document.querySelector('#categorias').getBoundingClientRect();
+      out.filtrosVisiblesAlBajar = barra.top >= 0 && barra.bottom <= innerHeight;
+      out.categoriaMarcadaEnSushi = document.querySelector('#categorias [aria-current="true"]')?.dataset.cat;
+      scrollTo(0, 0); await pausa(100);
+      const s = document.querySelector('#buscar');
+      const buscar = async q => {
+        s.value = q; s.dispatchEvent(new Event('input')); await pausa(300);
+        const filas = [...document.querySelectorAll('#secciones [data-clave]')].filter(f => !f.hidden && !f.closest('[hidden]'));
+        const res = { conteo: document.querySelector('#conteo').textContent, filas: filas.length,
+          categorias: [...new Set(filas.map(f => f.closest('.categoria').id))].join(', ') };
+        s.value = ''; s.dispatchEvent(new Event('input')); await pausa(300);
+        return res;
+      };
+      for (const q of ['burger', 'salmon', 'salmón', 'SALMÓN', 'gyosas', 'pizza']) out.busquedas[q] = await buscar(q);
+      return out;
+    }
     const tarjeta = document.querySelector('.menu-card, [data-producto]');
     out.primerProductoPx = tarjeta ? Math.round(tarjeta.getBoundingClientRect().top + scrollY) : null;
     out.altoDocumentoPx = document.documentElement.scrollHeight;

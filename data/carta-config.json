@@ -1,0 +1,187 @@
+{
+  "_ayuda": "Reglas con que scripts/fudo-sync.mjs ordena la carta de Fudo. Los números son los id de categoría o de producto en Fudo (ver docs/fudo-datos.md). En «familias», cada miembro es [id, valor de cada eje], en el orden en que se muestran. Los precios NUNCA se escriben aquí: siempre salen de Fudo.",
+
+  "categorias": [
+    { "id": "promos", "nombre": "Promos", "tipo": "platos", "subgrupos": [
+      { "nombre": null, "productos": [584, 587, 560, 552, 539, 570] }
+    ]},
+    { "id": "tablas", "nombre": "Tablas", "tipo": "platos", "sugeridor": true, "subgrupos": [
+      { "nombre": null, "categoriasFudo": [12], "productos": [468] }
+    ]},
+    { "id": "sushi", "nombre": "Sushi", "tipo": "platos", "subgrupos": [
+      { "nombre": "Rolls Ryori", "categoriasFudo": [6] },
+      { "nombre": "California rolls", "categoriasFudo": [2] },
+      { "nombre": "Avocado rolls", "categoriasFudo": [4] },
+      { "nombre": "Sake rolls", "categoriasFudo": [3] },
+      { "nombre": "Cream cheese rolls", "categoriasFudo": [5] },
+      { "nombre": "Tempura rolls", "categoriasFudo": [7] },
+      { "nombre": "Quinoa rolls", "categoriasFudo": [8] },
+      { "nombre": "Vegetarianos y veganos", "categoriasFudo": [46] },
+      { "nombre": "Hosomakis y hand rolls", "categoriasFudo": [1, 19] },
+      { "nombre": "Niguiris, sashimi y oniguiris", "categoriasFudo": [17, 16, 20] }
+    ]},
+    { "id": "cocina-japonesa", "nombre": "Cocina japonesa", "tipo": "platos", "subgrupos": [
+      { "nombre": null, "categoriasFudo": [15, 14, 18, 9, 13] }
+    ]},
+    { "id": "burgers", "nombre": "Burgers", "tipo": "platos", "subgrupos": [
+      { "nombre": null, "categoriasFudo": [45] }
+    ]},
+    { "id": "ceviches", "nombre": "Ceviches y ensaladas", "tipo": "platos", "subgrupos": [
+      { "nombre": null, "categoriasFudo": [11, 10] }
+    ]},
+    { "id": "para-picar", "nombre": "Para picar", "tipo": "platos", "subgrupos": [
+      { "nombre": null, "categoriasFudo": [44] }
+    ]},
+    { "id": "postres", "nombre": "Postres", "tipo": "platos", "subgrupos": [
+      { "nombre": null, "productos": [583] }
+    ]},
+    { "id": "bebidas", "nombre": "Bebidas", "tipo": "lista", "subgrupos": [
+      { "nombre": "Bebidas y aguas", "categoriasFudo": [24, 23] },
+      { "nombre": "Limonadas", "categoriasFudo": [25] },
+      { "nombre": "Mocktails", "categoriasFudo": [26] },
+      { "nombre": "Té e infusiones", "categoriasFudo": [42] }
+    ]},
+    { "id": "barra", "nombre": "Barra", "tipo": "lista", "subgrupos": [
+      { "nombre": "Coctelería de autor", "categoriasFudo": [35] },
+      { "nombre": "Coctelería peruana", "categoriasFudo": [27] },
+      { "nombre": "Coctelería clásica", "categoriasFudo": [31, 32, 34] },
+      { "nombre": "Aperitivos", "categoriasFudo": [28], "productos": [184] },
+      { "nombre": "Cervezas", "categoriasFudo": [52, 40], "productos": [576] },
+      { "nombre": "Cervezas sin alcohol", "categoriasFudo": [53] },
+      { "nombre": "Vinos y espumantes", "categoriasFudo": [41] },
+      { "nombre": "Destilados", "categoriasFudo": [48, 49, 50, 51] },
+      { "nombre": "Licores", "categoriasFudo": [38], "productos": [577] },
+      { "nombre": "Shots", "categoriasFudo": [36] }
+    ]}
+  ],
+
+  "_modificadores": "Productos que en Fudo son agregados o cambios de un pedido, no platos: se sacan de la carta y se eligen al pedir.",
+  "modificadores": {
+    "categoriasFudo": [54, 55, 43, 22, 21],
+    "productos": [212, 213, 246, 310, 372, 376, 377, 385, 534, 535, 470]
+  },
+
+  "renombres": {
+    "40": "Roll Acevichado",
+    "52": "Coco-Merkén Quinoa",
+    "28": "Sake Roll",
+    "584": "3x1 hand rolls",
+    "587": "Promoción tempura",
+    "560": "Promo quinoa rolls",
+    "570": "Promo burger clásica + schop",
+    "539": "Trío Dorado",
+    "581": "Mojito en promoción",
+    "562": "Promo Heineken 500 ml",
+    "111": "Kustmann Arándano (promo)",
+    "575": "Consomé",
+    "457": "Kross Golden Pale",
+    "532": "Kross Stout",
+    "391": "Royal sin alcohol",
+    "386": "Limonada Mango Albahaca",
+    "387": "Limonada Maracuyá Albahaca",
+    "475": "Limonada Frambuesa Menta Jengibre",
+    "537": "Limonada Spritz",
+    "474": "Red Bull Yellow",
+    "174": "Néctar botella 330 ml",
+    "175": "Bebida lata zero o normal 220 ml",
+    "176": "Bebida lata 350 ml",
+    "165": "Limón Soda 350 ml",
+    "576": "Royal, Corona o Miller",
+    "577": "Soju tradicional",
+    "271": "Jugo natural de frutilla",
+    "274": "Jugo natural de mango",
+    "277": "Jugo natural de piña",
+    "455": "Maracuyá Fresh Tonic",
+    "421": "Té negro",
+    "452": "Té de jazmín",
+    "453": "Té de manzanilla",
+    "426": "Té verde",
+    "427": "Infusión de botánicos",
+    "481": "Sour Peruano Jengibre Catedral",
+    "358": "Big Mojito Clásico",
+    "406": "Old Fashioned",
+    "395": "Ramazzotti Violetto Spritz",
+    "438": "Copa de Clery",
+    "549": "Ojos de Mar",
+    "329": "Gin Hendrick's",
+    "330": "Gin Tanqueray",
+    "143": "Gin Gordon's",
+    "145": "Jack Daniel's",
+    "530": "Jack Daniel's Manzana",
+    "466": "Jack Daniel's Honey",
+    "147": "Johnnie Walker Black Label",
+    "327": "Alto del Carmen 40°",
+    "328": "Alto del Carmen 35°",
+    "136": "Mistral 40°",
+    "138": "Abuelo 40°",
+    "152": "Drambuie",
+    "522": "St-Germain",
+    "523": "Licor de anís",
+    "525": "Licor de café",
+    "95": "Chardonnay Sour (lunes)",
+    "382": "Costillas BBQ 6 u.",
+    "374": "Papas cheddar (2 personas)",
+    "381": "Papas bravas (2 personas)",
+    "554": "Papas Mar y Tierra",
+    "66": "Miso Ebi (camarón o verduras)",
+    "67": "Miso Sake (salmón o verduras)",
+    "65": "Miso Tori (pollo o verduras)",
+    "60": "Ceviche Estero El Sauce",
+    "59": "Ceviche Plaza de Llolleo",
+    "468": "Tabla Premium",
+    "62": "Tabla Boca del Maipo",
+    "63": "Tabla Parque DYR",
+    "64": "Tabla Playa de Llolleo",
+    "548": "Handroll vegetariano",
+    "282": "Vegetariano"
+  },
+
+  "familias": [
+    { "clave": "hosomaki", "nombre": "Hosomaki", "ejes": ["Relleno"], "miembros": [
+      [11, "Pollo"], [12, "Camarón"], [13, "Salmón"], [14, "Pulpo"], [10, "Kanikama"] ] },
+    { "clave": "hand-roll", "nombre": "Hand roll", "ejes": ["Relleno"], "miembros": [
+      [281, "Pollo"], [226, "Camarón"], [227, "Salmón"], [229, "Kanikama"], [282, "Vegetariano"] ] },
+    { "clave": "gyosas", "nombre": "Gyosas", "ejes": ["Relleno", "Cantidad"], "porDefecto": ["Mixtas", "6 u."], "miembros": [
+      [251, "Pollo", "3 u."], [252, "Pollo", "6 u."], [250, "Pollo", "10 u."],
+      [73, "Cerdo", "3 u."], [74, "Cerdo", "6 u."], [75, "Cerdo", "10 u."],
+      [255, "Camarón", "3 u."], [254, "Camarón", "6 u."], [253, "Camarón", "10 u."],
+      [342, "Verduras", "3 u."], [341, "Verduras", "6 u."], [340, "Verduras", "10 u."],
+      [248, "Mixtas", "3 u."], [249, "Mixtas", "6 u."], [247, "Mixtas", "10 u."] ] },
+    { "clave": "sashimi", "nombre": "Sashimi", "ejes": ["Relleno", "Cantidad"], "porDefecto": ["Salmón", "6 u."], "miembros": [
+      [264, "Salmón", "3 u."], [263, "Salmón", "6 u."], [262, "Salmón", "10 u."],
+      [261, "Camarón", "3 u."], [260, "Camarón", "6 u."], [259, "Camarón", "10 u."],
+      [258, "Pulpo", "3 u."], [257, "Pulpo", "6 u."], [256, "Pulpo", "10 u."] ] },
+    { "clave": "niguiris", "nombre": "Niguiris", "ejes": ["Relleno", "Cantidad"], "porDefecto": ["Salmón", "6 u."], "miembros": [
+      [270, "Salmón", "3 u."], [269, "Salmón", "6 u."], [268, "Salmón", "10 u."],
+      [80, "Camarón", "6 u."],
+      [266, "Pulpo", "3 u."], [267, "Pulpo", "6 u."], [265, "Pulpo", "10 u."] ] },
+    { "clave": "oniguiris-yakimono", "nombre": "Oniguiris yakimono", "ejes": ["Cantidad"], "porDefecto": ["6 u."], "miembros": [
+      [85, "3 u."], [86, "6 u."], [87, "10 u."] ] },
+    { "clave": "camaron-tempura", "nombre": "Camarón tempura", "ejes": ["Cantidad"], "porDefecto": ["6 u."], "miembros": [
+      [82, "3 u."], [83, "6 u."], [84, "10 u."] ] },
+    { "clave": "gohan", "nombre": "Gohan", "ejes": ["Relleno"], "miembros": [
+      [198, "Pollo"], [68, "Camarón"], [69, "Salmón"] ] },
+    { "clave": "adshi-soba", "nombre": "Adshi soba", "ejes": ["Relleno"], "miembros": [
+      [55, "Pollo"], [54, "Camarón"] ] },
+    { "clave": "ensalada", "nombre": "Ensalada", "ejes": ["Relleno"], "miembros": [
+      [56, "Pollo"], [57, "Camarón"], [58, "Salmón"] ] },
+    { "clave": "hot-sushi-burger", "nombre": "Hot Sushi Burger", "ejes": ["Relleno"], "descripcionDe": 470, "miembros": [
+      [565, "Pollo"], [566, "Camarón"], [567, "Salmón"], [568, "Kanikama"] ] },
+    { "clave": "burger-clasica", "nombre": "Burger Clásica", "ejes": ["Tamaño"], "miembros": [
+      [362, "Normal 180 g"], [363, "Doble 360 g"] ] },
+    { "clave": "burger-rustica", "nombre": "Burger Rústica", "ejes": ["Tamaño"], "miembros": [
+      [364, "Normal 180 g"], [375, "Doble 360 g"] ] },
+    { "clave": "burger-del-embrujo", "nombre": "Burger del Embrujo", "ejes": ["Tamaño"], "miembros": [
+      [366, "Normal 180 g"], [367, "Doble 360 g"] ] },
+    { "clave": "burger-campestre", "nombre": "Burger Campestre", "ejes": ["Tamaño"], "miembros": [
+      [368, "Normal 180 g"], [369, "Doble 360 g"] ] },
+    { "clave": "aros-de-cebolla", "nombre": "Aros de cebolla", "ejes": ["Cantidad"], "miembros": [
+      [373, "3 u."], [378, "6 u."], [379, "8 u."] ] },
+    { "clave": "alitas-de-pollo", "nombre": "Alitas de pollo frito", "ejes": ["Cantidad"], "miembros": [
+      [380, "6 u."], [542, "10 u."] ] },
+    { "clave": "shot-ryori", "nombre": "Shot Ryori", "ejes": ["Medida"], "miembros": [ [508, "Corto"], [509, "Largo"] ] },
+    { "clave": "shot-jagger", "nombre": "Shot Jägermeister", "ejes": ["Medida"], "miembros": [ [512, "Corto"], [513, "Largo"] ] },
+    { "clave": "shot-tequila-dulce", "nombre": "Shot tequila dulce", "ejes": ["Medida"], "miembros": [ [514, "Corto"], [515, "Largo"] ] },
+    { "clave": "shot-tequila-olmeca", "nombre": "Shot tequila Olmeca", "ejes": ["Medida"], "miembros": [ [510, "Corto"], [511, "Largo"] ] }
+  ]
+}

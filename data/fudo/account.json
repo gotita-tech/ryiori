@@ -1,0 +1,261 @@
+{
+ "account": {
+  "name": "Ryori",
+  "settings": {
+   "appearance": {
+    "colorScheme": null,
+    "typography": null,
+    "template": null,
+    "categoryIcons": {
+     "enabled": true,
+     "variant": "stroke"
+    }
+   },
+   "currencySymbol": "$",
+   "countryCode": "cl",
+   "cardsViewEnabled": true,
+   "name": "Ryori Sushi Bar & Burgers",
+   "pickup": true,
+   "delivery": false,
+   "dataCollectionEnabled": false,
+   "availableTimes": {
+    "pickup": {
+     "availableNow": true,
+     "times": [
+      [],
+      [
+       [
+        "00:00",
+        "23:59"
+       ]
+      ],
+      [
+       [
+        "00:00",
+        "23:59"
+       ]
+      ],
+      [
+       [
+        "00:00",
+        "23:59"
+       ]
+      ],
+      [
+       [
+        "00:00",
+        "23:59"
+       ]
+      ],
+      [
+       [
+        "00:00",
+        "23:59"
+       ]
+      ],
+      [
+       [
+        "00:00",
+        "23:59"
+       ]
+      ]
+     ]
+    },
+    "delivery": {
+     "availableNow": false,
+     "times": [
+      [
+       [
+        "00:00",
+        "23:59"
+       ]
+      ],
+      [
+       [
+        "00:00",
+        "23:59"
+       ]
+      ],
+      [
+       [
+        "00:00",
+        "23:59"
+       ]
+      ],
+      [
+       [
+        "00:00",
+        "23:59"
+       ]
+      ],
+      [
+       [
+        "00:00",
+        "23:59"
+       ]
+      ],
+      [
+       [
+        "00:00",
+        "23:59"
+       ]
+      ],
+      [
+       [
+        "00:00",
+        "23:59"
+       ]
+      ]
+     ]
+    },
+    "selfService": {
+     "availableNow": true,
+     "times": null
+    }
+   },
+   "backgroundImage": {
+    "url": "https://fudo-apps-storage.s3.sa-east-1.amazonaws.com/production/54254/online-menu/background-image"
+   },
+   "contact": {
+    "email": "ryorisushiandbar@gmail.com",
+    "phone": 352281065,
+    "whatsapp": 56999518653,
+    "address": "Divina providencia 375, Llolleo"
+   },
+   "social": {
+    "facebook": "https://www.facebook.com/RyoriSushiOficial",
+    "instagram": "https://www.instagram.com/ryorisushi_llolleo/"
+   },
+   "onlinePaymentMethods": [],
+   "offlinePaymentMethods": {
+    "delivery": [
+     {
+      "id": 3,
+      "name": "Redcompra"
+     },
+     {
+      "id": 5,
+      "name": "Transferencia"
+     }
+    ],
+    "pickup": [
+     {
+      "id": 1,
+      "name": "Efectivo"
+     },
+     {
+      "id": 3,
+      "name": "Redcompra"
+     }
+    ]
+   },
+   "paymentMethodDiscounts": [],
+   "openingHours": "*Horario de atención: Lunes a Miércoles 13.00 a 21.00 hrs. Jueves 13.00 a 21.00hrs. Viernes & Sábado 13.00 hrs. a 00.00 hrs. Domingo cerrado.",
+   "location": {
+    "name": "Divina Providencia 375, San Antonio, Valparaíso, Chile",
+    "google_id": "EjdEaXZpbmEgUHJvdmlkZW5jaWEgMzc1LCBTYW4gQW50b25pbywgVmFscGFyYcOtc28sIENoaWxlIjESLwoUChIJQ3bq70w4YpYRy12rnkgIjmMQ9wIqFAoSCQX90PlLOGKWEX2MOV-hoT2k",
+    "lat": -33.6123105,
+    "lng": -71.6176851,
+    "street": {
+     "long_name": "Divina Providencia",
+     "short_name": "Divina Providencia",
+     "types": [
+      "route"
+     ]
+    },
+    "number": {
+     "long_name": "375",
+     "short_name": "375",
+     "types": [
+      "street_number"
+     ]
+    },
+    "city": {
+     "long_name": "San Antonio",
+     "short_name": "San Antonio",
+     "types": [
+      "locality",
+      "political"
+     ]
+    },
+    "state": {
+     "long_name": "Valparaíso",
+     "short_name": "Valparaíso",
+     "types": [
+      "administrative_area_level_1",
+      "political"
+     ]
+    }
+   },
+   "logo": {
+    "url": "https://fudo-apps-storage.s3.sa-east-1.amazonaws.com/production/54254/online-menu/logo"
+   },
+   "onlineMenuEnabled": true,
+   "qrMenu": {
+    "backgroundImage": null,
+    "enabled": null,
+    "logo": null,
+    "name": null,
+    "contact": {
+     "email": null,
+     "phone": null,
+     "whatsapp": null,
+     "address": null
+    },
+    "social": {
+     "facebook": null,
+     "instagram": null
+    },
+    "openingHours": null,
+    "selfService": null,
+    "showProductImages": null
+   },
+   "requireCashAmount": null,
+   "shippingCost": null,
+   "shippingCostType": "fixed",
+   "autocompleteRestrictionLevel": "optional",
+   "deliveryZones": [],
+   "minimumAmount": {
+    "enabled": null,
+    "value": null
+   },
+   "coupons": {
+    "enabled": false
+   },
+   "tracking": {
+    "enabled": false
+   },
+   "scheduleOrder": {
+    "enabled": false
+   },
+   "pixel": null,
+   "paused": false,
+   "inactive": false,
+   "customerRegistration": null,
+   "customerRegistrationEnabled": null,
+   "activeOnlineMenuPlus": true,
+   "logistics": null,
+   "uberDirectCashEnabled": false,
+   "loyalty": {
+    "enabled": false,
+    "earnPercentage": 3,
+    "maxRedeemPercentage": 100,
+    "minPurchaseAmount": 0
+   },
+   "feeSettings": {
+    "isServiceFeeBonified": false,
+    "serviceFeePercentage": 2.26,
+    "serviceFeeFixedAmount": 0,
+    "transferredServiceFeePercentage": 100
+   },
+   "taxConditionValid": false,
+   "countryTaxPercentage": 19,
+   "banner": {
+    "backgroundColor": null,
+    "enabled": null,
+    "message": null
+   },
+   "carousel": {}
+  }
+ }
+}

@@ -4,3 +4,4 @@ scripts/
 *.md
 PORCIONES-IA.json
 .claude/
+data/fudo/

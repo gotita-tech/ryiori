@@ -1,0 +1,444 @@
+{
+ "productCategories": [
+  {
+   "id": 1,
+   "name": ".1 HOSOMAKIS",
+   "parentId": null,
+   "position": 100000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 2,
+   "name": ".2 CALIFORNIA ROLL´S",
+   "parentId": null,
+   "position": 200000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 3,
+   "name": ".4 SAKE ROLL'S",
+   "parentId": null,
+   "position": 300000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 4,
+   "name": ".3 AVOCADO ROLL'S",
+   "parentId": null,
+   "position": 400000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 5,
+   "name": ".5 CREAM CHESSE ROLL'S",
+   "parentId": null,
+   "position": 500000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 6,
+   "name": ".6 RYORI ROLL'S",
+   "parentId": null,
+   "position": 600000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 7,
+   "name": ".7 TEMPURA ROLL'S",
+   "parentId": null,
+   "position": 700000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 8,
+   "name": ".8 QUINOA ROLL'S",
+   "parentId": null,
+   "position": 800000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 9,
+   "name": ".9 FIDEOS",
+   "parentId": null,
+   "position": 900000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 10,
+   "name": "13. ENSALADAS",
+   "parentId": null,
+   "position": 1000000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 11,
+   "name": "11. CEVICHES",
+   "parentId": null,
+   "position": 1100000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 12,
+   "name": "12. TABLAS RYORI",
+   "parentId": null,
+   "position": 1200000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 13,
+   "name": "SOPAS",
+   "parentId": null,
+   "position": 1300000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 14,
+   "name": "GOHAN",
+   "parentId": null,
+   "position": 1400000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 15,
+   "name": "GYOSAS",
+   "parentId": null,
+   "position": 1500000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 16,
+   "name": "SASHIMI",
+   "parentId": null,
+   "position": 1600000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 17,
+   "name": "NIGUIRIS",
+   "parentId": null,
+   "position": 1700000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 18,
+   "name": "18. CAMARÓN TEMPURA",
+   "parentId": null,
+   "position": 1800000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 19,
+   "name": "19. HAND ROLL’S",
+   "parentId": null,
+   "position": 1900000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 20,
+   "name": "20. ONIGUIRIS YAKIMONO",
+   "parentId": null,
+   "position": 2000000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 21,
+   "name": "21. Arma tu Roll",
+   "parentId": null,
+   "position": 2100000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 22,
+   "name": "22. SALSAS / PALITOS",
+   "parentId": null,
+   "position": 2200000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 23,
+   "name": "63.1 JUGOS",
+   "parentId": null,
+   "position": 2300000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 24,
+   "name": "63.2 .Bebidas",
+   "parentId": null,
+   "position": 2400000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 25,
+   "name": "64. LIMONADAS",
+   "parentId": null,
+   "position": 2500000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 26,
+   "name": "65. MOCKTAIL",
+   "parentId": null,
+   "position": 2600000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 27,
+   "name": "Coctelería Peruana",
+   "parentId": null,
+   "position": 2700000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 28,
+   "name": "Aperitivos",
+   "parentId": null,
+   "position": 2800000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 29,
+   "name": "ACHOLADOS",
+   "parentId": null,
+   "position": 2900000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 30,
+   "name": "CHILCANOS",
+   "parentId": null,
+   "position": 3000000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 31,
+   "name": "Coctelería Clásica",
+   "parentId": null,
+   "position": 3100000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 32,
+   "name": "COCTELES",
+   "parentId": null,
+   "position": 3200000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 33,
+   "name": "SPRITZ",
+   "parentId": null,
+   "position": 3300000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 34,
+   "name": "MOJITOS",
+   "parentId": null,
+   "position": 3400000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 35,
+   "name": "COCTELERIA DE AUTOR",
+   "parentId": null,
+   "position": 3500000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 36,
+   "name": "SHOTS",
+   "parentId": null,
+   "position": 3600000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 37,
+   "name": "JARRAS DE 1.5LTS",
+   "parentId": null,
+   "position": 3700000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 38,
+   "name": "CORTOS",
+   "parentId": null,
+   "position": 3800000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 39,
+   "name": "DESTILADOS",
+   "parentId": null,
+   "position": 3900000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 40,
+   "name": "CERVEZAS",
+   "parentId": null,
+   "position": 4000000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 41,
+   "name": "VINOS POR BOTELLA",
+   "parentId": null,
+   "position": 4100000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 42,
+   "name": "INFUSIONES Y TE",
+   "parentId": null,
+   "position": 4200000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 43,
+   "name": "EXTRAS",
+   "parentId": null,
+   "position": 4300000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 44,
+   "name": "GUARNICIONES",
+   "parentId": null,
+   "position": 4400000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 45,
+   "name": "BURGERS",
+   "parentId": null,
+   "position": 4500000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 46,
+   "name": "10. VEGETARIANOS Y VEGANOS",
+   "parentId": null,
+   "position": 4600000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 47,
+   "name": "40. TABLAS",
+   "parentId": null,
+   "position": 4700000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 54,
+   "name": "EXTRA 1200",
+   "parentId": 43,
+   "position": 100000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 48,
+   "name": "1. Pisco",
+   "parentId": 39,
+   "position": 100000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 52,
+   "name": "64. CERVEZAS",
+   "parentId": 40,
+   "position": 100000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 49,
+   "name": "2. Whisky",
+   "parentId": 39,
+   "position": 200000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 55,
+   "name": "EXTRA 800",
+   "parentId": 43,
+   "position": 200000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 53,
+   "name": "65. CERVEZAS SIN ALCOHOL",
+   "parentId": 40,
+   "position": 200000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 50,
+   "name": "3. Ron",
+   "parentId": 39,
+   "position": 300000,
+   "iconName": null,
+   "taxPercentage": null
+  },
+  {
+   "id": 51,
+   "name": "5. Ginebra",
+   "parentId": 39,
+   "position": 400000,
+   "iconName": null,
+   "taxPercentage": null
+  }
+ ]
+}

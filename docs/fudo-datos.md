@@ -27,3 +27,26 @@ Fudo abre un producto con la dirección `https://menu.fu.do/ryori/<categoría>/<
 
 - Es una interfaz interna de Fudo, sin documentación pública. Puede cambiar sin aviso. Por eso el script de sincronización (fase 2) se detiene si la respuesta no tiene la forma esperada y no sobrescribe la carta.
 - Conviene confirmar con Fudo o con el dueño que leer la carta pública de esta forma está bien. Es lo mismo que hace el navegador de cualquier cliente.
+
+## Sincronización: `scripts/fudo-sync.mjs`
+
+```
+node scripts/fudo-sync.mjs            # descarga de Fudo y actualiza menu-data.js
+node scripts/fudo-sync.mjs --revisar  # solo muestra qué cambiaría
+node scripts/fudo-sync.mjs --desde data/fudo   # repite con la última descarga guardada
+```
+
+El script hace esto, en orden:
+
+1. Lee los tres archivos públicos de Fudo y guarda una copia en `data/fudo/`. Si la respuesta no tiene la forma esperada, se detiene sin tocar nada.
+2. Limpia los nombres: quita la numeración («/ 17.»), los dobles espacios y el «+» inicial, corrige «CHESSE» y «Camaròn», y pasa los nombres en mayúsculas a mayúscula inicial. Los cambios puntuales están en `renombres` de `data/carta-config.json`.
+3. Saca de la carta los modificadores: extras, «Cambio de…», salsas, palitos y agregados (36 productos). Se eligen al pedir en Fudo.
+4. Ordena la carta en 10 categorías propias, entre ellas Promos y Postres.
+5. Agrupa las variantes en un solo producto con opciones: Gyosas (5 rellenos × 3, 6 o 10 u.), Sashimi, Niguiris, burgers normal o doble, etc. 292 productos de Fudo quedan en 233 filas.
+6. Agrega piezas, etiquetas y descripciones faltantes desde `data/descripciones.json` (fuente: Uber Eats, 12-10-2026), y fotos desde `data/fotos.json`.
+7. Escribe `menu-data.js` con la fecha e informa en consola y en `docs/carta-sync.md`:
+   - los precios que cambiaron;
+   - los productos nuevos o retirados;
+   - los productos nuevos que todavía no tienen categoría.
+
+Los precios **nunca** se escriben a mano: siempre salen del campo `pricePickup` (retiro) de Fudo.
