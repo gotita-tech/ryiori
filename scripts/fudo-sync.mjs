@@ -28,7 +28,10 @@ const desde = args.includes('--desde') ? args[args.indexOf('--desde') + 1] : nul
 const leerJSON = ruta => JSON.parse(readFileSync(join(RAIZ, ruta), 'utf8'));
 const config = leerJSON('data/carta-config.json');
 const descripciones = existsSync(join(RAIZ, 'data/descripciones.json')) ? leerJSON('data/descripciones.json').productos : {};
-const fotos = existsSync(join(RAIZ, 'data/fotos.json')) ? leerJSON('data/fotos.json').fotos : {};
+const fotosBase = existsSync(join(RAIZ, 'data/fotos.json')) ? leerJSON('data/fotos.json').fotos : {};
+// Versiones livianas generadas por scripts/imagenes.mjs (320, 480 y 960 px).
+const imagenes = existsSync(join(RAIZ, 'data/imagenes.json')) ? leerJSON('data/imagenes.json').imagenes : {};
+const fotos = Object.fromEntries(Object.entries(fotosBase).map(([k, f]) => [k, imagenes[f.src] ? { ...f, anchos: imagenes[f.src] } : f]));
 
 async function descargar(recurso) {
   if (desde) return JSON.parse(readFileSync(join(desde, `${recurso}.json`), 'utf8'));

@@ -1,6 +1,6 @@
 /* Carta de Ryori. Variables de color y tipografía en ../comun.css */
 *, *::before, *::after { box-sizing: border-box; }
-html { scroll-padding-top: 132px; }
+html { scroll-padding-top: 0; }
 .cabecera-nav > a:first-child { color: var(--arroz); }
 body { margin: 0; background: var(--arroz); color: var(--tinta); font-family: var(--texto); font-size: 16px; line-height: 1.45; -webkit-text-size-adjust: 100%; }
 a { color: inherit; }
@@ -40,7 +40,7 @@ h1, h2, h3, h4, p { margin: 0; }
 
 /* ---------- Secciones ---------- */
 #secciones, .nota-precios, .sin-resultados { max-width: 1120px; margin: 0 auto; padding: 0 16px; }
-.categoria { padding: 14px 0 8px; scroll-margin-top: 124px; }
+.categoria { padding: 14px 0 8px; scroll-margin-top: 104px; }
 .categoria + .categoria { border-top: 1px solid var(--linea); padding-top: 22px; }
 .categoria-titulo { font-family: var(--titulos); font-weight: 800; font-size: 24px; line-height: 1.1; letter-spacing: -.01em; }
 .subgrupo { margin-top: 6px; }
@@ -110,7 +110,7 @@ h1, h2, h3, h4, p { margin: 0; }
 
 /* ---------- Escritorio ---------- */
 @media (min-width: 760px) {
-  html { scroll-padding-top: 140px; }
+
   .lista-platos { grid-template-columns: 1fr 1fr; column-gap: 40px; }
   .plato:last-child { border-bottom: 1px solid var(--linea); }
   .lista-tragos { columns: 2; }
@@ -126,3 +126,5 @@ h1, h2, h3, h4, p { margin: 0; }
 .tarjeta-sugeridor { margin: 18px 0 8px; }
 .plato.simple { grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: 'texto pie'; align-items: center; }
 .plato.simple .plato-meta { display: none; }
+/* Rendimiento: el navegador dibuja cada categoría recién cuando se acerca a la pantalla. */
+.categoria { content-visibility: auto; contain-intrinsic-size: auto 1200px; }

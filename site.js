@@ -1,5 +1,6 @@
 // Portada: «Lo más pedido» y «Promos». Los precios y enlaces salen de menu-data.js (Fudo);
 // el ranking y las valoraciones, de data/negocio.json (Uber Eats, con fecha).
+// Las tarjetas usan como máximo la versión de 480 px: se ven nítidas y la portada pesa menos de 300 KB.
 (() => {
   const carta = window.RYORI_MENU;
   if (!carta) return;
@@ -32,7 +33,7 @@
       const nombre = p.variantes ? `${p.nombre} ${v.valores.join(' ').toLowerCase()}` : p.nombre;
       return `<li class="${m.posicion === 1 ? 'destacado' : ''}">
         <figure>
-          ${p.foto ? `<img src="${esc(p.foto.src)}" alt="" width="400" height="300" loading="lazy" decoding="async">${p.foto.tipo === 'muestra' ? '<figcaption>Foto de muestra</figcaption>' : ''}` : ''}
+          ${p.foto ? `<img src="${esc(p.foto.anchos?.[480] || p.foto.src)}"${p.foto.anchos ? ` srcset="${Object.entries(p.foto.anchos).filter(([w]) => w <= 480).map(([w, u]) => `${esc(u)} ${w}w`).join(', ')}" sizes="(min-width: 1100px) 220px, (min-width: 760px) 30vw, 78vw"` : ''} alt="" width="400" height="300" loading="lazy" decoding="async">${p.foto.tipo === 'muestra' ? '<figcaption>Foto de muestra</figcaption>' : ''}` : ''}
         </figure>
         <div class="mp-texto">
           ${m.posicion ? `<p class="mp-puesto">${m.posicion === 1 ? '<svg class="ola" viewBox="0 0 120 12" aria-hidden="true"><use href="#ola"/></svg>' : ''}Nº ${m.posicion} en Uber Eats</p>` : ''}
@@ -45,5 +46,6 @@
         </div>
       </li>`;
     }).join('');
+    window.ryoriMarcarEnlaces?.(ol);
   });
 })();

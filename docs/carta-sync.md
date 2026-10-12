@@ -1,6 +1,6 @@
 # Última sincronización con Fudo
 
-- Fecha: 12-10-2026, 3:34:55 a. m.
+- Fecha: 12-10-2026, 4:26:37 a. m.
 - Fudo: 328 productos · carta: 233 filas (292 productos) · 36 modificadores fuera de la carta
 
 ## Precios que cambiaron

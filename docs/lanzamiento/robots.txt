@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /presentacion/
+
+Sitemap: https://DOMINIO-DEFINITIVO/sitemap.xml

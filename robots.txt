@@ -1,0 +1,3 @@
+# Demo de propuesta: no indexar. Al lanzar, reemplazar por docs/lanzamiento/robots.txt
+User-agent: *
+Disallow: /

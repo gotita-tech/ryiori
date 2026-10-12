@@ -1,3 +1,7 @@
+/* Tipografías alojadas en el sitio (assets/fuentes, licencia OFL) */
+@font-face { font-family: "Archivo"; src: url("/assets/fuentes/archivo-latin.woff2") format("woff2"); font-weight: 400 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Bricolage Grotesque"; src: url("/assets/fuentes/bricolage-grotesque-latin.woff2") format("woff2"); font-weight: 700 800; font-style: normal; font-display: swap; }
+
 /* Sistema visual compartido por portada y carta: colores, tipografías, canales de compra,
    barra fija del teléfono y botón de WhatsApp. */
 :root {
@@ -96,6 +100,7 @@
 }
 
 /* ---------- Base compartida ---------- */
+*, *::before, *::after { box-sizing: border-box; }
 .visualmente-oculto { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .saltar { position: fixed; left: 12px; top: -60px; z-index: 100; background: var(--mango); color: var(--tinta); padding: 12px 16px; font-weight: 600; }
 .saltar:focus { top: 12px; }

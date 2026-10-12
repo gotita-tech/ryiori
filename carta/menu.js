@@ -35,7 +35,7 @@
     const v = p.variantes ? varianteDe(p) : p;
     const etiquetas = p.variantes ? [...new Set([...p.etiquetas, ...v.etiquetas])] : p.etiquetas;
     const nombreCompleto = p.variantes ? `${p.nombre} ${v.valores.join(' ')}` : p.nombre;
-    const foto = p.foto ? `<figure class="foto"><img src="../${esc(p.foto.src)}" alt="" width="96" height="96" loading="lazy" decoding="async">${p.foto.tipo === 'muestra' ? '<figcaption>Foto de muestra</figcaption>' : ''}</figure>` : '';
+    const foto = p.foto ? `<figure class="foto"><img src="../${esc(p.foto.anchos?.[320] || p.foto.src)}"${p.foto.anchos ? ` srcset="${Object.entries(p.foto.anchos).map(([w, u]) => `../${esc(u)} ${w}w`).join(', ')}" sizes="88px"` : ''} alt="" width="88" height="88" loading="lazy" decoding="async">${p.foto.tipo === 'muestra' ? '<figcaption>Foto de muestra</figcaption>' : ''}</figure>` : '';
     const simple = !p.foto && !p.descripcion && !p.variantes && !p.piezas && !etiquetas.length;
     return `<article class="plato${p.foto ? ' con-foto' : ''}${simple ? ' simple' : ''}" data-clave="${esc(p.clave)}">
       ${foto}
@@ -104,6 +104,7 @@
     const nueva = tmp.firstElementChild;
     fila.replaceWith(nueva);
     marcarDisponibles(nueva, p);
+    window.ryoriMarcarEnlaces?.(nueva);
     nueva.querySelector(`.opcion[data-eje="${b.dataset.eje}"][data-valor="${CSS.escape(b.dataset.valor)}"]`)?.focus();
   });
 

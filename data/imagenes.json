@@ -1,0 +1,141 @@
+{
+  "_ayuda": "Generado por scripts/imagenes.mjs. No editar a mano.",
+  "imagenes": {
+    "assets/hot-sushi-burger-hd.webp": {
+      "320": "assets/opt/hot-sushi-burger-hd-320.webp",
+      "480": "assets/opt/hot-sushi-burger-hd-480.webp",
+      "960": "assets/opt/hot-sushi-burger-hd-960.webp"
+    },
+    "assets/menu/tabla-parque-dyr-40-piezas-63.webp": {
+      "320": "assets/opt/tabla-parque-dyr-40-piezas-63-320.webp",
+      "480": "assets/opt/tabla-parque-dyr-40-piezas-63-480.webp",
+      "960": "assets/opt/tabla-parque-dyr-40-piezas-63-960.webp"
+    },
+    "assets/menu/tabla-playa-de-llolleo-70-piezas-64.webp": {
+      "320": "assets/opt/tabla-playa-de-llolleo-70-piezas-64-320.webp",
+      "480": "assets/opt/tabla-playa-de-llolleo-70-piezas-64-480.webp",
+      "960": "assets/opt/tabla-playa-de-llolleo-70-piezas-64-960.webp"
+    },
+    "assets/menu/tabla-boca-del-maipo-40-piezas-62.webp": {
+      "320": "assets/opt/tabla-boca-del-maipo-40-piezas-62-320.webp",
+      "480": "assets/opt/tabla-boca-del-maipo-40-piezas-62-480.webp",
+      "960": "assets/opt/tabla-boca-del-maipo-40-piezas-62-960.webp"
+    },
+    "assets/menu/tabla-premium-468.webp": {
+      "320": "assets/opt/tabla-premium-468-320.webp",
+      "480": "assets/opt/tabla-premium-468-480.webp",
+      "960": "assets/opt/tabla-premium-468-960.webp"
+    },
+    "assets/menu/17-rolls-acevichado-40.webp": {
+      "320": "assets/opt/17-rolls-acevichado-40-320.webp",
+      "480": "assets/opt/17-rolls-acevichado-40-480.webp",
+      "960": "assets/opt/17-rolls-acevichado-40-960.webp"
+    },
+    "assets/menu/18-mango-maki-39.webp": {
+      "320": "assets/opt/18-mango-maki-39-320.webp",
+      "480": "assets/opt/18-mango-maki-39-480.webp",
+      "960": "assets/opt/18-mango-maki-39-960.webp"
+    },
+    "assets/menu/20-ryori-full-38.webp": {
+      "320": "assets/opt/20-ryori-full-38-320.webp",
+      "480": "assets/opt/20-ryori-full-38-480.webp",
+      "960": "assets/opt/20-ryori-full-38-960.webp"
+    },
+    "assets/menu/19-panko-avocado-43.webp": {
+      "320": "assets/opt/19-panko-avocado-43-320.webp",
+      "480": "assets/opt/19-panko-avocado-43-480.webp",
+      "960": "assets/opt/19-panko-avocado-43-960.webp"
+    },
+    "assets/menu/2-california-tori-crispy-18.webp": {
+      "320": "assets/opt/2-california-tori-crispy-18-320.webp",
+      "480": "assets/opt/2-california-tori-crispy-18-480.webp",
+      "960": "assets/opt/2-california-tori-crispy-18-960.webp"
+    },
+    "assets/menu/10-avocado-sake-24.webp": {
+      "320": "assets/opt/10-avocado-sake-24-320.webp",
+      "480": "assets/opt/10-avocado-sake-24-480.webp",
+      "960": "assets/opt/10-avocado-sake-24-960.webp"
+    },
+    "assets/menu/15-cheese-tori-34.webp": {
+      "320": "assets/opt/15-cheese-tori-34-320.webp",
+      "480": "assets/opt/15-cheese-tori-34-480.webp",
+      "960": "assets/opt/15-cheese-tori-34-960.webp"
+    },
+    "assets/menu/22-tempura-tori-teriyaki-45.webp": {
+      "320": "assets/opt/22-tempura-tori-teriyaki-45-320.webp",
+      "480": "assets/opt/22-tempura-tori-teriyaki-45-480.webp",
+      "960": "assets/opt/22-tempura-tori-teriyaki-45-960.webp"
+    },
+    "assets/menu/29-coco-merken-quinoa-52.webp": {
+      "320": "assets/opt/29-coco-merken-quinoa-52-320.webp",
+      "480": "assets/opt/29-coco-merken-quinoa-52-480.webp",
+      "960": "assets/opt/29-coco-merken-quinoa-52-960.webp"
+    },
+    "assets/menu/handroll-chicken.webp": {
+      "320": "assets/opt/handroll-chicken-320.webp",
+      "480": "assets/opt/handroll-chicken-480.webp",
+      "960": "assets/opt/handroll-chicken-960.webp"
+    },
+    "assets/menu/niguiris-salmon-6-u-269-quantity.webp": {
+      "320": "assets/opt/niguiris-salmon-6-u-269-quantity-320.webp",
+      "480": "assets/opt/niguiris-salmon-6-u-269-quantity-480.webp",
+      "960": "assets/opt/niguiris-salmon-6-u-269-quantity-960.webp"
+    },
+    "assets/menu/gyosas-mixtas-6-u-249-quantity.webp": {
+      "320": "assets/opt/gyosas-mixtas-6-u-249-quantity-320.webp",
+      "480": "assets/opt/gyosas-mixtas-6-u-249-quantity-480.webp",
+      "960": "assets/opt/gyosas-mixtas-6-u-249-quantity-960.webp"
+    },
+    "assets/menu/gohan-chicken.webp": {
+      "320": "assets/opt/gohan-chicken-320.webp",
+      "480": "assets/opt/gohan-chicken-480.webp",
+      "960": "assets/opt/gohan-chicken-960.webp"
+    },
+    "assets/menu/camaron-tempura-6-u-83-quantity.webp": {
+      "320": "assets/opt/camaron-tempura-6-u-83-quantity-320.webp",
+      "480": "assets/opt/camaron-tempura-6-u-83-quantity-480.webp",
+      "960": "assets/opt/camaron-tempura-6-u-83-quantity-960.webp"
+    },
+    "assets/menu/burger-del-embrujo-normal-180-gr-366.webp": {
+      "320": "assets/opt/burger-del-embrujo-normal-180-gr-366-320.webp",
+      "480": "assets/opt/burger-del-embrujo-normal-180-gr-366-480.webp",
+      "960": "assets/opt/burger-del-embrujo-normal-180-gr-366-960.webp"
+    },
+    "assets/menu/burger-clasica-normal-180-gr-362.webp": {
+      "320": "assets/opt/burger-clasica-normal-180-gr-362-320.webp",
+      "480": "assets/opt/burger-clasica-normal-180-gr-362-480.webp",
+      "960": "assets/opt/burger-clasica-normal-180-gr-362-960.webp"
+    },
+    "assets/menu/burger-rustica-normal-180-gr-364.webp": {
+      "320": "assets/opt/burger-rustica-normal-180-gr-364-320.webp",
+      "480": "assets/opt/burger-rustica-normal-180-gr-364-480.webp",
+      "960": "assets/opt/burger-rustica-normal-180-gr-364-960.webp"
+    },
+    "assets/menu/burger-campestre-normal-180-gr-368.webp": {
+      "320": "assets/opt/burger-campestre-normal-180-gr-368-320.webp",
+      "480": "assets/opt/burger-campestre-normal-180-gr-368-480.webp",
+      "960": "assets/opt/burger-campestre-normal-180-gr-368-960.webp"
+    },
+    "assets/menu/ceviche-plaza-de-llolleo-59.webp": {
+      "320": "assets/opt/ceviche-plaza-de-llolleo-59-320.webp",
+      "480": "assets/opt/ceviche-plaza-de-llolleo-59-480.webp",
+      "960": "assets/opt/ceviche-plaza-de-llolleo-59-960.webp"
+    },
+    "assets/menu/ceviche-estero-el-sauce-60.webp": {
+      "320": "assets/opt/ceviche-estero-el-sauce-60-320.webp",
+      "480": "assets/opt/ceviche-estero-el-sauce-60-480.webp",
+      "960": "assets/opt/ceviche-estero-el-sauce-60-960.webp"
+    },
+    "assets/menu/vegan-rolls.webp": {
+      "320": "assets/opt/vegan-rolls-320.webp",
+      "480": "assets/opt/vegan-rolls-480.webp",
+      "960": "assets/opt/vegan-rolls-960.webp"
+    },
+    "assets/hero-hd.webp": {
+      "telefono-480": "assets/portada/hero-telefono-480.webp",
+      "telefono-960": "assets/portada/hero-telefono-960.webp",
+      "escritorio-960": "assets/portada/hero-escritorio-960.webp",
+      "escritorio-1440": "assets/portada/hero-escritorio-1440.webp"
+    }
+  }
+}

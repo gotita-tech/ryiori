@@ -9,19 +9,96 @@
   <meta name="theme-color" content="#000000">
   <meta property="og:title" content="Ryori Sushi Bar · Sushi de Llolleo">
   <meta property="og:description" content="Rolls, tablas para compartir y Hot Sushi Burger. Retira en Divina Providencia 375, pide delivery o escríbenos por WhatsApp.">
-  <meta property="og:image" content="https://ryiori.vercel.app/assets/hero-hd.webp">
+  <meta property="og:image" content="https://ryiori.vercel.app/assets/compartir-1200x630.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:type" content="website">
-  <link rel="icon" href="assets/logo.webp">
-  <link rel="preload" as="image" href="assets/portada/hero-telefono-960.webp" media="(max-width: 759px)">
-  <link rel="preload" as="image" href="assets/hero-hd.webp" media="(min-width: 760px)">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/marca/icono-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/marca/icono-180.png">
+  <link rel="preload" as="image" href="assets/portada/hero-telefono-960.webp" imagesrcset="assets/portada/hero-telefono-480.webp 480w, assets/portada/hero-telefono-960.webp 960w" imagesizes="100vw" media="(max-width: 759px)">
+  <link rel="preload" as="image" href="assets/portada/hero-escritorio-960.webp" imagesrcset="assets/portada/hero-escritorio-960.webp 960w, assets/portada/hero-escritorio-1440.webp 1440w" imagesizes="(min-width: 1180px) 610px, 52vw" media="(min-width: 760px)">
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fuentes/archivo-latin.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fuentes/bricolage-grotesque-latin.woff2" crossorigin>
   <link rel="stylesheet" href="comun.css">
   <link rel="stylesheet" href="styles.css">
   <script src="comun.js" defer></script>
   <script src="menu-data.js" defer></script>
   <script src="site.js" defer></script>
+  <!-- Datos estructurados para Google (sin efecto mientras la demo tenga noindex). Generado desde data/negocio.json. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Ryori Sushi Bar & Burgers",
+    "url": "https://ryiori.vercel.app/",
+    "image": "https://ryiori.vercel.app/assets/compartir-1200x630.jpg",
+    "logo": "https://ryiori.vercel.app/assets/marca/icono-512.png",
+    "telephone": "+56352281065",
+    "email": "ryorisushiandbar@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Divina Providencia 375",
+      "addressLocality": "Llolleo, San Antonio",
+      "addressRegion": "Valparaíso",
+      "addressCountry": "CL"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -33.6123105,
+      "longitude": -71.6176851
+    },
+    "servesCuisine": [
+      "Sushi",
+      "Japonesa",
+      "Hamburguesas"
+    ],
+    "hasMenu": "https://ryiori.vercel.app/carta/",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "https://schema.org/Monday",
+        "opens": "13:00",
+        "closes": "21:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "https://schema.org/Tuesday",
+        "opens": "13:00",
+        "closes": "21:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "https://schema.org/Wednesday",
+        "opens": "13:00",
+        "closes": "21:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "https://schema.org/Thursday",
+        "opens": "13:00",
+        "closes": "21:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "https://schema.org/Friday",
+        "opens": "13:00",
+        "closes": "23:59"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "https://schema.org/Saturday",
+        "opens": "13:00",
+        "closes": "23:59"
+      }
+    ],
+    "paymentAccepted": "Efectivo, Redcompra",
+    "sameAs": [
+      "https://www.instagram.com/ryorisushi_llolleo/",
+      "https://www.facebook.com/RyoriSushiOficial"
+    ]
+  }
+  </script>
 </head>
 <body>
   <a class="saltar" href="#contenido">Ir al contenido</a>
@@ -47,7 +124,8 @@
     <section class="portada" aria-labelledby="titulo">
       <picture class="portada-foto">
         <source media="(max-width: 759px)" srcset="assets/portada/hero-telefono-480.webp 480w, assets/portada/hero-telefono-960.webp 960w" sizes="100vw">
-        <img src="assets/hero-hd.webp" alt="Rolls de Ryori con salmón, queso crema y cobertura de mango" width="1998" height="787" fetchpriority="high">
+        <source media="(min-width: 760px)" srcset="assets/portada/hero-escritorio-960.webp 960w, assets/portada/hero-escritorio-1440.webp 1440w" sizes="(min-width: 1180px) 610px, 52vw">
+        <img src="assets/portada/hero-escritorio-960.webp" alt="Rolls de Ryori con salmón, queso crema y cobertura de mango" width="960" height="720" fetchpriority="high">
       </picture>
       <div class="portada-texto">
         <h1 id="titulo">Sushi de Llolleo.</h1>

@@ -113,6 +113,9 @@ async function medirCarta(chrome, perfil) {
     const out = { categorias: {}, busquedas: {} };
     if (document.querySelector('#secciones')) {
       // Carta nueva (fase 2): una sola página con todas las categorías.
+      // Se dibujan todas las secciones para medir su alto real (la carta usa content-visibility).
+      document.querySelectorAll('.categoria').forEach(sec => { sec.style.contentVisibility = 'visible'; });
+      await pausa(300);
       const primero = document.querySelector('#secciones [data-clave]');
       out.primerProductoPx = Math.round(primero.getBoundingClientRect().top + scrollY);
       out.altoDocumentoPx = document.documentElement.scrollHeight;

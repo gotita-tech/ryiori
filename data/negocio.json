@@ -1,6 +1,13 @@
 {
   "_fuente": "Datos publicados por Ryori en su carta de Fudo (https://menu.fu.do/ryori), leídos el 12-10-2026. Las diferencias con otras fuentes están en docs/venta/datos-por-resolver.md y no se muestran en la landing.",
   "modoDemo": true,
+  "analitica": false,
+  "_analitica": "Ponlo en true después de activar Web Analytics en el panel de Vercel (proyecto → Analytics → Enable). Mientras sea false no se carga ningún script de medición.",
+  "utm": {
+    "utm_source": "sitio-ryori",
+    "utm_medium": "web",
+    "utm_campaign": "pedidos"
+  },
   "nombre": "Ryori Sushi Bar & Burgers",
   "nombreCorto": "Ryori",
   "direccion": {
