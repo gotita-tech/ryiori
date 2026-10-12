@@ -228,6 +228,10 @@ try {
     resultado.sugeridorTelefono = (await medirPagina(chrome, `${BASE}/sugeridor/`, PERFILES.telefono));
     resultado.sugeridorEscritorio = (await medirPagina(chrome, `${BASE}/sugeridor/`, PERFILES.escritorio));
   }
+  console.log('Propuesta…');
+  resultado.cargaPropuesta = await cargaLenta(chrome, `${BASE}/presentacion/`);
+  resultado.propuestaTelefono = await medirPagina(chrome, `${BASE}/presentacion/`, PERFILES.telefono);
+  resultado.propuestaEscritorio = await medirPagina(chrome, `${BASE}/presentacion/`, PERFILES.escritorio);
 } finally {
   await chrome.cerrar();
 }

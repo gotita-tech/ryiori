@@ -101,3 +101,4 @@ h2 { font-family: var(--titulos); font-weight: 800; font-size: 28px; line-height
 }
 @media (max-width: 759px) { .solo-escritorio { display: none !important; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+.pie-propuesta a { display: inline-flex; align-items: center; min-height: 44px; color: #C9CCC6; font-size: 14px; }

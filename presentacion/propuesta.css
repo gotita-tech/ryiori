@@ -1,0 +1,64 @@
+/* Propuesta para Ryori. Mismo sistema visual que el sitio (../comun.css). */
+body { margin: 0; background: var(--arroz); color: var(--tinta); font-family: var(--texto); font-size: 17px; line-height: 1.55; -webkit-text-size-adjust: 100%; }
+h1, h2, h3, p, figure, ul, ol { margin: 0; }
+a { color: inherit; text-underline-offset: 3px; }
+:focus-visible { outline: 3px solid var(--mango); outline-offset: 2px; }
+
+.cabecera .local { color: var(--arroz); font-weight: 600; font-size: 14px; line-height: 1.35; }
+.cabecera .local span { font-weight: 400; color: #C9CCC6; }
+
+main { max-width: 720px; margin: 0 auto; padding: 0 16px 48px; }
+main > section { padding: 36px 0 8px; }
+main > section + section { border-top: 1px solid var(--linea); margin-top: 28px; }
+h2 { font-family: var(--titulos); font-weight: 800; font-size: 28px; line-height: 1.1; letter-spacing: -.01em; margin-bottom: 14px; }
+h3 { font-family: var(--titulos); font-weight: 700; font-size: 19px; margin: 24px 0 8px; color: var(--nori); }
+main p + p { margin-top: 12px; }
+.fuente { font-size: 13px; color: var(--gris); margin-top: 10px; line-height: 1.45; }
+main .fuente { margin-top: 10px; }
+
+.portada-propuesta { padding-top: 28px; }
+.portada-propuesta .ola { margin-bottom: 12px; }
+.portada-propuesta h1 { font-family: var(--titulos); font-weight: 800; font-size: 40px; line-height: 1.02; letter-spacing: -.02em; margin-bottom: 14px; }
+.boton { display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; margin-top: 18px; border-radius: 999px; background: var(--tinta); color: var(--arroz); font-weight: 700; text-decoration: none; }
+.boton:hover { background: var(--nori); }
+.tiempo { font-size: 14px; color: var(--gris); margin-top: 10px; }
+
+.datos { list-style: none; padding: 0; display: grid; gap: 8px; }
+.datos li { display: flex; align-items: baseline; gap: 12px; padding: 12px 14px; background: var(--papel); border: 1px solid var(--linea); border-radius: 12px; }
+.datos strong { font-family: var(--titulos); font-weight: 800; font-size: 26px; white-space: nowrap; min-width: 4.4em; font-variant-numeric: tabular-nums; }
+.datos span { font-size: 15px; line-height: 1.35; }
+.datos + .fuente + p { margin-top: 16px; }
+
+.pendientes, .incluye, .extras { padding-left: 20px; display: grid; gap: 10px; }
+.pendientes li::marker, .incluye li::marker, .extras li::marker { color: var(--nori); }
+
+.comparar { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 10px; }
+.comparar figure { min-width: 0; }
+.comparar img { display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--linea); background: #E4E3DB; }
+.comparar figcaption { font-size: 13px; margin-top: 5px; color: var(--gris); }
+.comparar figcaption b { color: var(--tinta); }
+
+.cifras { list-style: none; padding: 0; display: grid; gap: 10px; }
+.cifras li { display: grid; grid-template-columns: auto auto 1fr; align-items: baseline; gap: 2px 10px; padding: 12px 14px; background: var(--papel); border: 1px solid var(--linea); border-radius: 12px; }
+.cifras .antes { color: var(--gris); text-decoration: line-through; text-decoration-thickness: 1px; font-variant-numeric: tabular-nums; }
+.cifras .flecha { color: var(--gris); }
+.cifras .ahora { font-family: var(--titulos); font-weight: 800; font-size: 24px; font-variant-numeric: tabular-nums; }
+.cifras .que { grid-column: 1 / -1; font-size: 15px; line-height: 1.35; }
+
+.pasos, .etapas { padding-left: 24px; display: grid; gap: 10px; }
+.pasos li::marker, .etapas li::marker { font-weight: 700; color: var(--nori); }
+
+.inversion { text-align: left; }
+.precio-propuesta { font-family: var(--titulos); font-weight: 800; font-size: 30px; padding: 14px 16px; border-radius: 12px; background: var(--nori); color: var(--arroz); margin-bottom: 12px; }
+
+.pie p { max-width: 720px; margin: 0 auto; color: #C9CCC6; }
+
+@media (min-width: 760px) {
+  main { padding-bottom: 72px; }
+  .portada-propuesta { padding-top: 56px; }
+  .portada-propuesta h1 { font-size: 56px; }
+  h2 { font-size: 34px; }
+  .comparar { grid-template-columns: repeat(4, 1fr); }
+  .cifras { grid-template-columns: 1fr 1fr; }
+}
+.incluye a { display: inline-block; padding: 13px 4px; margin: -13px -4px; font-weight: 600; }
