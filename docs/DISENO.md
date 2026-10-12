@@ -14,9 +14,9 @@ Todo lo demás es sobrio: tinta, arroz y un verde nori. El mango se reserva para
 
 | Token | Hex | Uso | Contraste |
 | --- | --- | --- | --- |
-| `--tinta` | #0F1112 | Texto, botones principales | 18,4:1 sobre arroz |
+| `--tinta` | #0F1112 | Texto, botones principales | 17,5:1 sobre arroz |
 | `--arroz` | #F6F6F2 | Fondo | — |
-| `--nori` | #1E3D35 | Tarjeta del sugeridor, subtítulos | 11,3:1 sobre arroz |
+| `--nori` | #1E3D35 | Tarjeta del sugeridor, subtítulos | 10,9:1 sobre arroz |
 | `--mango` | #E8A317 | Botón «Armar mi pedido», ola, foco | tinta sobre mango: 8,7:1 |
 | `--wa` | #128C7E | Solo el botón redondo de WhatsApp con ícono blanco | 4,1:1 (gráfico, mínimo 3:1) |
 | `--gris` | #4A504E | Texto secundario | 7,6:1 sobre arroz |
