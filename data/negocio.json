@@ -97,7 +97,7 @@
       "etiqueta": "Delivery",
       "etiquetaCorta": "Delivery",
       "plataforma": "Uber Eats",
-      "url": "https://www.ubereats.com/cl-en/store/ryori-sushi/pJ2VaHH-VmKoWFzFx3EKbg",
+      "url": "https://www.ubereats.com/cl/store/ryori-sushi/pJ2VaHH-VmKoWFzFx3EKbg",
       "cargoEnvio": "CLP 1.300",
       "cargoEnvioFecha": "2026-10-12"
     },
@@ -127,7 +127,7 @@
       "plataforma": "Uber Eats",
       "nota": 4.4,
       "cantidad": "500+ valoraciones",
-      "url": "https://www.ubereats.com/cl-en/store/ryori-sushi/pJ2VaHH-VmKoWFzFx3EKbg",
+      "url": "https://www.ubereats.com/cl/store/ryori-sushi/pJ2VaHH-VmKoWFzFx3EKbg",
       "fecha": "2026-10-12"
     },
     {
@@ -187,6 +187,6 @@
         "valoraciones": 25
       }
     ],
-    "url": "https://www.ubereats.com/cl-en/store/ryori-sushi/pJ2VaHH-VmKoWFzFx3EKbg"
+    "url": "https://www.ubereats.com/cl/store/ryori-sushi/pJ2VaHH-VmKoWFzFx3EKbg"
   }
 }

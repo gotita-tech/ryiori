@@ -20,6 +20,7 @@
         <span class="precio">${precio(p.precio)}</span>
         <a class="pedir" href="${esc(p.url)}" target="_blank" rel="noopener" aria-label="Pedir ${esc(p.nombre)} para retirar">Pedir <span aria-hidden="true">↗</span></a>
       </li>`).join('');
+    window.ryoriMarcarEnlaces?.(lista);
   }
 
   // Lo más pedido, según Uber Eats.

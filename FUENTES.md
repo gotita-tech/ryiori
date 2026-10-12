@@ -36,3 +36,44 @@ La descripción de Hot Sushi Burger y las tablas de 40/70 piezas se contrastaron
 ## Versiones mejoradas con ChatGPT
 
 La portada, los rolls, la foto de sushi para compartir, el ambiente y la burger usan archivos `*-hd.webp`. En las tres fotos provenientes de collages se extrae la toma mostrada en el sitio. Se pidió preservar el contenido y la composición; la IA puede reconstruir detalles distintos del original. La burger continúa identificada como imagen referencial. Ver [MEJORA-IMAGENES.md](MEJORA-IMAGENES.md) para resoluciones y prompts.
+
+---
+
+# Versión propuesta-v2 (12-10-2026)
+
+Todo dato de terceros que muestra el sitio lleva su fuente y su fecha en la página o en `data/`.
+
+## Datos del local
+
+- **Fudo** (https://menu.fu.do/ryori), leído el 12-10-2026 a través de sus datos públicos (ver `docs/fudo-datos.md`):
+  - nombre, dirección y coordenadas, horario de atención, WhatsApp, teléfono, correo, redes;
+  - medios de pago en el local (efectivo y Redcompra);
+  - carta y **todos los precios**.
+  Copia en `data/fudo/` y datos en `data/negocio.json`.
+- Las diferencias con otras fuentes (dirección 391 en Tripadvisor y Waze; apertura 12:30 en Google y Uber Eats; ficha duplicada en Google) **no** se muestran en el sitio: están en `docs/venta/datos-por-resolver.md`.
+
+## Uber Eats
+
+https://www.ubereats.com/cl/store/ryori-sushi/pJ2VaHH-VmKoWFzFx3EKbg, revisado el 12-10-2026:
+- nota 4,4 con más de 500 valoraciones;
+- lo más pedido: Hot Sushi Burger Pollo (nº 1, 83 % de 48), Tabla Parque DYR (84 % de 38), Roll Acevichado (80 % de 25), Handroll pollo y queso crema (94 % de 53), Gohan de pollo (96 % de 25);
+- piezas («8 cortes»), alérgenos (mariscos y pescado), picante y descripciones de productos que Fudo no describe. Están resumidas en `data/descripciones.json` con su fuente.
+
+Los precios de Uber Eats **no** se usan: son distintos de los de Fudo.
+
+## Google Maps
+
+Ficha «Ryori Sushi en Llolleo», 4,1 con 432 reseñas (12-10-2026). No se citan reseñas.
+
+## Imágenes
+
+- **Fotos de platos de la carta y de lo más pedido:** las imágenes de IA existentes en `assets/menu/` y `assets/hot-sushi-burger-hd.webp` (ver arriba y `MEJORA-CARTA.md`), rotuladas «Foto de muestra». Las versiones de 320/480/960 px en `assets/opt/` se generaron con `scripts/imagenes.mjs`.
+- **Portada:** recortes de `assets/hero-hd.webp` (foto de la portada de Fudo mejorada con IA, ver arriba) en `assets/portada/`.
+- **Logo:** `assets/marca/` se genera desde `assets/logo.webp` (Fudo), recortado y con fondo transparente. Ver `docs/DISENO.md`.
+- **Favicon de la ola** (`favicon.svg`, `assets/marca/icono-*.png`): dibujo propio inspirado en la ola del logo.
+- **Imagen para compartir** (`assets/compartir-1200x630.jpg`): composición del logo y la foto de portada.
+- **Capturas de Fudo y del sitio anterior** en la propuesta (`presentacion/img/`): capturas propias del 12-10-2026.
+
+## Tipografías
+
+Archivo y Bricolage Grotesque, licencia SIL OFL 1.1, alojadas en `assets/fuentes/` (ver `assets/fuentes/LICENCIA.md`).

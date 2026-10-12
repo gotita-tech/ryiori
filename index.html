@@ -18,13 +18,18 @@
   <link rel="apple-touch-icon" href="assets/marca/icono-180.png">
   <link rel="preload" as="image" href="assets/portada/hero-telefono-960.webp" imagesrcset="assets/portada/hero-telefono-480.webp 480w, assets/portada/hero-telefono-960.webp 960w" imagesizes="100vw" media="(max-width: 759px)">
   <link rel="preload" as="image" href="assets/portada/hero-escritorio-960.webp" imagesrcset="assets/portada/hero-escritorio-960.webp 960w, assets/portada/hero-escritorio-1440.webp 1440w" imagesizes="(min-width: 1180px) 610px, 52vw" media="(min-width: 760px)">
-  <link rel="preload" as="font" type="font/woff2" href="/assets/fuentes/archivo-latin.woff2" crossorigin>
-  <link rel="preload" as="font" type="font/woff2" href="/assets/fuentes/bricolage-grotesque-latin.woff2" crossorigin>
   <link rel="stylesheet" href="comun.css">
   <link rel="stylesheet" href="styles.css">
   <script src="comun.js" defer></script>
-  <script src="menu-data.js" defer></script>
-  <script src="site.js" defer></script>
+  <script>
+    // Lo más pedido y las promos están más abajo: sus datos se cargan después de mostrar la portada.
+    addEventListener('load', () => {
+      const s = document.createElement('script');
+      s.src = 'menu-data.js';
+      s.onload = () => { const t = document.createElement('script'); t.src = 'site.js'; document.head.appendChild(t); };
+      document.head.appendChild(s);
+    });
+  </script>
   <!-- Datos estructurados para Google (sin efecto mientras la demo tenga noindex). Generado desde data/negocio.json. -->
   <script type="application/ld+json">
   {
@@ -104,7 +109,7 @@
   <a class="saltar" href="#contenido">Ir al contenido</a>
 
   <header class="cabecera">
-    <a class="logo" href="./" aria-label="Ryori Sushi Bar, inicio"><img src="assets/marca/logo-original-negro.png" alt="Ryori Sushi Bar" width="252" height="132"></a>
+    <a class="logo" href="./" aria-label="Ryori Sushi Bar, inicio"><img src="assets/marca/logo-original-negro.webp" alt="Ryori Sushi Bar" width="252" height="132"></a>
     <div class="local">
       <p class="estado" data-estado aria-live="polite"></p>
       <address>Divina Providencia 375, Llolleo</address>
@@ -114,7 +119,7 @@
       <a class="solo-escritorio" href="#visitanos">Visítanos</a>
       <div class="canales sobre-oscuro">
         <a class="canal canal-retiro" href="https://menu.fu.do/ryori" target="_blank" rel="noopener">Retirar en el local <span class="ext" aria-hidden="true">↗</span></a>
-        <a class="canal canal-delivery" href="https://www.ubereats.com/cl-en/store/ryori-sushi/pJ2VaHH-VmKoWFzFx3EKbg" target="_blank" rel="noopener">Delivery <span class="ext" aria-hidden="true">↗</span></a>
+        <a class="canal canal-delivery" href="https://www.ubereats.com/cl/store/ryori-sushi/pJ2VaHH-VmKoWFzFx3EKbg" target="_blank" rel="noopener">Delivery <span class="ext" aria-hidden="true">↗</span></a>
         <a class="canal canal-whatsapp" href="https://wa.me/56999518653" target="_blank" rel="noopener"><svg class="wa-icono" viewBox="0 0 24 24" aria-hidden="true"><use href="#icono-wa"/></svg>WhatsApp <span class="ext" aria-hidden="true">↗</span></a>
       </div>
     </nav>
@@ -132,7 +137,7 @@
         <p class="bajada">Rolls de 8 cortes, tablas de 40 y 70 piezas y Hot Sushi Burger. Retira en el local, pide delivery o escríbenos.</p>
         <div class="canales portada-canales">
           <a class="canal canal-retiro" href="https://menu.fu.do/ryori" target="_blank" rel="noopener">Retirar en el local <span class="ext" aria-hidden="true">↗</span></a>
-          <a class="canal canal-delivery" href="https://www.ubereats.com/cl-en/store/ryori-sushi/pJ2VaHH-VmKoWFzFx3EKbg" target="_blank" rel="noopener">Delivery <span class="ext" aria-hidden="true">↗</span></a>
+          <a class="canal canal-delivery" href="https://www.ubereats.com/cl/store/ryori-sushi/pJ2VaHH-VmKoWFzFx3EKbg" target="_blank" rel="noopener">Delivery <span class="ext" aria-hidden="true">↗</span></a>
           <a class="canal canal-whatsapp" href="https://wa.me/56999518653" target="_blank" rel="noopener"><svg class="wa-icono" viewBox="0 0 24 24" aria-hidden="true"><use href="#icono-wa"/></svg>WhatsApp <span class="ext" aria-hidden="true">↗</span></a>
         </div>
         <p class="como-llega">Retiro: pagas en el local con efectivo o Redcompra. Delivery: lo lleva Uber Eats.</p>
@@ -150,7 +155,7 @@
       <section class="seccion" id="lo-mas-pedido" aria-labelledby="mas-pedido-titulo">
         <div class="seccion-cabeza">
           <h2 id="mas-pedido-titulo">Lo más pedido</h2>
-          <p class="fuente">Según las valoraciones en <a href="https://www.ubereats.com/cl-en/store/ryori-sushi/pJ2VaHH-VmKoWFzFx3EKbg" target="_blank" rel="noopener">Uber Eats <span aria-hidden="true">↗</span></a> al 12-10-2026</p>
+          <p class="fuente">Según las valoraciones en <a href="https://www.ubereats.com/cl/store/ryori-sushi/pJ2VaHH-VmKoWFzFx3EKbg" target="_blank" rel="noopener">Uber Eats <span aria-hidden="true">↗</span></a> al 12-10-2026</p>
         </div>
         <ol class="mas-pedido" id="mas-pedido"></ol>
         <a class="enlace" href="carta/">Ver la carta completa con precios</a>
@@ -172,7 +177,7 @@
         <h2 id="opiniones-titulo">Lo que dicen</h2>
         <ul class="notas">
           <li>
-            <a href="https://www.ubereats.com/cl-en/store/ryori-sushi/pJ2VaHH-VmKoWFzFx3EKbg" target="_blank" rel="noopener">
+            <a href="https://www.ubereats.com/cl/store/ryori-sushi/pJ2VaHH-VmKoWFzFx3EKbg" target="_blank" rel="noopener">
               <span class="nota">4,4<span class="estrella" aria-hidden="true">★</span></span>
               <span class="nota-detalle"><strong>Uber Eats</strong> · más de 500 valoraciones <span aria-hidden="true">↗</span></span>
             </a>
@@ -230,7 +235,7 @@
   <a class="wa-flotante" href="https://wa.me/56999518653" target="_blank" rel="noopener" aria-label="Escribir a Ryori por WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icono-wa"/></svg></a>
   <nav class="barra-canales" aria-label="Pedir">
     <a class="canal canal-retiro" href="https://menu.fu.do/ryori" target="_blank" rel="noopener">Retirar en el local <span class="ext" aria-hidden="true">↗</span></a>
-    <a class="canal canal-delivery" href="https://www.ubereats.com/cl-en/store/ryori-sushi/pJ2VaHH-VmKoWFzFx3EKbg" target="_blank" rel="noopener">Delivery <span class="ext" aria-hidden="true">↗</span></a>
+    <a class="canal canal-delivery" href="https://www.ubereats.com/cl/store/ryori-sushi/pJ2VaHH-VmKoWFzFx3EKbg" target="_blank" rel="noopener">Delivery <span class="ext" aria-hidden="true">↗</span></a>
     <a class="wa-redondo" href="https://wa.me/56999518653" target="_blank" rel="noopener" aria-label="Escribir a Ryori por WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icono-wa"/></svg></a>
   </nav>
 
