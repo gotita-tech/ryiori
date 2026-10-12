@@ -1,0 +1,5 @@
+# Material interno: no se publica en el sitio.
+docs/
+scripts/
+*.md
+PORCIONES-IA.json

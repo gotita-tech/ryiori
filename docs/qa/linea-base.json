@@ -1,0 +1,1247 @@
+{
+  "base": "https://ryiori.vercel.app",
+  "fecha": "2026-10-12T05:39:12.612Z",
+  "condiciones": "Teléfono 390×844 (DPR 3), 1,6 Mbps, 150 ms, CPU ×4, caché desactivada",
+  "cargaPortada": {
+    "url": "https://ryiori.vercel.app/",
+    "lcpMs": 3104,
+    "lcpElemento": "IMG.hero-image hero-hd.webp",
+    "cls": 0,
+    "pesoKB": 694,
+    "peticiones": 12,
+    "porTipoKB": {
+      "Document": 4,
+      "Image": 569,
+      "Stylesheet": 4,
+      "Script": 1,
+      "Font": 112,
+      "Other": 4
+    },
+    "mayores": [
+      {
+        "url": "/assets/rolls-casa-hd.webp",
+        "kb": 229
+      },
+      {
+        "url": "/assets/hero-hd.webp",
+        "kb": 204
+      },
+      {
+        "url": "/assets/compartir-hd.webp",
+        "kb": 131
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/playfairdisplay/v40/nuFkD-vYSZviVYUb_rj3ij__anPXDTnogkk7yRZrPA.woff2",
+        "kb": 38
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgEM86xQ.woff2",
+        "kb": 38
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K6z9mXg.woff2",
+        "kb": 37
+      }
+    ],
+    "duracionMs": 6499
+  },
+  "cargaCarta": {
+    "url": "https://ryiori.vercel.app/carta/",
+    "lcpMs": 932,
+    "lcpElemento": "H1",
+    "cls": 0,
+    "pesoKB": 371,
+    "peticiones": 12,
+    "porTipoKB": {
+      "Document": 1,
+      "Stylesheet": 3,
+      "Script": 12,
+      "Font": 112,
+      "Image": 243,
+      "Other": 0
+    },
+    "mayores": [
+      {
+        "url": "/assets/menu/hosomaki-surimi-crab-stick.webp",
+        "kb": 86
+      },
+      {
+        "url": "/assets/menu/hosomaki-chicken.webp",
+        "kb": 83
+      },
+      {
+        "url": "/assets/menu/hosomaki-shrimp.webp",
+        "kb": 74
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/playfairdisplay/v40/nuFkD-vYSZviVYUb_rj3ij__anPXDTnogkk7yRZrPA.woff2",
+        "kb": 38
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgEM86xQ.woff2",
+        "kb": 38
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K6z9mXg.woff2",
+        "kb": 36
+      }
+    ],
+    "duracionMs": 4718
+  },
+  "portadaTelefono": {
+    "altoDocumentoPx": 5867,
+    "botonPrincipal": {
+      "texto": "Ver la carta ↗",
+      "arribaPx": 564,
+      "abajoPx": 621,
+      "completoEnPantalla": true
+    },
+    "franjaNaranja": true,
+    "franjaDesborda": true,
+    "enlacesExternos": [
+      "https://menu.fu.do/ryori",
+      "https://www.instagram.com/ryorisushi_llolleo/",
+      "https://api.whatsapp.com/send",
+      "https://www.google.com/maps/search/",
+      "https://www.facebook.com/RyoriSushiOficial"
+    ],
+    "mencionaFudo": false,
+    "tieneUberEats": false,
+    "visual": {
+      "textosTotal": 95,
+      "textosMenos12": 30,
+      "ejemplosPequenos": [
+        {
+          "txt": "SUSHI · BAR · BURGERS",
+          "px": 8
+        },
+        {
+          "txt": "LLOLLEO, SAN ANTONIO",
+          "px": 8
+        },
+        {
+          "txt": "UN BUEN PLAN EN LLOLLEO",
+          "px": 9
+        },
+        {
+          "txt": "BUENA COMIDA. BUENA COMPAÑÍA.",
+          "px": 8
+        },
+        {
+          "txt": "DESCUBRE RYORI",
+          "px": 8
+        },
+        {
+          "txt": "↗",
+          "px": 8
+        },
+        {
+          "txt": "ROLLS DE LA CASA",
+          "px": 9
+        },
+        {
+          "txt": "TABLAS PARA COMPARTIR",
+          "px": 9
+        },
+        {
+          "txt": "BURGERS & BAR",
+          "px": 9
+        },
+        {
+          "txt": "UN PLAN, MUCHOS SABORES",
+          "px": 9
+        },
+        {
+          "txt": "ENCUENTRA TU FAVORITO",
+          "px": 9
+        },
+        {
+          "txt": "01 / SUSHI",
+          "px": 9
+        }
+      ],
+      "contrasteBajo": 18,
+      "ejemplosContraste": [
+        {
+          "txt": "Ver la carta",
+          "ratio": 4.08,
+          "color": "rgb(255, 255, 255)",
+          "px": 14
+        },
+        {
+          "txt": "↗",
+          "ratio": 4.08,
+          "color": "rgb(255, 255, 255)",
+          "px": 14
+        },
+        {
+          "txt": "ROLLS DE LA CASA",
+          "ratio": 4.08,
+          "color": "rgb(255, 255, 255)",
+          "px": 9
+        },
+        {
+          "txt": "✳",
+          "ratio": 4.08,
+          "color": "rgb(255, 255, 255)",
+          "px": 22
+        },
+        {
+          "txt": "TABLAS PARA COMPARTIR",
+          "ratio": 4.08,
+          "color": "rgb(255, 255, 255)",
+          "px": 9
+        },
+        {
+          "txt": "✳",
+          "ratio": 4.08,
+          "color": "rgb(255, 255, 255)",
+          "px": 22
+        },
+        {
+          "txt": "BURGERS & BAR",
+          "ratio": 4.08,
+          "color": "rgb(255, 255, 255)",
+          "px": 9
+        },
+        {
+          "txt": "✳",
+          "ratio": 4.08,
+          "color": "rgb(255, 255, 255)",
+          "px": 22
+        },
+        {
+          "txt": "UN PLAN, MUCHOS SABORES",
+          "ratio": 4.08,
+          "color": "rgb(255, 255, 255)",
+          "px": 9
+        },
+        {
+          "txt": "ENCUENTRA TU FAVORITO",
+          "ratio": 3.65,
+          "color": "rgb(212, 85, 48)",
+          "px": 9
+        },
+        {
+          "txt": "MÁS QUE UN ANTOJO",
+          "ratio": 3.33,
+          "color": "rgb(212, 85, 48)",
+          "px": 9
+        },
+        {
+          "txt": "Una salida después del trabajo, una mesa",
+          "ratio": 4.18,
+          "color": "rgb(104, 112, 101)",
+          "px": 15
+        }
+      ],
+      "tactilesTotal": 24,
+      "tactilesMenos44": 13,
+      "ejemplosTactiles": [
+        {
+          "txt": "Nos vemos en Ryori ↓",
+          "w": 165,
+          "h": 29
+        },
+        {
+          "txt": "Descubrir nuestra carta",
+          "w": 112,
+          "h": 13
+        },
+        {
+          "txt": "Explorar carta completa ↗",
+          "w": 193,
+          "h": 29
+        },
+        {
+          "txt": "Elegir mis rolls ↗",
+          "w": 128,
+          "h": 29
+        },
+        {
+          "txt": "Ver las tablas ↗",
+          "w": 122,
+          "h": 29
+        },
+        {
+          "txt": "Encontrar mi burger ↗",
+          "w": 166,
+          "h": 29
+        },
+        {
+          "txt": "Conoce más en Instagram ↗",
+          "w": 206,
+          "h": 29
+        },
+        {
+          "txt": "Consultar por WhatsApp ↗",
+          "w": 198,
+          "h": 29
+        },
+        {
+          "txt": "+56 35 228 1065",
+          "w": 343,
+          "h": 38
+        },
+        {
+          "txt": "Escríbenos por WhatsApp ↗",
+          "w": 207,
+          "h": 29
+        },
+        {
+          "txt": "Instagram ↗",
+          "w": 67,
+          "h": 19
+        },
+        {
+          "txt": "Facebook ↗",
+          "w": 66,
+          "h": 19
+        },
+        {
+          "txt": "Carta online ↗",
+          "w": 79,
+          "h": 19
+        }
+      ]
+    }
+  },
+  "portadaEscritorio": {
+    "altoDocumentoPx": 4178,
+    "botonPrincipal": {
+      "texto": "Ver la carta ↗",
+      "arribaPx": 679,
+      "abajoPx": 735,
+      "completoEnPantalla": true
+    },
+    "franjaNaranja": true,
+    "franjaDesborda": false,
+    "enlacesExternos": [
+      "https://menu.fu.do/ryori",
+      "https://www.instagram.com/ryorisushi_llolleo/",
+      "https://api.whatsapp.com/send",
+      "https://www.google.com/maps/search/",
+      "https://www.facebook.com/RyoriSushiOficial"
+    ],
+    "mencionaFudo": false,
+    "tieneUberEats": false,
+    "visual": {
+      "textosTotal": 96,
+      "textosMenos12": 30,
+      "ejemplosPequenos": [
+        {
+          "txt": "SUSHI · BAR · BURGERS",
+          "px": 10
+        },
+        {
+          "txt": "LLOLLEO, SAN ANTONIO",
+          "px": 10
+        },
+        {
+          "txt": "UN BUEN PLAN EN LLOLLEO",
+          "px": 10
+        },
+        {
+          "txt": "BUENA COMIDA. BUENA COMPAÑÍA.",
+          "px": 9
+        },
+        {
+          "txt": "DESCUBRE RYORI",
+          "px": 9
+        },
+        {
+          "txt": "↗",
+          "px": 9
+        },
+        {
+          "txt": "ROLLS DE LA CASA",
+          "px": 11
+        },
+        {
+          "txt": "TABLAS PARA COMPARTIR",
+          "px": 11
+        },
+        {
+          "txt": "BURGERS & BAR",
+          "px": 11
+        },
+        {
+          "txt": "UN PLAN, MUCHOS SABORES",
+          "px": 11
+        },
+        {
+          "txt": "ENCUENTRA TU FAVORITO",
+          "px": 10
+        },
+        {
+          "txt": "01 / SUSHI",
+          "px": 9
+        }
+      ],
+      "contrasteBajo": 18,
+      "ejemplosContraste": [
+        {
+          "txt": "Pedir online",
+          "ratio": 4.08,
+          "color": "rgb(255, 255, 255)",
+          "px": 14
+        },
+        {
+          "txt": "↗",
+          "ratio": 4.08,
+          "color": "rgb(255, 255, 255)",
+          "px": 14
+        },
+        {
+          "txt": "Ver la carta",
+          "ratio": 4.08,
+          "color": "rgb(255, 255, 255)",
+          "px": 14
+        },
+        {
+          "txt": "↗",
+          "ratio": 4.08,
+          "color": "rgb(255, 255, 255)",
+          "px": 14
+        },
+        {
+          "txt": "ROLLS DE LA CASA",
+          "ratio": 4.08,
+          "color": "rgb(255, 255, 255)",
+          "px": 11
+        },
+        {
+          "txt": "✳",
+          "ratio": 4.08,
+          "color": "rgb(255, 255, 255)",
+          "px": 22
+        },
+        {
+          "txt": "TABLAS PARA COMPARTIR",
+          "ratio": 4.08,
+          "color": "rgb(255, 255, 255)",
+          "px": 11
+        },
+        {
+          "txt": "✳",
+          "ratio": 4.08,
+          "color": "rgb(255, 255, 255)",
+          "px": 22
+        },
+        {
+          "txt": "BURGERS & BAR",
+          "ratio": 4.08,
+          "color": "rgb(255, 255, 255)",
+          "px": 11
+        },
+        {
+          "txt": "✳",
+          "ratio": 4.08,
+          "color": "rgb(255, 255, 255)",
+          "px": 22
+        },
+        {
+          "txt": "UN PLAN, MUCHOS SABORES",
+          "ratio": 4.08,
+          "color": "rgb(255, 255, 255)",
+          "px": 11
+        },
+        {
+          "txt": "ENCUENTRA TU FAVORITO",
+          "ratio": 3.65,
+          "color": "rgb(212, 85, 48)",
+          "px": 10
+        }
+      ],
+      "tactilesTotal": 26,
+      "tactilesMenos44": 16,
+      "ejemplosTactiles": [
+        {
+          "txt": "Nuestra carta",
+          "w": 88,
+          "h": 22
+        },
+        {
+          "txt": "El lugar",
+          "w": 47,
+          "h": 22
+        },
+        {
+          "txt": "Visítanos",
+          "w": 59,
+          "h": 22
+        },
+        {
+          "txt": "Nos vemos en Ryori ↓",
+          "w": 165,
+          "h": 29
+        },
+        {
+          "txt": "Descubrir nuestra carta",
+          "w": 124,
+          "h": 14
+        },
+        {
+          "txt": "Explorar carta completa ↗",
+          "w": 193,
+          "h": 29
+        },
+        {
+          "txt": "Elegir mis rolls ↗",
+          "w": 128,
+          "h": 29
+        },
+        {
+          "txt": "Ver las tablas ↗",
+          "w": 122,
+          "h": 29
+        },
+        {
+          "txt": "Encontrar mi burger ↗",
+          "w": 166,
+          "h": 29
+        },
+        {
+          "txt": "Conoce más en Instagram ↗",
+          "w": 206,
+          "h": 29
+        },
+        {
+          "txt": "Consultar por WhatsApp ↗",
+          "w": 198,
+          "h": 29
+        },
+        {
+          "txt": "+56 35 228 1065",
+          "w": 583,
+          "h": 38
+        },
+        {
+          "txt": "Escríbenos por WhatsApp ↗",
+          "w": 207,
+          "h": 29
+        },
+        {
+          "txt": "Instagram ↗",
+          "w": 86,
+          "h": 21
+        },
+        {
+          "txt": "Facebook ↗",
+          "w": 86,
+          "h": 21
+        }
+      ]
+    }
+  },
+  "portadaLaptop1536x639": {
+    "altoDocumentoPx": 4086,
+    "botonPrincipal": {
+      "texto": "Ver la carta ↗",
+      "arribaPx": 624,
+      "abajoPx": 681,
+      "completoEnPantalla": false
+    },
+    "franjaNaranja": true,
+    "franjaDesborda": false,
+    "enlacesExternos": [
+      "https://menu.fu.do/ryori",
+      "https://www.instagram.com/ryorisushi_llolleo/",
+      "https://api.whatsapp.com/send",
+      "https://www.google.com/maps/search/",
+      "https://www.facebook.com/RyoriSushiOficial"
+    ],
+    "mencionaFudo": false,
+    "tieneUberEats": false,
+    "visual": {
+      "textosTotal": 96,
+      "textosMenos12": 30,
+      "ejemplosPequenos": [
+        {
+          "txt": "SUSHI · BAR · BURGERS",
+          "px": 10
+        },
+        {
+          "txt": "LLOLLEO, SAN ANTONIO",
+          "px": 10
+        },
+        {
+          "txt": "UN BUEN PLAN EN LLOLLEO",
+          "px": 10
+        },
+        {
+          "txt": "BUENA COMIDA. BUENA COMPAÑÍA.",
+          "px": 9
+        },
+        {
+          "txt": "DESCUBRE RYORI",
+          "px": 9
+        },
+        {
+          "txt": "↗",
+          "px": 9
+        },
+        {
+          "txt": "ROLLS DE LA CASA",
+          "px": 11
+        },
+        {
+          "txt": "TABLAS PARA COMPARTIR",
+          "px": 11
+        },
+        {
+          "txt": "BURGERS & BAR",
+          "px": 11
+        },
+        {
+          "txt": "UN PLAN, MUCHOS SABORES",
+          "px": 11
+        },
+        {
+          "txt": "ENCUENTRA TU FAVORITO",
+          "px": 10
+        },
+        {
+          "txt": "01 / SUSHI",
+          "px": 9
+        }
+      ],
+      "contrasteBajo": 18,
+      "ejemplosContraste": [
+        {
+          "txt": "Pedir online",
+          "ratio": 4.08,
+          "color": "rgb(255, 255, 255)",
+          "px": 14
+        },
+        {
+          "txt": "↗",
+          "ratio": 4.08,
+          "color": "rgb(255, 255, 255)",
+          "px": 14
+        },
+        {
+          "txt": "Ver la carta",
+          "ratio": 4.08,
+          "color": "rgb(255, 255, 255)",
+          "px": 14
+        },
+        {
+          "txt": "↗",
+          "ratio": 4.08,
+          "color": "rgb(255, 255, 255)",
+          "px": 14
+        },
+        {
+          "txt": "ROLLS DE LA CASA",
+          "ratio": 4.08,
+          "color": "rgb(255, 255, 255)",
+          "px": 11
+        },
+        {
+          "txt": "✳",
+          "ratio": 4.08,
+          "color": "rgb(255, 255, 255)",
+          "px": 22
+        },
+        {
+          "txt": "TABLAS PARA COMPARTIR",
+          "ratio": 4.08,
+          "color": "rgb(255, 255, 255)",
+          "px": 11
+        },
+        {
+          "txt": "✳",
+          "ratio": 4.08,
+          "color": "rgb(255, 255, 255)",
+          "px": 22
+        },
+        {
+          "txt": "BURGERS & BAR",
+          "ratio": 4.08,
+          "color": "rgb(255, 255, 255)",
+          "px": 11
+        },
+        {
+          "txt": "✳",
+          "ratio": 4.08,
+          "color": "rgb(255, 255, 255)",
+          "px": 22
+        },
+        {
+          "txt": "UN PLAN, MUCHOS SABORES",
+          "ratio": 4.08,
+          "color": "rgb(255, 255, 255)",
+          "px": 11
+        },
+        {
+          "txt": "ENCUENTRA TU FAVORITO",
+          "ratio": 3.65,
+          "color": "rgb(212, 85, 48)",
+          "px": 10
+        }
+      ],
+      "tactilesTotal": 26,
+      "tactilesMenos44": 16,
+      "ejemplosTactiles": [
+        {
+          "txt": "Nuestra carta",
+          "w": 88,
+          "h": 22
+        },
+        {
+          "txt": "El lugar",
+          "w": 47,
+          "h": 22
+        },
+        {
+          "txt": "Visítanos",
+          "w": 59,
+          "h": 22
+        },
+        {
+          "txt": "Nos vemos en Ryori ↓",
+          "w": 165,
+          "h": 29
+        },
+        {
+          "txt": "Descubrir nuestra carta",
+          "w": 124,
+          "h": 14
+        },
+        {
+          "txt": "Explorar carta completa ↗",
+          "w": 193,
+          "h": 29
+        },
+        {
+          "txt": "Elegir mis rolls ↗",
+          "w": 128,
+          "h": 29
+        },
+        {
+          "txt": "Ver las tablas ↗",
+          "w": 122,
+          "h": 29
+        },
+        {
+          "txt": "Encontrar mi burger ↗",
+          "w": 166,
+          "h": 29
+        },
+        {
+          "txt": "Conoce más en Instagram ↗",
+          "w": 206,
+          "h": 29
+        },
+        {
+          "txt": "Consultar por WhatsApp ↗",
+          "w": 198,
+          "h": 29
+        },
+        {
+          "txt": "+56 35 228 1065",
+          "w": 606,
+          "h": 38
+        },
+        {
+          "txt": "Escríbenos por WhatsApp ↗",
+          "w": 207,
+          "h": 29
+        },
+        {
+          "txt": "Instagram ↗",
+          "w": 86,
+          "h": 21
+        },
+        {
+          "txt": "Facebook ↗",
+          "w": 86,
+          "h": 21
+        }
+      ]
+    }
+  },
+  "cartaTelefono": {
+    "categorias": {
+      "Todos": {
+        "altoPx": 153564,
+        "productos": 328,
+        "documentoPx": 155161
+      },
+      "Sushi": {
+        "altoPx": 31153,
+        "productos": 67,
+        "documentoPx": 32750
+      },
+      "Cocina japonesa": {
+        "altoPx": 12580,
+        "productos": 27,
+        "documentoPx": 14177
+      },
+      "Para compartir": {
+        "altoPx": 3955,
+        "productos": 8,
+        "documentoPx": 5552
+      },
+      "Burgers": {
+        "altoPx": 8377,
+        "productos": 17,
+        "documentoPx": 9974
+      },
+      "Ceviches": {
+        "altoPx": 1424,
+        "productos": 3,
+        "documentoPx": 3021
+      },
+      "Ensaladas": {
+        "altoPx": 1365,
+        "productos": 3,
+        "documentoPx": 2962
+      },
+      "Bebidas": {
+        "altoPx": 21454,
+        "productos": 46,
+        "documentoPx": 23051
+      },
+      "Barra": {
+        "altoPx": 55906,
+        "productos": 120,
+        "documentoPx": 57503
+      },
+      "Acompañamientos": {
+        "altoPx": 4690,
+        "productos": 10,
+        "documentoPx": 6287
+      },
+      "Extras": {
+        "altoPx": 12463,
+        "productos": 27,
+        "documentoPx": 14059
+      }
+    },
+    "busquedas": {
+      "burger con Sushi activo": {
+        "conteo": "0 opciones · carta completa",
+        "tarjetas": 0
+      },
+      "burger con Todos": {
+        "conteo": "17 opciones · carta completa",
+        "tarjetas": 17
+      },
+      "salmon con Sushi activo": {
+        "conteo": "4 opciones · carta completa",
+        "tarjetas": 4
+      },
+      "salmón con Sushi activo": {
+        "conteo": "14 opciones · carta completa",
+        "tarjetas": 14
+      },
+      "salmon con Todos": {
+        "conteo": "5 opciones · carta completa",
+        "tarjetas": 5
+      },
+      "salmón con Todos": {
+        "conteo": "22 opciones · carta completa",
+        "tarjetas": 22
+      },
+      "SALMON con Todos": {
+        "conteo": "5 opciones · carta completa",
+        "tarjetas": 5
+      }
+    },
+    "primerProductoPx": 1157,
+    "altoDocumentoPx": 32750,
+    "filasDeFiltros": 4,
+    "filtrosVisiblesAlBajar": false,
+    "visual": {
+      "textosTotal": 430,
+      "textosMenos12": 139,
+      "ejemplosPequenos": [
+        {
+          "txt": "SUSHI BAR",
+          "px": 8
+        },
+        {
+          "txt": "RYORI · LLOLLEO",
+          "px": 10
+        },
+        {
+          "txt": "CATÁLOGO ACTUALIZADO · OCTUBRE 2026",
+          "px": 10
+        },
+        {
+          "txt": "FOTOGRAFÍAS REFERENCIALES · IA",
+          "px": 10
+        },
+        {
+          "txt": "ENCUENTRA TU FAVORITO",
+          "px": 10
+        },
+        {
+          "txt": "Foto referencial · IA",
+          "px": 10
+        },
+        {
+          "txt": "Sushi · hosomakis",
+          "px": 10
+        },
+        {
+          "txt": "Foto referencial · IA",
+          "px": 10
+        },
+        {
+          "txt": "Sushi · hosomakis",
+          "px": 10
+        },
+        {
+          "txt": "Foto referencial · IA",
+          "px": 10
+        },
+        {
+          "txt": "Sushi · hosomakis",
+          "px": 10
+        },
+        {
+          "txt": "Foto referencial · IA",
+          "px": 10
+        }
+      ],
+      "contrasteBajo": 2,
+      "ejemplosContraste": [
+        {
+          "txt": "ENCUENTRA TU FAVORITO",
+          "ratio": 4.09,
+          "color": "rgb(202, 78, 45)",
+          "px": 10
+        },
+        {
+          "txt": "Las fotografías son referencias visuales",
+          "ratio": 3.87,
+          "color": "rgb(118, 110, 102)",
+          "px": 13
+        }
+      ],
+      "tactilesTotal": 83,
+      "tactilesMenos44": 81,
+      "ejemplosTactiles": [
+        {
+          "txt": "Buscar en la carta",
+          "w": 318,
+          "h": 20
+        },
+        {
+          "txt": "Todos",
+          "w": 67,
+          "h": 38
+        },
+        {
+          "txt": "Sushi",
+          "w": 64,
+          "h": 38
+        },
+        {
+          "txt": "Cocina japonesa",
+          "w": 126,
+          "h": 38
+        },
+        {
+          "txt": "Para compartir",
+          "w": 117,
+          "h": 38
+        },
+        {
+          "txt": "Burgers",
+          "w": 76,
+          "h": 38
+        },
+        {
+          "txt": "Ceviches",
+          "w": 85,
+          "h": 38
+        },
+        {
+          "txt": "Ensaladas",
+          "w": 90,
+          "h": 38
+        },
+        {
+          "txt": "Bebidas",
+          "w": 79,
+          "h": 38
+        },
+        {
+          "txt": "Barra",
+          "w": 63,
+          "h": 38
+        },
+        {
+          "txt": "Acompañamientos",
+          "w": 139,
+          "h": 38
+        },
+        {
+          "txt": "Extras",
+          "w": 68,
+          "h": 38
+        },
+        {
+          "txt": "Pedir ↗",
+          "w": 40,
+          "h": 21
+        },
+        {
+          "txt": "Pedir ↗",
+          "w": 40,
+          "h": 21
+        },
+        {
+          "txt": "Pedir ↗",
+          "w": 40,
+          "h": 21
+        }
+      ]
+    }
+  },
+  "cartaEscritorio": {
+    "categorias": {
+      "Todos": {
+        "altoPx": 56383,
+        "productos": 328,
+        "documentoPx": 57815
+      },
+      "Sushi": {
+        "altoPx": 11699,
+        "productos": 67,
+        "documentoPx": 13131
+      },
+      "Cocina japonesa": {
+        "altoPx": 4564,
+        "productos": 27,
+        "documentoPx": 5996
+      },
+      "Para compartir": {
+        "altoPx": 1599,
+        "productos": 8,
+        "documentoPx": 3031
+      },
+      "Burgers": {
+        "altoPx": 3219,
+        "productos": 17,
+        "documentoPx": 4651
+      },
+      "Ceviches": {
+        "altoPx": 488,
+        "productos": 3,
+        "documentoPx": 1920
+      },
+      "Ensaladas": {
+        "altoPx": 488,
+        "productos": 3,
+        "documentoPx": 1920
+      },
+      "Bebidas": {
+        "altoPx": 8159,
+        "productos": 46,
+        "documentoPx": 9591
+      },
+      "Barra": {
+        "altoPx": 20417,
+        "productos": 120,
+        "documentoPx": 21849
+      },
+      "Acompañamientos": {
+        "altoPx": 2016,
+        "productos": 10,
+        "documentoPx": 3448
+      },
+      "Extras": {
+        "altoPx": 4564,
+        "productos": 27,
+        "documentoPx": 5996
+      }
+    },
+    "busquedas": {
+      "burger con Sushi activo": {
+        "conteo": "0 opciones · carta completa",
+        "tarjetas": 0
+      },
+      "burger con Todos": {
+        "conteo": "17 opciones · carta completa",
+        "tarjetas": 17
+      },
+      "salmon con Sushi activo": {
+        "conteo": "4 opciones · carta completa",
+        "tarjetas": 4
+      },
+      "salmón con Sushi activo": {
+        "conteo": "14 opciones · carta completa",
+        "tarjetas": 14
+      },
+      "salmon con Todos": {
+        "conteo": "5 opciones · carta completa",
+        "tarjetas": 5
+      },
+      "salmón con Todos": {
+        "conteo": "22 opciones · carta completa",
+        "tarjetas": 22
+      },
+      "SALMON con Todos": {
+        "conteo": "5 opciones · carta completa",
+        "tarjetas": 5
+      }
+    },
+    "primerProductoPx": 1104,
+    "altoDocumentoPx": 13131,
+    "filasDeFiltros": 1,
+    "filtrosVisiblesAlBajar": false,
+    "visual": {
+      "textosTotal": 431,
+      "textosMenos12": 139,
+      "ejemplosPequenos": [
+        {
+          "txt": "SUSHI BAR",
+          "px": 8
+        },
+        {
+          "txt": "RYORI · LLOLLEO",
+          "px": 10
+        },
+        {
+          "txt": "CATÁLOGO ACTUALIZADO · OCTUBRE 2026",
+          "px": 10
+        },
+        {
+          "txt": "FOTOGRAFÍAS REFERENCIALES · IA",
+          "px": 10
+        },
+        {
+          "txt": "ENCUENTRA TU FAVORITO",
+          "px": 10
+        },
+        {
+          "txt": "Foto referencial · IA",
+          "px": 10
+        },
+        {
+          "txt": "Sushi · hosomakis",
+          "px": 10
+        },
+        {
+          "txt": "Foto referencial · IA",
+          "px": 10
+        },
+        {
+          "txt": "Sushi · hosomakis",
+          "px": 10
+        },
+        {
+          "txt": "Foto referencial · IA",
+          "px": 10
+        },
+        {
+          "txt": "Sushi · hosomakis",
+          "px": 10
+        },
+        {
+          "txt": "Foto referencial · IA",
+          "px": 10
+        }
+      ],
+      "contrasteBajo": 2,
+      "ejemplosContraste": [
+        {
+          "txt": "ENCUENTRA TU FAVORITO",
+          "ratio": 4.09,
+          "color": "rgb(202, 78, 45)",
+          "px": 10
+        },
+        {
+          "txt": "Las fotografías son referencias visuales",
+          "ratio": 3.87,
+          "color": "rgb(118, 110, 102)",
+          "px": 13
+        }
+      ],
+      "tactilesTotal": 84,
+      "tactilesMenos44": 82,
+      "ejemplosTactiles": [
+        {
+          "txt": "Volver al sitio",
+          "w": 80,
+          "h": 17
+        },
+        {
+          "txt": "Buscar en la carta",
+          "w": 316,
+          "h": 20
+        },
+        {
+          "txt": "Todos",
+          "w": 67,
+          "h": 38
+        },
+        {
+          "txt": "Sushi",
+          "w": 64,
+          "h": 38
+        },
+        {
+          "txt": "Cocina japonesa",
+          "w": 126,
+          "h": 38
+        },
+        {
+          "txt": "Para compartir",
+          "w": 117,
+          "h": 38
+        },
+        {
+          "txt": "Burgers",
+          "w": 76,
+          "h": 38
+        },
+        {
+          "txt": "Ceviches",
+          "w": 85,
+          "h": 38
+        },
+        {
+          "txt": "Ensaladas",
+          "w": 90,
+          "h": 38
+        },
+        {
+          "txt": "Bebidas",
+          "w": 79,
+          "h": 38
+        },
+        {
+          "txt": "Barra",
+          "w": 63,
+          "h": 38
+        },
+        {
+          "txt": "Acompañamientos",
+          "w": 139,
+          "h": 38
+        },
+        {
+          "txt": "Extras",
+          "w": 68,
+          "h": 38
+        },
+        {
+          "txt": "Pedir ↗",
+          "w": 40,
+          "h": 21
+        },
+        {
+          "txt": "Pedir ↗",
+          "w": 40,
+          "h": 21
+        }
+      ]
+    }
+  }
+}

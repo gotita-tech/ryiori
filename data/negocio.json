@@ -1,0 +1,99 @@
+{
+  "_fuente": "Datos publicados por Ryori en su carta de Fudo (https://menu.fu.do/ryori), leídos el 12-10-2026. Las diferencias con otras fuentes están en docs/venta/datos-por-resolver.md y no se muestran en la landing.",
+  "modoDemo": true,
+  "nombre": "Ryori Sushi Bar & Burgers",
+  "nombreCorto": "Ryori",
+  "direccion": {
+    "calle": "Divina Providencia 375",
+    "localidad": "Llolleo",
+    "comuna": "San Antonio",
+    "region": "Valparaíso",
+    "pais": "CL",
+    "lat": -33.6123105,
+    "lng": -71.6176851
+  },
+  "zonaHoraria": "America/Santiago",
+  "horario": {
+    "_nota": "0 = domingo … 6 = sábado. Cierre 00:00 se guarda como 24:00.",
+    "dias": {
+      "0": [],
+      "1": [["13:00", "21:00"]],
+      "2": [["13:00", "21:00"]],
+      "3": [["13:00", "21:00"]],
+      "4": [["13:00", "21:00"]],
+      "5": [["13:00", "24:00"]],
+      "6": [["13:00", "24:00"]]
+    },
+    "texto": [
+      { "dias": "Lunes a jueves", "horas": "13:00 – 21:00" },
+      { "dias": "Viernes y sábado", "horas": "13:00 – 00:00" },
+      { "dias": "Domingo", "horas": "Cerrado" }
+    ]
+  },
+  "contacto": {
+    "whatsapp": "56999518653",
+    "whatsappTexto": "+56 9 9951 8653",
+    "telefono": "+56352281065",
+    "telefonoTexto": "+56 35 228 1065",
+    "email": "ryorisushiandbar@gmail.com"
+  },
+  "canales": {
+    "retiro": {
+      "etiqueta": "Retirar en el local",
+      "etiquetaCorta": "Retirar",
+      "url": "https://menu.fu.do/ryori",
+      "pagoEnLocal": ["Efectivo", "Redcompra"]
+    },
+    "delivery": {
+      "etiqueta": "Delivery",
+      "etiquetaCorta": "Delivery",
+      "plataforma": "Uber Eats",
+      "url": "https://www.ubereats.com/cl-en/store/ryori-sushi/pJ2VaHH-VmKoWFzFx3EKbg",
+      "cargoEnvio": "CLP 1.300",
+      "cargoEnvioFecha": "2026-10-12"
+    },
+    "whatsapp": {
+      "etiqueta": "WhatsApp",
+      "etiquetaCorta": "WhatsApp",
+      "etiquetaAccesible": "Escribir a Ryori por WhatsApp",
+      "url": "https://wa.me/56999518653"
+    }
+  },
+  "mapa": {
+    "comoLlegar": "https://www.google.com/maps/dir/?api=1&destination=-33.6123105%2C-71.6176851",
+    "_nota": "Se usan las coordenadas que publica Fudo, no una búsqueda por nombre, para no caer en la ficha duplicada de Google."
+  },
+  "redes": {
+    "instagram": { "usuario": "@ryorisushi_llolleo", "url": "https://www.instagram.com/ryorisushi_llolleo/" },
+    "facebook": { "usuario": "RyoriSushiOficial", "url": "https://www.facebook.com/RyoriSushiOficial" }
+  },
+  "valoraciones": [
+    {
+      "plataforma": "Uber Eats",
+      "nota": 4.4,
+      "cantidad": "500+ valoraciones",
+      "url": "https://www.ubereats.com/cl-en/store/ryori-sushi/pJ2VaHH-VmKoWFzFx3EKbg",
+      "fecha": "2026-10-12"
+    },
+    {
+      "plataforma": "Google Maps",
+      "nota": 4.1,
+      "cantidad": "432 reseñas",
+      "ficha": "Ryori Sushi en Llolleo",
+      "url": "https://www.google.com/maps/search/?api=1&query=Ryori+Sushi+en+Llolleo",
+      "fecha": "2026-10-12"
+    }
+  ],
+  "masPedido": {
+    "fuente": "Uber Eats",
+    "fecha": "2026-10-12",
+    "_nota": "Porcentaje = valoraciones positivas en Uber Eats sobre el total indicado.",
+    "productos": [
+      { "nombre": "Hot Sushi Burger Pollo", "dato": "Nº 1 · 83 % de 48" },
+      { "nombre": "Tabla Parque DYR 40 piezas", "dato": "84 % de 38" },
+      { "nombre": "Roll Acevichado", "dato": "80 % de 25" },
+      { "nombre": "Handroll pollo + queso crema", "dato": "94 % de 53" },
+      { "nombre": "Gohan de pollo", "dato": "96 % de 25" }
+    ]
+  }
+}
