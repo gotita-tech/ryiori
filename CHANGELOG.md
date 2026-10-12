@@ -8,6 +8,7 @@
 - La portada carga primero la foto: las tipografías no compiten con ella, los datos de lo más pedido se cargan después y el logo pasó a WebP.
 - Enlaces de Uber Eats a la versión en español (`/cl/`).
 - README, FUENTES.md y este registro actualizados.
+- **Publicado en `main` el 12-10-2026** con el «sí» del propietario. En el sitio real, la foto principal aparece a los 2,39 s y los 12 recorridos son correctos.
 
 ### Fase 6 — Propuesta de venta
 - `/presentacion/` reemplaza la auditoría anterior por una propuesta para leer en el teléfono en menos de 3 minutos, con cifras y fuentes, y `[PRECIO A DEFINIR]`.

@@ -16,13 +16,21 @@ La misma portada en local daba 1,96 s: la conexión segura y la latencia real ag
 - los datos de lo más pedido se cargan después;
 - el logo pasó a WebP.
 
-Así debería quedar bajo 2,5 s con holgura también en Vercel. **Se confirma al publicar** con `node scripts/medir.mjs https://ryiori.vercel.app docs/qa/medicion-publicada.json`.
+**Confirmado al publicar** (12-10-2026, [medicion-publicada.json](medicion-publicada.json)):
+- foto principal de la portada a los **2,39 s** y 253 KB;
+- carta: 2,10 s y 186 KB;
+- sugeridor: 1,40 s y 109 KB;
+- propuesta: 1,63 s y 176 KB;
+- 0 problemas de accesibilidad;
+- **12 de 12 recorridos correctos** en el sitio publicado ([recorridos-publicado.md](recorridos-publicado.md)).
+
+La cifra varía unos ±0,1 s entre mediciones.
 
 ## Velocidad y peso
 
 | Qué | Antes | Después | Meta |
 | --- | --- | --- | --- |
-| Foto principal de la portada (LCP) | 3,10 s | **1,76 s** en local (Vercel, versión de la fase 4: 2,47–2,57 s) | < 2,5 s: local ✔ · Vercel, confirmar al publicar |
+| Foto principal de la portada (LCP) | 3,10 s | **2,39 s** en el sitio publicado (1,76 s en local) | < 2,5 s ✔ |
 | Peso de la portada, primera carga | 694 KB | **252 KB** | < 300 KB ✔ |
 | Peso de la carta, primera carga | 371 KB | **185 KB** | < 500 KB ✔ |
 | Contenido grande de la carta (LCP) | 0,93 s, pero solo un título | **2,12 s** en local, ya con productos (1,82 s en Vercel con la versión de la fase 4) | — |
