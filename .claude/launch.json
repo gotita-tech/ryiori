@@ -1,0 +1,6 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "ryori", "runtimeExecutable": "node", "runtimeArgs": ["scripts/servir.mjs", "4173"], "port": 4173 }
+  ]
+}

@@ -1,0 +1,389 @@
+{
+  "base": "http://localhost:4173",
+  "fecha": "2026-10-12T06:11:31.946Z",
+  "condiciones": "Teléfono 390×844 (DPR 3), 1,6 Mbps, 150 ms, CPU ×4, caché desactivada",
+  "cargaPortada": {
+    "url": "http://localhost:4173/",
+    "lcpMs": 4136,
+    "lcpElemento": "IMG.hero-image hero-hd.webp",
+    "cls": 0,
+    "pesoKB": 1004,
+    "peticiones": 14,
+    "porTipoKB": {
+      "Document": 12,
+      "Image": 861,
+      "Stylesheet": 14,
+      "Script": 1,
+      "Font": 112,
+      "Other": 4
+    },
+    "mayores": [
+      {
+        "url": "/assets/hot-sushi-burger-hd.webp",
+        "kb": 293
+      },
+      {
+        "url": "/assets/rolls-casa-hd.webp",
+        "kb": 229
+      },
+      {
+        "url": "/assets/hero-hd.webp",
+        "kb": 204
+      },
+      {
+        "url": "/assets/compartir-hd.webp",
+        "kb": 131
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/playfairdisplay/v40/nuFkD-vYSZviVYUb_rj3ij__anPXDTnogkk7yRZrPA.woff2",
+        "kb": 38
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgEM86xQ.woff2",
+        "kb": 38
+      }
+    ],
+    "duracionMs": 8916
+  },
+  "cargaCarta": {
+    "url": "http://localhost:4173/carta/",
+    "lcpMs": 1424,
+    "lcpElemento": "H1",
+    "cls": 0,
+    "pesoKB": 413,
+    "peticiones": 11,
+    "porTipoKB": {
+      "Document": 5,
+      "Stylesheet": 11,
+      "Script": 127,
+      "Font": 112,
+      "Image": 160
+    },
+    "mayores": [
+      {
+        "url": "/menu-data.js",
+        "kb": 121
+      },
+      {
+        "url": "/assets/menu/hosomaki-surimi-crab-stick.webp",
+        "kb": 86
+      },
+      {
+        "url": "/assets/menu/hosomaki-shrimp.webp",
+        "kb": 74
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/playfairdisplay/v40/nuFkD-vYSZviVYUb_rj3ij__anPXDTnogkk7yRZrPA.woff2",
+        "kb": 38
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgEM86xQ.woff2",
+        "kb": 38
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K6z9mXg.woff2",
+        "kb": 36
+      }
+    ],
+    "duracionMs": 5552
+  },
+  "portadaTelefono": {
+    "altoDocumentoPx": 5803,
+    "botonPrincipal": {
+      "texto": "Retirar en el local ↗",
+      "arribaPx": 339,
+      "abajoPx": 387,
+      "completoEnPantalla": true
+    },
+    "franjaNaranja": false,
+    "franjaDesborda": false,
+    "enlacesExternos": [
+      "https://menu.fu.do/ryori",
+      "https://www.ubereats.com/cl-en/store/ryori-sushi/pJ2VaHH-VmKoWFzFx3EKbg",
+      "https://wa.me/56999518653",
+      "https://www.instagram.com/ryorisushi_llolleo/",
+      "https://www.google.com/maps/dir/",
+      "https://www.facebook.com/RyoriSushiOficial"
+    ],
+    "mencionaFudo": false,
+    "tieneUberEats": true,
+    "visual": {
+      "textosTotal": 88,
+      "textosMenos12": 0,
+      "ejemplosPequenos": [],
+      "contrasteBajo": 0,
+      "ejemplosContraste": [],
+      "tactilesTotal": 29,
+      "tactilesMenos44": 0,
+      "ejemplosTactiles": []
+    }
+  },
+  "portadaEscritorio": {
+    "altoDocumentoPx": 3991,
+    "botonPrincipal": {
+      "texto": "Retirar en el local ↗",
+      "arribaPx": 488,
+      "abajoPx": 536,
+      "completoEnPantalla": true
+    },
+    "franjaNaranja": false,
+    "franjaDesborda": false,
+    "enlacesExternos": [
+      "https://menu.fu.do/ryori",
+      "https://www.ubereats.com/cl-en/store/ryori-sushi/pJ2VaHH-VmKoWFzFx3EKbg",
+      "https://wa.me/56999518653",
+      "https://www.instagram.com/ryorisushi_llolleo/",
+      "https://www.google.com/maps/dir/",
+      "https://www.facebook.com/RyoriSushiOficial"
+    ],
+    "mencionaFudo": false,
+    "tieneUberEats": true,
+    "visual": {
+      "textosTotal": 90,
+      "textosMenos12": 0,
+      "ejemplosPequenos": [],
+      "contrasteBajo": 0,
+      "ejemplosContraste": [],
+      "tactilesTotal": 31,
+      "tactilesMenos44": 0,
+      "ejemplosTactiles": []
+    }
+  },
+  "portadaLaptop1536x639": {
+    "altoDocumentoPx": 4015,
+    "botonPrincipal": {
+      "texto": "Retirar en el local ↗",
+      "arribaPx": 495,
+      "abajoPx": 543,
+      "completoEnPantalla": true
+    },
+    "franjaNaranja": false,
+    "franjaDesborda": false,
+    "enlacesExternos": [
+      "https://menu.fu.do/ryori",
+      "https://www.ubereats.com/cl-en/store/ryori-sushi/pJ2VaHH-VmKoWFzFx3EKbg",
+      "https://wa.me/56999518653",
+      "https://www.instagram.com/ryorisushi_llolleo/",
+      "https://www.google.com/maps/dir/",
+      "https://www.facebook.com/RyoriSushiOficial"
+    ],
+    "mencionaFudo": false,
+    "tieneUberEats": true,
+    "visual": {
+      "textosTotal": 90,
+      "textosMenos12": 0,
+      "ejemplosPequenos": [],
+      "contrasteBajo": 0,
+      "ejemplosContraste": [],
+      "tactilesTotal": 31,
+      "tactilesMenos44": 0,
+      "ejemplosTactiles": []
+    }
+  },
+  "cartaTelefono": {
+    "categorias": {
+      "Todos": {
+        "altoPx": 162656,
+        "productos": 1,
+        "documentoPx": 164210
+      },
+      "Sushi": {
+        "altoPx": 162656,
+        "productos": 1,
+        "documentoPx": 164210
+      },
+      "Cocina japonesa": {
+        "altoPx": 162656,
+        "productos": 1,
+        "documentoPx": 164210
+      },
+      "Para compartir": {
+        "altoPx": 162656,
+        "productos": 1,
+        "documentoPx": 164210
+      },
+      "Burgers": {
+        "altoPx": 162656,
+        "productos": 1,
+        "documentoPx": 164210
+      },
+      "Ceviches": {
+        "altoPx": 162656,
+        "productos": 1,
+        "documentoPx": 164210
+      },
+      "Ensaladas": {
+        "altoPx": 162656,
+        "productos": 1,
+        "documentoPx": 164210
+      },
+      "Bebidas": {
+        "altoPx": 162656,
+        "productos": 1,
+        "documentoPx": 164210
+      },
+      "Barra": {
+        "altoPx": 162656,
+        "productos": 1,
+        "documentoPx": 164210
+      },
+      "Acompañamientos": {
+        "altoPx": 162656,
+        "productos": 1,
+        "documentoPx": 164210
+      },
+      "Extras": {
+        "altoPx": 162656,
+        "productos": 1,
+        "documentoPx": 164210
+      }
+    },
+    "busquedas": {
+      "burger con Sushi activo": {
+        "conteo": "17 resultados para «burger» en 1 categoría",
+        "tarjetas": 17
+      },
+      "burger con Todos": {
+        "conteo": "17 resultados para «burger» en 1 categoría",
+        "tarjetas": 17
+      },
+      "salmon con Sushi activo": {
+        "conteo": "27 resultados para «salmon» en 7 categorías",
+        "tarjetas": 27
+      },
+      "salmón con Sushi activo": {
+        "conteo": "27 resultados para «salmón» en 7 categorías",
+        "tarjetas": 27
+      },
+      "salmon con Todos": {
+        "conteo": "27 resultados para «salmon» en 7 categorías",
+        "tarjetas": 27
+      },
+      "salmón con Todos": {
+        "conteo": "27 resultados para «salmón» en 7 categorías",
+        "tarjetas": 27
+      },
+      "SALMON con Todos": {
+        "conteo": "27 resultados para «SALMON» en 7 categorías",
+        "tarjetas": 27
+      }
+    },
+    "primerProductoPx": 1123,
+    "altoDocumentoPx": 34490,
+    "filasDeFiltros": 4,
+    "filtrosVisiblesAlBajar": false,
+    "visual": {
+      "textosTotal": 498,
+      "textosMenos12": 0,
+      "ejemplosPequenos": [],
+      "contrasteBajo": 0,
+      "ejemplosContraste": [],
+      "tactilesTotal": 86,
+      "tactilesMenos44": 0,
+      "ejemplosTactiles": []
+    }
+  },
+  "cartaEscritorio": {
+    "categorias": {
+      "Todos": {
+        "altoPx": 59435,
+        "productos": 1,
+        "documentoPx": 60808
+      },
+      "Sushi": {
+        "altoPx": 59435,
+        "productos": 1,
+        "documentoPx": 60808
+      },
+      "Cocina japonesa": {
+        "altoPx": 59435,
+        "productos": 1,
+        "documentoPx": 60808
+      },
+      "Para compartir": {
+        "altoPx": 59435,
+        "productos": 1,
+        "documentoPx": 60808
+      },
+      "Burgers": {
+        "altoPx": 59435,
+        "productos": 1,
+        "documentoPx": 60808
+      },
+      "Ceviches": {
+        "altoPx": 59435,
+        "productos": 1,
+        "documentoPx": 60808
+      },
+      "Ensaladas": {
+        "altoPx": 59435,
+        "productos": 1,
+        "documentoPx": 60808
+      },
+      "Bebidas": {
+        "altoPx": 59435,
+        "productos": 1,
+        "documentoPx": 60808
+      },
+      "Barra": {
+        "altoPx": 59435,
+        "productos": 1,
+        "documentoPx": 60808
+      },
+      "Acompañamientos": {
+        "altoPx": 59435,
+        "productos": 1,
+        "documentoPx": 60808
+      },
+      "Extras": {
+        "altoPx": 59435,
+        "productos": 1,
+        "documentoPx": 60808
+      }
+    },
+    "busquedas": {
+      "burger con Sushi activo": {
+        "conteo": "17 resultados para «burger» en 1 categoría",
+        "tarjetas": 17
+      },
+      "burger con Todos": {
+        "conteo": "17 resultados para «burger» en 1 categoría",
+        "tarjetas": 17
+      },
+      "salmon con Sushi activo": {
+        "conteo": "27 resultados para «salmon» en 7 categorías",
+        "tarjetas": 27
+      },
+      "salmón con Sushi activo": {
+        "conteo": "27 resultados para «salmón» en 7 categorías",
+        "tarjetas": 27
+      },
+      "salmon con Todos": {
+        "conteo": "27 resultados para «salmon» en 7 categorías",
+        "tarjetas": 27
+      },
+      "salmón con Todos": {
+        "conteo": "27 resultados para «salmón» en 7 categorías",
+        "tarjetas": 27
+      },
+      "SALMON con Todos": {
+        "conteo": "27 resultados para «SALMON» en 7 categorías",
+        "tarjetas": 27
+      }
+    },
+    "primerProductoPx": 1072,
+    "altoDocumentoPx": 13691,
+    "filasDeFiltros": 1,
+    "filtrosVisiblesAlBajar": false,
+    "visual": {
+      "textosTotal": 500,
+      "textosMenos12": 0,
+      "ejemplosPequenos": [],
+      "contrasteBajo": 0,
+      "ejemplosContraste": [],
+      "tactilesTotal": 87,
+      "tactilesMenos44": 0,
+      "ejemplosTactiles": []
+    }
+  }
+}

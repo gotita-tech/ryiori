@@ -1,0 +1,84 @@
+/* Piezas compartidas por portada y carta: canales de compra, barra fija del teléfono y botón de WhatsApp.
+   En la fase 3 este archivo recibe también las variables de color y tipografía del sistema visual. */
+:root {
+  --wa: #128C7E;
+  --canal-tinta: #20271f;
+  --canal-papel: #f5f2e9;
+}
+
+.canales { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.canal {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  min-height: 48px; padding: 12px 18px; border-radius: 999px;
+  font: inherit; font-size: 15px; font-weight: 600; line-height: 1.2; text-decoration: none;
+  border: 1.5px solid currentColor; white-space: nowrap;
+  transition: background-color .15s, color .15s;
+}
+.canal .ext { font-weight: 400; }
+.canal svg { width: 20px; height: 20px; flex: none; }
+
+/* Sobre fondo claro */
+.canal-retiro { background: var(--canal-tinta); border-color: var(--canal-tinta); color: var(--canal-papel); }
+.canal-retiro:hover { background: #3a4636; border-color: #3a4636; }
+.canal-delivery, .canal-whatsapp { background: transparent; color: var(--canal-tinta); }
+.canal-delivery:hover, .canal-whatsapp:hover { background: rgba(32, 39, 31, .08); }
+.canal-whatsapp .wa-icono { color: var(--wa); }
+
+/* Sobre fondo oscuro o foto */
+.canales.sobre-oscuro .canal-retiro { background: var(--canal-papel); border-color: var(--canal-papel); color: var(--canal-tinta); }
+.canales.sobre-oscuro .canal-retiro:hover { background: #fff; }
+.canales.sobre-oscuro .canal-delivery,
+.canales.sobre-oscuro .canal-whatsapp { color: var(--canal-papel); background: rgba(20, 22, 18, .35); }
+.canales.sobre-oscuro .canal-delivery:hover,
+.canales.sobre-oscuro .canal-whatsapp:hover { background: rgba(20, 22, 18, .6); }
+.canales.sobre-oscuro .wa-icono { color: #6fd6c4; }
+
+/* Botón redondo de WhatsApp: flotante en escritorio */
+.wa-flotante {
+  position: fixed; right: 24px; bottom: 24px; z-index: 40;
+  width: 60px; height: 60px; border-radius: 50%;
+  display: grid; place-items: center;
+  background: var(--wa); color: #fff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .25);
+  transition: transform .15s;
+}
+.wa-flotante:hover { transform: scale(1.06); }
+.wa-flotante svg { width: 30px; height: 30px; }
+
+/* Barra fija del teléfono: Retirar, Delivery y WhatsApp redondo */
+.barra-canales { display: none; }
+
+@media (max-width: 700px) {
+  .wa-flotante { display: none; }
+  .barra-canales {
+    display: flex; gap: 8px; align-items: center;
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 40;
+    padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+    background: var(--canal-tinta);
+    box-shadow: 0 -4px 16px rgba(0, 0, 0, .18);
+  }
+  .barra-canales .canal { flex: 1 1 auto; min-width: 0; padding: 12px 12px; font-size: 15px; gap: 6px; }
+  .barra-canales .canal-retiro { flex-grow: 2; }
+  .barra-canales .canal-retiro { background: var(--canal-papel); border-color: var(--canal-papel); color: var(--canal-tinta); }
+  .barra-canales .canal-delivery { color: var(--canal-papel); }
+  .barra-canales .wa-redondo {
+    flex: none; width: 52px; height: 52px; border-radius: 50%;
+    display: grid; place-items: center; background: var(--wa); color: #fff;
+  }
+  .barra-canales .wa-redondo svg { width: 28px; height: 28px; }
+  /* Deja espacio para que la barra no tape el final de la página */
+  body { padding-bottom: calc(76px + env(safe-area-inset-bottom)); }
+}
+
+.canal:focus-visible, .wa-flotante:focus-visible, .wa-redondo:focus-visible {
+  outline: 3px solid #e8a317; outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .canal, .wa-flotante { transition: none; }
+  .wa-flotante:hover { transform: none; }
+}
+
+@media print {
+  .wa-flotante, .barra-canales { display: none; }
+}

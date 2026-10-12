@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ryori Sushi Bar · Sushi, burgers y buenos momentos en Llolleo</title>
-  <meta name="description" content="Descubre Ryori Sushi Bar en Llolleo: rolls, tablas para compartir, burgers y coctelería. Revisa la carta, pide online o ven a conocernos.">
+  <title>Ryori Sushi Bar · Sushi y burgers en Llolleo</title>
+  <meta name="description" content="Ryori Sushi Bar & Burgers en Llolleo, San Antonio: rolls, tablas para compartir y burgers. Retira en el local, pide delivery por Uber Eats o escríbenos por WhatsApp.">
   <meta name="robots" content="noindex,nofollow">
   <meta name="theme-color" content="#171b17">
-  <meta property="og:title" content="Ryori Sushi Bar · El antojo tiene nombre">
-  <meta property="og:description" content="Sushi, burgers y buenos momentos en Llolleo. Encuentra tu próximo favorito en nuestra carta.">
+  <meta property="og:title" content="Ryori Sushi Bar · Sushi y burgers en Llolleo">
+  <meta property="og:description" content="Retira en Divina Providencia 375, pide delivery por Uber Eats o escríbenos por WhatsApp.">
   <meta property="og:image" content="https://ryiori.vercel.app/assets/hero-hd.webp">
   <meta property="og:type" content="website">
   <link rel="icon" href="assets/logo.webp">
@@ -17,44 +17,77 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="comun.css">
   <script src="site.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#contenido">Ir al contenido</a>
-  <div class="topline"><span>SUSHI · BAR · BURGERS</span><span>LLOLLEO, SAN ANTONIO</span></div>
   <header class="header">
     <a class="brand" href="#inicio" aria-label="Ryori Sushi Bar, inicio"><img src="assets/logo.webp" alt="Ryori Sushi Bar" width="90" height="90"></a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation">Menú <span aria-hidden="true">☰</span></button>
     <nav class="navigation" id="navigation" aria-label="Navegación principal">
-      <a href="carta/">Nuestra carta</a><a href="#ryori">El lugar</a><a href="#visitanos">Visítanos</a>
-      <a class="button small" href="https://menu.fu.do/ryori" target="_blank" rel="noopener">Pedir online <span aria-hidden="true">↗</span></a>
+      <a href="carta/">La carta</a><a href="#visitanos">Visítanos</a>
+      <div class="canales">
+        <a class="canal canal-retiro" href="https://menu.fu.do/ryori" target="_blank" rel="noopener">Retirar en el local <span class="ext" aria-hidden="true">↗</span></a>
+        <a class="canal canal-delivery" href="https://www.ubereats.com/cl-en/store/ryori-sushi/pJ2VaHH-VmKoWFzFx3EKbg" target="_blank" rel="noopener">Delivery <span class="ext" aria-hidden="true">↗</span></a>
+        <a class="canal canal-whatsapp" href="https://wa.me/56999518653" target="_blank" rel="noopener"><svg class="wa-icono" viewBox="0 0 24 24" aria-hidden="true"><use href="#icono-wa"/></svg>WhatsApp <span class="ext" aria-hidden="true">↗</span></a>
+      </div>
     </nav>
   </header>
   <main id="contenido">
     <section class="hero" id="inicio" aria-labelledby="hero-title">
-      <img class="hero-image" src="assets/hero-hd.webp" alt="Rolls publicados en la carta de Ryori, con salmón, queso crema y cobertura de mango" width="1998" height="787" fetchpriority="high">
+      <img class="hero-image" src="assets/hero-hd.webp" alt="Rolls de Ryori con salmón, queso crema y cobertura de mango" width="1998" height="787" fetchpriority="high">
       <div class="hero-shade"></div>
-      <div class="hero-copy"><p class="eyebrow light">UN BUEN PLAN EN LLOLLEO</p><h1 id="hero-title">El antojo<br>tiene <em>nombre.</em></h1><p class="hero-description">Sushi, burgers y algo rico para brindar.<br>Ven por tu favorito. Quédate por el momento.</p><div class="hero-actions"><a class="button" href="carta/">Ver la carta <span aria-hidden="true">↗</span></a><a class="text-link light" href="#visitanos">Nos vemos en Ryori <span aria-hidden="true">↓</span></a></div></div>
-      <div class="hero-bottom"><span>BUENA COMIDA. BUENA COMPAÑÍA.</span><a href="carta/" aria-label="Descubrir nuestra carta">DESCUBRE RYORI <span aria-hidden="true">↗</span></a></div>
-    </section>
-    <div class="ribbon" aria-hidden="true"><span>ROLLS DE LA CASA</span><i>✳</i><span>TABLAS PARA COMPARTIR</span><i>✳</i><span>BURGERS & BAR</span><i>✳</i><span>UN PLAN, MUCHOS SABORES</span></div>
-    <section class="section menu-section" id="carta" aria-labelledby="carta-title">
-      <div class="section-heading"><div><p class="eyebrow">ENCUENTRA TU FAVORITO</p><h2 id="carta-title">Uno más.<br><em>Y otro más.</em></h2></div><div class="heading-note"><p>Del primer roll al último bocado.<br>Una carta para todos los antojos.</p><a class="text-link" href="carta/">Explorar carta completa <span aria-hidden="true">↗</span></a></div></div>
-      <div class="food-grid">
-        <article class="food-card"><a class="photo-window" href="carta/" aria-label="Ver los rolls en la carta de Ryori"><img src="assets/rolls-casa-hd.webp" alt="Rolls de Ryori servidos en una fuente, fotografía del restaurante mejorada con IA" width="1870" height="841" loading="lazy"></a><div class="food-body"><span class="number">01 / SUSHI</span><h3>Rolls de la casa</h3><p>Avocado, tempura, acevichados y combinaciones para volver por más.</p><a class="text-link" href="carta/">Elegir mis rolls <span aria-hidden="true">↗</span></a></div></article>
-        <article class="food-card"><a class="photo-window" href="carta/" aria-label="Ver las tablas en la carta de Ryori"><img src="assets/compartir-hd.webp" alt="Sushi servido en Ryori, fotografía del restaurante mejorada con IA" width="1448" height="1086" loading="lazy"></a><div class="food-body"><span class="number">02 / PARA COMPARTIR</span><h3>El mejor punto de encuentro</h3><p>Tablas de 40 o 70 piezas. Elige la tuya y arma un buen plan alrededor de la mesa.</p><a class="text-link" href="carta/">Ver las tablas <span aria-hidden="true">↗</span></a></div></article>
-        <article class="food-card"><a class="photo-window" href="carta/" aria-label="Ver burgers y Hot Sushi Burger en la carta"><img src="assets/hot-sushi-burger-hd.webp" alt="Imagen referencial creada con IA de una Hot Sushi Burger de pollo, queso, palta y cebollín" width="1448" height="1086" loading="lazy"><span class="photo-caption">Imagen referencial · IA</span></a><div class="food-body"><span class="number">03 / BURGERS</span><h3>Un giro al clásico</h3><p>Burgers de carne y Hot Sushi Burger: arroz crujiente, queso, palta y todo el antojo.</p><a class="text-link" href="carta/">Encontrar mi burger <span aria-hidden="true">↗</span></a></div></article>
+      <div class="hero-copy">
+        <p class="eyebrow light">Divina Providencia 375, Llolleo</p>
+        <h1 id="hero-title">El antojo<br>tiene <em>nombre.</em></h1>
+        <p class="hero-description">Rolls, tablas para compartir y burgers. Retira en el local, pide delivery o escríbenos.</p>
+        <div class="canales sobre-oscuro hero-canales">
+          <a class="canal canal-retiro" href="https://menu.fu.do/ryori" target="_blank" rel="noopener">Retirar en el local <span class="ext" aria-hidden="true">↗</span></a>
+          <a class="canal canal-delivery" href="https://www.ubereats.com/cl-en/store/ryori-sushi/pJ2VaHH-VmKoWFzFx3EKbg" target="_blank" rel="noopener">Delivery <span class="ext" aria-hidden="true">↗</span></a>
+          <a class="canal canal-whatsapp" href="https://wa.me/56999518653" target="_blank" rel="noopener"><svg class="wa-icono" viewBox="0 0 24 24" aria-hidden="true"><use href="#icono-wa"/></svg>WhatsApp <span class="ext" aria-hidden="true">↗</span></a>
+        </div>
+        <a class="text-link light hero-carta" href="carta/">Ver la carta con precios</a>
       </div>
-      <p class="menu-footnote">Consulta precios, ingredientes y disponibilidad en nuestra carta online. Fotografías mejoradas con IA.</p>
+    </section>
+    <section class="section menu-section" id="carta" aria-labelledby="carta-title">
+      <div class="section-heading"><div><p class="eyebrow">Encuentra tu favorito</p><h2 id="carta-title">Uno más.<br><em>Y otro más.</em></h2></div><div class="heading-note"><p>Rolls de 8 cortes, tablas de 40 y 70 piezas y burgers con base de arroz crujiente.</p><a class="text-link" href="carta/">Ver la carta completa</a></div></div>
+      <div class="food-grid">
+        <article class="food-card"><a class="photo-window" href="carta/#sushi" aria-label="Ver los rolls en la carta"><img src="assets/rolls-casa-hd.webp" alt="Rolls de Ryori servidos en una fuente, fotografía del restaurante mejorada con IA" width="1870" height="841" loading="lazy"></a><div class="food-body"><span class="number">Sushi</span><h3>Rolls de la casa</h3><p>Avocado, tempura, acevichados y combinaciones para volver por más.</p><a class="text-link" href="carta/#sushi">Ver los rolls</a></div></article>
+        <article class="food-card"><a class="photo-window" href="carta/#tablas" aria-label="Ver las tablas en la carta"><img src="assets/compartir-hd.webp" alt="Sushi servido en Ryori, fotografía del restaurante mejorada con IA" width="1448" height="1086" loading="lazy"></a><div class="food-body"><span class="number">Para compartir</span><h3>Tablas de 40 y 70 piezas</h3><p>Parque DYR, Boca del Maipo, Playa de Llolleo: cada tabla lleva el nombre de un lugar de la costa.</p><a class="text-link" href="carta/#tablas">Ver las tablas</a></div></article>
+        <article class="food-card"><a class="photo-window" href="carta/#burgers" aria-label="Ver las burgers en la carta"><img src="assets/hot-sushi-burger-hd.webp" alt="Imagen referencial creada con IA de una Hot Sushi Burger de pollo, queso, palta y cebollín" width="1448" height="1086" loading="lazy"><span class="photo-caption">Imagen referencial · IA</span></a><div class="food-body"><span class="number">Burgers</span><h3>Hot Sushi Burger</h3><p>Pan de arroz crujiente, queso, palta y cebollín, con pollo, camarón, salmón o kanikama.</p><a class="text-link" href="carta/#burgers">Ver las burgers</a></div></article>
+      </div>
+      <p class="menu-footnote">Fotografías mejoradas con IA. Precios y disponibilidad se confirman al pedir.</p>
     </section>
     <section class="place-section" id="ryori" aria-labelledby="place-title">
       <div class="place-photo"><div class="photo-window"><img src="assets/ambiente-hd.webp" alt="Una mesa con sushi y el interior de Ryori en Llolleo, fotografía del local mejorada con IA" width="1086" height="1448" loading="lazy"></div><span class="place-stamp">RYORI<br><small>SUSHI BAR</small></span></div>
-      <div class="place-copy"><p class="eyebrow">MÁS QUE UN ANTOJO</p><h2 id="place-title">Tu mesa.<br>Tu gente.<br><em>Tu momento.</em></h2><p>Una salida después del trabajo, una mesa para compartir o ese sushi que te alegra el día. En el centro de Llolleo, Ryori reúne sushi, burgers y bar en un solo lugar.</p><a class="text-link" href="https://www.instagram.com/ryorisushi_llolleo/" target="_blank" rel="noopener">Conoce más en Instagram <span aria-hidden="true">↗</span></a><div class="place-details"><span>SUSHI & BURGERS</span><span>COCTELERÍA</span><span>PARA LLEVAR</span></div></div>
+      <div class="place-copy"><p class="eyebrow">El local</p><h2 id="place-title">Tu mesa.<br>Tu gente.<br><em>Tu momento.</em></h2><p>En el centro de Llolleo, Ryori reúne sushi, burgers y bar en un solo lugar. Puedes comer aquí o pedir para llevar.</p><a class="text-link" href="https://www.instagram.com/ryorisushi_llolleo/" target="_blank" rel="noopener">Instagram @ryorisushi_llolleo <span aria-hidden="true">↗</span></a></div>
     </section>
-    <section class="order-section section" aria-labelledby="order-title"><p class="eyebrow">EL PLAN TAMBIÉN PUEDE SER EN CASA</p><div class="order-heading"><h2 id="order-title">Hoy se come<br><em>Ryori.</em></h2><p>Abre la carta, elige tus favoritos y revisa las opciones disponibles para tu pedido.</p></div><div class="order-actions"><a class="button" href="https://menu.fu.do/ryori" target="_blank" rel="noopener">Hacer mi pedido <span aria-hidden="true">↗</span></a><a class="text-link" href="https://api.whatsapp.com/send?phone=56999518653" target="_blank" rel="noopener">Consultar por WhatsApp <span aria-hidden="true">↗</span></a></div></section>
-    <section class="visit-section section" id="visitanos" aria-labelledby="visit-title"><div class="visit-intro"><p class="eyebrow">TE ESPERAMOS</p><h2 id="visit-title">Nos vemos<br><em>en Llolleo.</em></h2><p>En el centro de Llolleo, San Antonio.<br>Encuentra la ruta y ven a compartir.</p><a class="button dark" href="https://www.google.com/maps/search/?api=1&query=Ryori+Sushi+Llolleo" target="_blank" rel="noopener">Cómo llegar <span aria-hidden="true">↗</span></a></div><div class="visit-info"><div><span class="number">DÓNDE</span><h3>Divina Providencia 375, Llolleo</h3><p>Dirección publicada en nuestra carta online.</p></div><div><span class="number">CUÁNDO</span><dl class="hours"><div><dt>Lunes a jueves</dt><dd>13:00 — 21:00</dd></div><div><dt>Viernes y sábado</dt><dd>13:00 — 00:00</dd></div><div><dt>Domingo</dt><dd>Cerrado</dd></div></dl><p>Horarios publicados en la carta. Consulta por WhatsApp para feriados o cambios.</p></div><div><span class="number">HABLEMOS</span><a class="phone-link" href="tel:+56352281065">+56 35 228 1065</a><a class="text-link" href="https://api.whatsapp.com/send?phone=56999518653" target="_blank" rel="noopener">Escríbenos por WhatsApp <span aria-hidden="true">↗</span></a></div></div></section>
+    <section class="order-section section" aria-labelledby="order-title">
+      <p class="eyebrow">Tres formas de pedir</p>
+      <h2 id="order-title">Hoy se come<br><em>Ryori.</em></h2>
+      <ul class="formas-pedir">
+        <li><h3>Retirar en el local</h3><p>Eliges en la carta online, pagas al retirar en efectivo o Redcompra.</p><a class="canal canal-retiro" href="https://menu.fu.do/ryori" target="_blank" rel="noopener">Retirar en el local <span class="ext" aria-hidden="true">↗</span></a></li>
+        <li><h3>Delivery</h3><p>Te lo llevamos a través de Uber Eats.</p><a class="canal canal-delivery" href="https://www.ubereats.com/cl-en/store/ryori-sushi/pJ2VaHH-VmKoWFzFx3EKbg" target="_blank" rel="noopener">Delivery <span class="ext" aria-hidden="true">↗</span></a></li>
+        <li><h3>WhatsApp</h3><p>Pregúntanos por disponibilidad, pedidos grandes o lo que necesites.</p><a class="canal canal-whatsapp" href="https://wa.me/56999518653" target="_blank" rel="noopener"><svg class="wa-icono" viewBox="0 0 24 24" aria-hidden="true"><use href="#icono-wa"/></svg>WhatsApp <span class="ext" aria-hidden="true">↗</span></a></li>
+      </ul>
+    </section>
+    <section class="visit-section section" id="visitanos" aria-labelledby="visit-title"><div class="visit-intro"><p class="eyebrow">Visítanos</p><h2 id="visit-title">Nos vemos<br><em>en Llolleo.</em></h2><p>En el centro de Llolleo, San Antonio.</p><a class="button dark" href="https://www.google.com/maps/dir/?api=1&amp;destination=-33.6123105%2C-71.6176851" target="_blank" rel="noopener">Cómo llegar <span aria-hidden="true">↗</span></a></div><div class="visit-info"><div><span class="number">Dónde</span><h3>Divina Providencia 375, Llolleo</h3><p>San Antonio, Región de Valparaíso.</p></div><div><span class="number">Cuándo</span><dl class="hours"><div><dt>Lunes a jueves</dt><dd>13:00 — 21:00</dd></div><div><dt>Viernes y sábado</dt><dd>13:00 — 00:00</dd></div><div><dt>Domingo</dt><dd>Cerrado</dd></div></dl><p>En feriados, escríbenos por WhatsApp para confirmar.</p></div><div><span class="number">Contacto</span><a class="phone-link" href="tel:+56352281065">+56 35 228 1065</a><a class="text-link" href="https://wa.me/56999518653" target="_blank" rel="noopener">WhatsApp +56 9 9951 8653 <span aria-hidden="true">↗</span></a></div></div></section>
   </main>
-  <footer class="footer"><div class="footer-top"><a class="brand" href="#inicio" aria-label="Volver al inicio"><img src="assets/logo.webp" alt="Ryori Sushi Bar" width="110" height="110" loading="lazy"></a><p>Sushi, burgers<br><em>y buenos momentos.</em></p><div><a href="https://www.instagram.com/ryorisushi_llolleo/" target="_blank" rel="noopener">Instagram ↗</a><a href="https://www.facebook.com/RyoriSushiOficial" target="_blank" rel="noopener">Facebook ↗</a><a href="https://menu.fu.do/ryori" target="_blank" rel="noopener">Carta online ↗</a></div></div><div class="footer-bottom"><span>RYORI SUSHI BAR · LLOLLEO</span><span>HECHO PARA COMPARTIR.</span></div></footer>
-  <a class="mobile-order" href="https://menu.fu.do/ryori" target="_blank" rel="noopener">Ver carta y pedir <span aria-hidden="true">↗</span></a>
+  <footer class="footer"><div class="footer-top"><a class="brand" href="#inicio" aria-label="Volver al inicio"><img src="assets/logo.webp" alt="Ryori Sushi Bar" width="110" height="110" loading="lazy"></a><p>Sushi, burgers<br><em>y buenos momentos.</em></p><div><a href="https://www.instagram.com/ryorisushi_llolleo/" target="_blank" rel="noopener">Instagram ↗</a><a href="https://www.facebook.com/RyoriSushiOficial" target="_blank" rel="noopener">Facebook ↗</a><a href="https://menu.fu.do/ryori" target="_blank" rel="noopener">Retirar en el local ↗</a><a href="https://www.ubereats.com/cl-en/store/ryori-sushi/pJ2VaHH-VmKoWFzFx3EKbg" target="_blank" rel="noopener">Delivery ↗</a></div></div><div class="footer-bottom"><span>Ryori Sushi Bar &amp; Burgers · Divina Providencia 375, Llolleo</span></div></footer>
+
+  <a class="wa-flotante" href="https://wa.me/56999518653" target="_blank" rel="noopener" aria-label="Escribir a Ryori por WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icono-wa"/></svg></a>
+  <nav class="barra-canales" aria-label="Pedir">
+    <a class="canal canal-retiro" href="https://menu.fu.do/ryori" target="_blank" rel="noopener">Retirar en el local <span class="ext" aria-hidden="true">↗</span></a>
+    <a class="canal canal-delivery" href="https://www.ubereats.com/cl-en/store/ryori-sushi/pJ2VaHH-VmKoWFzFx3EKbg" target="_blank" rel="noopener">Delivery <span class="ext" aria-hidden="true">↗</span></a>
+    <a class="wa-redondo" href="https://wa.me/56999518653" target="_blank" rel="noopener" aria-label="Escribir a Ryori por WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icono-wa"/></svg></a>
+  </nav>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="icono-wa" viewBox="0 0 24 24">
+      <path d="M12 2.6a9.4 9.4 0 0 0-8.1 14.2L2.6 21.4l4.7-1.2A9.4 9.4 0 1 0 12 2.6Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+      <path d="M9.1 7.4c-.2-.5-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.7s1.2 3.1 1.3 3.3c.2.2 2.2 3.5 5.4 4.8 2.7 1.1 3.2.9 3.8.8.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.7-.4l-2.1-1c-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.6-.9-.8-1.6-1.9-1.7-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.4 0-.6l-1-2.3Z" fill="currentColor"/>
+    </symbol>
+  </svg>
 </body>
 </html>
